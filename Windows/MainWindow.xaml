@@ -1,0 +1,150 @@
+﻿<Window x:Class="iMine.Launcher.Windows.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="iMine" Height="610" GotFocus="GotFocusHandler" Width="1122" WindowStartupLocation="CenterScreen" WindowStyle="None" AllowsTransparency="True" Background="#00000000" ResizeMode="NoResize">
+    <Viewbox HorizontalAlignment="Left">
+        <Grid x:Name="MainGrid" HorizontalAlignment="Left" Height="610" VerticalAlignment="Top" Width="1122" >
+            <Rectangle Fill="Transparent" Height="70" VerticalAlignment="Top" MouseDown="DragMouseDown" Margin="10,0,10,0" />
+            <Border Name="MainSliderBorder"  HorizontalAlignment="Left" Height="305" Margin="215,140,0,0" VerticalAlignment="Top" Width="610" Padding="0" Background="#C03A2F2C" BorderBrush="#423632" BorderThickness="3,3,3,3">
+                <Grid x:Name="MainSlider"  MouseEnter="MainSliderMouseEnter" MouseLeave="MainSliderMouseLeave">
+                    <Button x:Name="PrevSlideButton" Click="PrevSlideButtonClick" MouseEnter="PrevSlideButtonMouseEnter" MouseLeave="PrevSlideButtonMouseLeave" Content="&lt;" HorizontalAlignment="Left" Margin="5,0,0,0" VerticalAlignment="Center" Width="30" Height="60" FontSize="20" Style="{StaticResource BigSlideButton}" FontWeight="Bold" FontStyle="Italic"/>
+                    <Button x:Name="NextSlideButton" Click="NextSlideButtonClick" Content="&gt;" MouseEnter="NextSlideButtonMouseEnter" MouseLeave="NextSlideButtonMouseLeave" HorizontalAlignment="Right" Margin="0,0,5,0" VerticalAlignment="Center" Width="30" Height="60" FontSize="20" Style="{StaticResource BigSlideButton}" FontStyle="Italic" FontWeight="Bold"/>
+                    <RichTextBox IsReadOnly="True" SelectionOpacity="0" Name="MainSliderText" GotFocus="MainSliderTextClick" MouseEnter="MainSliderTextMouseEnter" MouseLeave="MainSliderTextMouseLeave" Height="Auto" VerticalAlignment="Bottom" Width="610" Background="#C03A2F2C" Foreground="#FFC4B7A4" BorderThickness="0" Padding="5" />
+                    <Rectangle x:Name="SliderOpacity" IsHitTestVisible="false" >
+                        <Rectangle.Fill>
+                            <SolidColorBrush Color="Black"/>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                </Grid>
+            </Border>
+            <Border Margin="215,460,0,0" Padding="0" Background="#C03A2F2C" BorderBrush="#423632" BorderThickness="3,3,3,3" Width="610" Height="110" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <Grid HorizontalAlignment="Right" Margin="-3,-3,-3,-3" Width="610">
+                    <Grid MouseDown="BottomSliderTextClick" MouseLeave="BottomSliderTextMouseLeave" MouseEnter="BottomSliderTextMouseEnter" x:Name="BottomSlider0" Height="90" Width="180" HorizontalAlignment="Left" Margin="30,10,0,10">
+                        <RichTextBox IsHitTestVisible="false" SelectionOpacity="0" IsReadOnly="True" x:Name="BottomSliderText0" Height="Auto" VerticalAlignment="Bottom" Background="#C03A2F2C" Foreground="#FFC4B7A4" BorderThickness="0" Padding="1" Margin="-1,0,-1,-1"/>
+                        <TextBlock x:Name="BottomSliderNew0" Width="35" Height="20" HorizontalAlignment="Right" VerticalAlignment="Top" IsHitTestVisible="false" Foreground="#FFFFB34F" Text="NEW!" FontWeight="Bold" Visibility="Hidden"/>
+                        <Rectangle x:Name="BottomSliderOpacity1" IsHitTestVisible="false">
+                            <Rectangle.Fill>
+                                <SolidColorBrush Color="Black"/>
+                            </Rectangle.Fill>
+                        </Rectangle>
+                        <Rectangle x:Name="BottomSlider0Tint" IsHitTestVisible="false" Opacity="0">
+                            <Rectangle.Fill>
+                                <SolidColorBrush Color="White"/>
+                            </Rectangle.Fill>
+                        </Rectangle>
+                    </Grid>
+                    <Grid MouseDown="BottomSliderTextClick" MouseLeave="BottomSliderTextMouseLeave" MouseEnter="BottomSliderTextMouseEnter" x:Name="BottomSlider1" Height="90" Width="180">
+                        <RichTextBox SelectionOpacity="0" IsReadOnly="True" x:Name="BottomSliderText1" Height="Auto" VerticalAlignment="Bottom" Background="#C03A2F2C" Foreground="#FFC4B7A4" BorderThickness="0" Padding="1" Margin="-1,0,-1,-1"/>
+                        <TextBlock x:Name="BottomSliderNew1" Width="35"  Height="20" HorizontalAlignment="Right" VerticalAlignment="Top" IsHitTestVisible="false" Foreground="#FFFFB34F" Text="NEW!" FontWeight="Bold" Visibility="Hidden"/>
+                        <Rectangle x:Name="BottomSliderOpacity2" IsHitTestVisible="false">
+                            <Rectangle.Fill>
+                                <SolidColorBrush Color="Black"/>
+                            </Rectangle.Fill>
+                        </Rectangle>
+                        <Rectangle x:Name="BottomSlider1Tint" IsHitTestVisible="false" Opacity="0">
+                            <Rectangle.Fill>
+                                <SolidColorBrush Color="White"/>
+                            </Rectangle.Fill>
+                        </Rectangle>
+                    </Grid>
+                    <Grid MouseDown="BottomSliderTextClick" MouseLeave="BottomSliderTextMouseLeave" MouseEnter="BottomSliderTextMouseEnter" x:Name="BottomSlider2" Height="90" Width="180" HorizontalAlignment="Right" Margin="0,10,30,10">
+                        <RichTextBox SelectionOpacity="0" IsReadOnly="True" x:Name="BottomSliderText2" Height="Auto" VerticalAlignment="Bottom" Background="#C03A2F2C" Foreground="#FFC4B7A4" BorderThickness="0" Padding="1" Margin="-1,0,-1,-1"/>
+                        <TextBlock x:Name="BottomSliderNew2" Width="35"  Height="20" HorizontalAlignment="Right" VerticalAlignment="Top" IsHitTestVisible="false" Foreground="#FFFFB34F" Text="NEW!" FontWeight="Bold" Visibility="Hidden"/>
+                        <Rectangle x:Name="BottomSliderOpacity3" IsHitTestVisible="false">
+                            <Rectangle.Fill>
+                                <SolidColorBrush Color="Black"/>
+                            </Rectangle.Fill>
+                        </Rectangle>
+                        <Rectangle x:Name="BottomSlider2Tint" IsHitTestVisible="false" Opacity="0">
+                            <Rectangle.Fill>
+                                <SolidColorBrush Color="White"/>
+                            </Rectangle.Fill>
+                        </Rectangle>
+                    </Grid>
+                    <Button x:Name="PrevBottomButton" Click="PrevBottomSlideButtonClick" Content="&lt;" MouseEnter="PrevButtonMouseEnter" MouseLeave="PrevButtonMouseLeave" HorizontalAlignment="Left" Margin="5,0,0,0" VerticalAlignment="Center" Width="20" Height="40" Style="{StaticResource SlideButton}" FontWeight="Bold" FontStyle="Italic" FontSize="16" Opacity="0.5"/>
+                    <Button x:Name="NextBottomButton" Click="NextBottomSlideButtonClick" Content="&gt;" MouseEnter="NextButtonMouseEnter" MouseLeave="NextButtonMouseLeave" HorizontalAlignment="Right" Margin="0,0,5,0" VerticalAlignment="Center" Width="20" Height="40" Style="{StaticResource SlideButton}" FontWeight="Bold" FontStyle="Italic" FontSize="16" Opacity="0.5"/>
+                </Grid>
+            </Border>
+            <Border  Margin="215,95,0,0" Padding="0" Background="#C03A2F2C" BorderBrush="#423632" BorderThickness="3,3,3,3" Width="610" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <DockPanel>
+                    <Border Background="#AAC4B7A4" BorderThickness="0" Height="25" HorizontalAlignment="Left" CornerRadius="3" Margin="10,0,10,0" Padding="8,0,8,0">
+                        <Label x:Name="ServerName" Content="[Error]" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="-7,-6,-7,-4"/>
+                    </Border>
+                    <!--<Border Background="#AAC4B7A4" BorderThickness="0" Height="18" HorizontalAlignment="Left" CornerRadius="95" Margin="-4,0,10,0" Padding="8,1,8,0">
+                        <Label MouseDown="ServerInfoTagClick" MouseEnter="ModHelpMouseEnter" MouseLeave="ModHelpMouseLeave" Content="?" FontSize="14" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="-7,-7,-7,-4"/>
+                    </Border>-->
+                    <Border x:Name="TagBorder0" Background="#55C4B7A4" BorderThickness="0" Height="18" HorizontalAlignment="Left" CornerRadius="5" Margin="0,0,5,0" Padding="6,0,5,0">
+                        <Label x:Name="Tag0" Content="[error]" FontSize="14" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="-7,-7,-7,-4"/>
+                    </Border>
+                    <Border x:Name="TagBorder1" Background="#55C4B7A4" BorderThickness="0" Height="18" HorizontalAlignment="Left" CornerRadius="5" Margin="0,0,5,0" Padding="6,0,5,0">
+                        <Label x:Name="Tag1" Content="[error]" FontSize="14" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="-7,-7,-7,-4"/>
+                    </Border>
+                    <Border x:Name="TagBorder2" Background="#55C4B7A4" BorderThickness="0" Height="18" HorizontalAlignment="Left" CornerRadius="5" Margin="0,0,5,0" Padding="6,0,5,0">
+                        <Label x:Name="Tag2" Content="[error]" FontSize="14" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="-7,-7,-7,-4"/>
+                    </Border>
+                    <Border x:Name="TagBorder3" Background="#55C4B7A4" BorderThickness="0" Height="18" HorizontalAlignment="Left" CornerRadius="5" Margin="0,0,5,0" Padding="6,0,5,0">
+                        <Label x:Name="Tag3" Content="[error]" FontSize="14" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="-7,-7,-7,-4"/>
+                    </Border>
+                    <Border x:Name="TagBorder4" Background="#55C4B7A4" BorderThickness="0" Height="18" HorizontalAlignment="Left" CornerRadius="5" Margin="0,0,5,0" Padding="6,0,5,0">
+                        <Label x:Name="Tag4" Content="[error]" FontSize="14" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="-7,-7,-7,-4"/>
+                    </Border>
+                    <Border x:Name="TagBorder5" Background="#55C4B7A4" BorderThickness="0" Height="18" HorizontalAlignment="Left" CornerRadius="5" Margin="0,0,5,0" Padding="6,0,5,0">
+                        <Label x:Name="Tag5" Content="[error]" FontSize="14" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="-7,-7,-7,-4"/>
+                    </Border>
+                    <Border x:Name="TagBorder6" Background="#55C4B7A4" BorderThickness="0" Height="18" HorizontalAlignment="Left" CornerRadius="5" Margin="0,0,5,0" Padding="6,0,5,0">
+                        <Label x:Name="Tag6" Content="[error]" FontSize="14" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="-7,-7,-7,-4"/>
+                    </Border>
+                </DockPanel>
+            </Border>
+            <Button Click="ServerInfoTagClick" x:Name="ServerInfoButton" Content="О сервере" MouseEnter="GoldButtonEnter" MouseLeave="GoldButtonLeave" HorizontalAlignment="Right" VerticalAlignment="Top" Width="100" Height="50" Style="{DynamicResource BlackButtons}" Margin="0,94,296,0"/>
+            <StackPanel x:Name="Logo" HorizontalAlignment="Left" Height="52" Margin="32,15,0,0" VerticalAlignment="Top" Width="180"/>
+            <TextBlock Text="[Error]" x:Name="LoginLabel" Visibility="Hidden" HorizontalAlignment="Left" Height="23" Margin="808,28,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FF3A2F2C" Foreground="#FFC4B7A4" Padding="5,2,0,0"/>
+            <Button Name="ConsoleButton" Opacity="0.5" Click="ConsoleButtonClick" MouseEnter="ConsoleButtonEnter" MouseLeave="ConsoleButtonLeave" Width="32" Height="32" Style="{DynamicResource StartMenuButtons}" Margin="217,23,873,555"/>
+            <Button Name="BugButton" Opacity="0.5" Click="BugButtonClick" MouseEnter="ConsoleButtonEnter" MouseLeave="ConsoleButtonLeave" Width="32" Height="32" Style="{DynamicResource StartMenuButtons}" Margin="262,23,828,555"/>
+            <Button x:Name="LoginButton" Click="LoginButtonClick" Content="Логин" MouseEnter="GoldButtonEnter" MouseLeave="GoldButtonLeave" HorizontalAlignment="Left" Margin="930,17,0,0" VerticalAlignment="Top" Width="100" Height="50" Style="{DynamicResource BlackButtons}" RenderTransformOrigin="0.498,0.162"/>
+            <Button x:Name="RegisterButton" Click="RegisterButtonClick" Content="Регистрация" MouseEnter="DiamondButtonEnter" MouseLeave="DiamondButtonLeave" HorizontalAlignment="Left" Margin="837,17,0,0" VerticalAlignment="Top" Width="100" Height="50" Style="{DynamicResource BlackButtons}"/>
+            <StackPanel x:Name="CloseButton" HorizontalAlignment="Right" VerticalAlignment="Top" Width="54" Height="28" Margin="0,12,12,0" MouseDown="CloseButtonClick" MouseMove="CloseButtonMove" MouseLeave="CloseButtonLeave"/>
+            <StackPanel x:Name="ModListPanel" HorizontalAlignment="Left" Height="520" Margin="825,82,0,0" VerticalAlignment="Top" Width="286" Background="#C03A2F2C">
+                <RichTextBox SelectionOpacity="0" IsReadOnly="True" x:Name="ModList" Background="Transparent" FontSize="14" Margin="15,20,15,0" Foreground="#FFC4B7A4" BorderThickness="0" VerticalScrollBarVisibility="Auto" Height="345">
+                    <RichTextBox.Resources>
+                        <Style TargetType="ScrollBar" BasedOn="{StaticResource Pingas}"/>
+                    </RichTextBox.Resources>
+                </RichTextBox>
+                <Border Margin="20,5,20,15" Name="CheckListBorder" Height="0" BorderThickness="3" BorderBrush="#77C84113">
+                    <Grid Margin="-1,-1" Name="CheckListGrid"  Background="#77A37537">
+                        <TextBlock Name="CheckListTitle" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="5,3" Text="Проблем не обнаружено!"/>
+                        <Button Name="CheckListButton" HorizontalAlignment="Right" VerticalAlignment="Top" Padding="-3" Click="CheckListButtonClick" MouseEnter="ModHelpMouseEnter" MouseLeave="ModHelpMouseLeave" Width="15" Height="15" Background="#FF0F930F" Style="{DynamicResource StartMenuButtons}" HorizontalContentAlignment="Center" Margin="0,4,5,0" VerticalContentAlignment="Center">
+                            <TextBlock Name="CheckListButtonText" Text="X" Margin="0,0,0,0"/>
+                        </Button>
+                        <RichTextBox Margin="0,20,0,0" SelectionOpacity="0" IsReadOnly="True" Name="CheckList" Background="Transparent" FontSize="14" Foreground="#FFC4B7A4" BorderThickness="0" VerticalScrollBarVisibility="Auto" IsHitTestVisible="true">
+                        <RichTextBox.Resources>
+                            <Style TargetType="ScrollBar" BasedOn="{StaticResource Pingas}"/>
+                        </RichTextBox.Resources>
+                    </RichTextBox>
+                    </Grid>
+                </Border>
+                <DockPanel x:Name="PlayButtonBcg" Margin="0,-28" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="211" Height="115">
+                    <Button Click="PlayButtonClick" MouseEnter="MouseEnterPlayButton" MouseLeave="MouseLeavePlayButton" Width="165" Height="64" Background="Transparent" Style="{DynamicResource StartMenuButtons}"/>
+                </DockPanel>
+                <Grid>
+                    <Label x:Name="PlayerCount" Content="Игроков: ?/?" FontSize="16" VerticalContentAlignment="Center" Foreground="#FFC4B7A4" HorizontalContentAlignment="Center" Margin="0,0,0,0" HorizontalAlignment="Center"/>
+                    <Button Name="SettingsButton" Opacity="0.5" Click="SettingsButtonClick" MouseEnter="ConsoleButtonEnter" MouseLeave="ConsoleButtonLeave" Width="32" Height="32" Style="{DynamicResource StartMenuButtons}" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,20,0"/>
+                </Grid>
+            </StackPanel>
+            <Border  x:Name="ModPanel" Margin="540,170,0,0" Visibility="Hidden" Padding="0" Background="#F04A3F3C" BorderBrush="#423632" BorderThickness="3" Width="400" Height="60" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <Grid Background="Transparent" Margin="-2">
+                    <RichTextBox FontSize="13" Foreground="#FFC4B7A4" Name="ModPanelBox" SelectionOpacity="0" IsReadOnly="true" Background="Transparent" BorderThickness="0" VerticalAlignment="Top"/>
+                    <TextBlock HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="6,4">
+                        <Hyperlink x:Name="ModPanelLink" Click="ModPanelLinkClicked" Foreground="CornflowerBlue">
+                            Подробнее
+                        </Hyperlink>
+                    </TextBlock>
+                </Grid>
+            </Border>
+            <StackPanel Canvas.ZIndex="99" Visibility="Hidden" x:Name="BlackTint" Opacity="0.7"/>
+        </Grid>
+    </Viewbox>
+</Window>

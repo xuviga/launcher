@@ -1,0 +1,1777 @@
+Renamed Types:
+
+[iMineLauncher]iMine.Launcher.ClientLauncher -> [iMineLauncher]A.A
+{
+	[iMineLauncher]iMine.Launcher.ClientLauncher::GoGame[2]( [iMineLauncher]iMine.Launcher.Client.ServerInfo, [iMineLauncher]iMine.Launcher.Client.Params ) -> A
+	[iMineLauncher]iMine.Launcher.ClientLauncher::CloseGame[0]( ) -> A
+	[iMineLauncher]iMine.Launcher.ClientLauncher::UserHasHisJava[0]( ) -> a
+	[iMineLauncher]iMine.Launcher.ClientLauncher::UserHasOurJava[0]( ) -> B
+	[iMineLauncher]iMine.Launcher.ClientLauncher::ResolveLibrariesDir[2]( [mscorlib]System.Int32, [mscorlib]System.IO.DirectoryInfo ) -> A
+	[iMineLauncher]iMine.Launcher.ClientLauncher::ResolveClassPathDir[2]( [mscorlib]System.Int32, [mscorlib]System.IO.DirectoryInfo ) -> a
+	[iMineLauncher]iMine.Launcher.ClientLauncher::CompilateClientArgs[4]( [mscorlib]System.Collections.Generic.List`1<[mscorlib]System.String>, [mscorlib]System.Collections.Generic.List`1<[mscorlib]System.String>, [iMineLauncher]iMine.Launcher.Client.ClientProfile, [iMineLauncher]iMine.Launcher.Client.Params ) -> A
+	[iMineLauncher]iMine.Launcher.ClientLauncher::AddArgs[5]( [mscorlib]System.Collections.Generic.ICollection`1<[mscorlib]System.String>, [mscorlib]System.Collections.Generic.ICollection`1<[mscorlib]System.String>, [mscorlib]System.String, [mscorlib]System.String, [mscorlib]System.String ) -> A
+	[iMineLauncher]iMine.Launcher.ClientLauncher::TryFindAReason[1]( [iMineLauncher]iMine.Launcher.Client.ServerInfo ) -> A
+	[iMineLauncher]iMine.Launcher.ClientLauncher::ToHash[1]( [mscorlib]System.Guid ) -> A
+	[iMineLauncher]iMine.Launcher.ClientLauncher::ToHex[1]( [mscorlib]System.Byte[] ) -> A
+	[iMineLauncher]iMine.Launcher.ClientLauncher::OpenWebPage[1]( [mscorlib]System.String ) -> A
+
+	System.DateTime [iMineLauncher]System.DateTime iMine.Launcher.ClientLauncher::clientLaunchTime -> A
+}
+
+[iMineLauncher]iMine.Launcher.Config -> [iMineLauncher]A.a
+{
+	[iMineLauncher]iMine.Launcher.Config::get_WorkingDir[0]( ) -> A
+	[iMineLauncher]iMine.Launcher.Config::set_WorkingDir[1]( [mscorlib]System.IO.DirectoryInfo ) -> A
+	[iMineLauncher]iMine.Launcher.Config::get_ServerIp[0]( ) -> a
+	[iMineLauncher]iMine.Launcher.Config::set_ServerIp[1]( [mscorlib]System.String ) -> A
+	[iMineLauncher]iMine.Launcher.Config::get_ServerPort[0]( ) -> B
+	[iMineLauncher]iMine.Launcher.Config::set_ServerPort[1]( [mscorlib]System.Int32 ) -> A
+	[iMineLauncher]iMine.Launcher.Config::get_DownloaderPath[0]( ) -> b
+	[iMineLauncher]iMine.Launcher.Config::set_DownloaderPath[1]( [mscorlib]System.String ) -> a
+	[iMineLauncher]iMine.Launcher.Config::Init[3]( [mscorlib]System.String, [mscorlib]System.Int32, [mscorlib]System.String ) -> A
+	[iMineLauncher]iMine.Launcher.Config::ConnectLauncher[0]( ) -> C
+	[iMineLauncher]iMine.Launcher.Config::RunClient[1]( [iMineLauncher]iMine.Launcher.Client.ServerInfo ) -> A
+	[iMineLauncher]iMine.Launcher.Config::DownloadClientAndRun[1]( [iMineLauncher]iMine.Launcher.Client.ServerInfo ) -> a
+	[iMineLauncher]iMine.Launcher.Config::StopDownloadingClient[0]( ) -> c
+	[iMineLauncher]iMine.Launcher.Config::OpenNewLoginWindow[1]( [iMineLauncher]iMine.Launcher.Client.ServerInfo ) -> B
+	[iMineLauncher]iMine.Launcher.Config::ComputeHash[1]( [mscorlib]System.Byte[] ) -> A
+	[iMineLauncher]iMine.Launcher.Config::ComputeHash[1]( [mscorlib]System.IO.Stream ) -> A
+	[iMineLauncher]iMine.Launcher.Config::ComputeHash[1]( [mscorlib]System.String ) -> B
+
+	[iMineLauncher]iMine.Launcher.Config::.cctor[0]( ) skipped:  special name
+
+	System.Uri [iMineLauncher]System.Uri iMine.Launcher.Config::OurWebsite -> A
+	System.Security.Cryptography.MD5 [iMineLauncher]System.Security.Cryptography.MD5 iMine.Launcher.Config::Md5 -> A
+	System.IO.DirectoryInfo [iMineLauncher]System.IO.DirectoryInfo iMine.Launcher.Config::<WorkingDir>k__BackingField -> A
+	System.String [iMineLauncher]System.String iMine.Launcher.Config::<ServerIp>k__BackingField -> A
+	System.Int32 [iMineLauncher]System.Int32 iMine.Launcher.Config::<ServerPort>k__BackingField -> A
+	System.String [iMineLauncher]System.String iMine.Launcher.Config::<DownloaderPath>k__BackingField -> a
+
+	System.IO.DirectoryInfo [iMineLauncher]System.IO.DirectoryInfo iMine.Launcher.Config::WorkingDir -> dropped
+	System.String [iMineLauncher]System.String iMine.Launcher.Config::ServerIp -> dropped
+	System.Int32 [iMineLauncher]System.Int32 iMine.Launcher.Config::ServerPort -> dropped
+	System.String [iMineLauncher]System.String iMine.Launcher.Config::DownloaderPath -> dropped
+}
+
+[iMineLauncher]iMine.Launcher.DataProvider -> [iMineLauncher]A.B
+{
+	[iMineLauncher]iMine.Launcher.DataProvider::DoEveryfin[0]( ) -> A
+	[iMineLauncher]iMine.Launcher.DataProvider::DownloadWebData[4]( [System]System.Net.WebClient, [iMineLauncher]iMine.Launcher.Client.ClientProfile, [mscorlib]System.String, [mscorlib]System.String[] ) -> A
+	[iMineLauncher]iMine.Launcher.DataProvider::IsGameInProgress[0]( ) -> a
+
+	[iMineLauncher]iMine.Launcher.DataProvider::.cctor[0]( ) skipped:  special name
+
+	iMine.Launcher.Utils.Collections.NDictionary`2<System.String,iMine.Launcher.Client.ServerInfo> [iMineLauncher]iMine.Launcher.Utils.Collections.NDictionary`2<System.String,iMine.Launcher.Client.ServerInfo> iMine.Launcher.DataProvider::Servers -> A
+	iMine.Launcher.Utils.Collections.NDictionary`2<System.String,System.String> [iMineLauncher]iMine.Launcher.Utils.Collections.NDictionary`2<System.String,System.String> iMine.Launcher.DataProvider::Links -> A
+	iMine.Launcher.Client.ServerInfo [iMineLauncher]iMine.Launcher.Client.ServerInfo iMine.Launcher.DataProvider::SelectedServer -> A
+	System.Threading.Thread [iMineLauncher]System.Threading.Thread iMine.Launcher.DataProvider::DownloadThread -> A
+	System.Diagnostics.Process [iMineLauncher]System.Diagnostics.Process iMine.Launcher.DataProvider::GameProcess -> A
+	iMine.Launcher.Request.Auth.AuthRequest/Result [iMineLauncher]iMine.Launcher.Request.Auth.AuthRequest/Result iMine.Launcher.DataProvider::AuthResult -> A
+}
+
+[iMineLauncher]iMine.Launcher.Settings -> [iMineLauncher]A.b
+{
+	[iMineLauncher]iMine.Launcher.Settings::get_SelectedServer[0]( ) -> A
+	[iMineLauncher]iMine.Launcher.Settings::set_SelectedServer[1]( [mscorlib]System.String ) -> A
+	[iMineLauncher]iMine.Launcher.Settings::get_Username[0]( ) -> a
+	[iMineLauncher]iMine.Launcher.Settings::set_Username[1]( [mscorlib]System.String ) -> a
+	[iMineLauncher]iMine.Launcher.Settings::get_Token[0]( ) -> B
+	[iMineLauncher]iMine.Launcher.Settings::set_Token[1]( [mscorlib]System.String ) -> B
+	[iMineLauncher]iMine.Launcher.Settings::get_OpenConsoleOnPlay[0]( ) -> b
+	[iMineLauncher]iMine.Launcher.Settings::set_OpenConsoleOnPlay[1]( [mscorlib]System.Boolean ) -> A
+	[iMineLauncher]iMine.Launcher.Settings::GetId[0]( ) -> C
+	[iMineLauncher]iMine.Launcher.Settings::GetFirstLaunch[1]( [mscorlib]System.String ) -> b
+	[iMineLauncher]iMine.Launcher.Settings::GetLastVisit[0]( ) -> c
+	[iMineLauncher]iMine.Launcher.Settings::UpdateVisitValue[0]( ) -> D
+	[iMineLauncher]iMine.Launcher.Settings::GetRunningRam[1]( [iMineLauncher]iMine.Launcher.Client.ServerInfo ) -> A
+	[iMineLauncher]iMine.Launcher.Settings::GetSelectedRam[1]( [iMineLauncher]iMine.Launcher.Client.ServerInfo ) -> a
+	[iMineLauncher]iMine.Launcher.Settings::SetSelectedRam[2]( [mscorlib]System.String, [mscorlib]System.Int32 ) -> A
+	[iMineLauncher]iMine.Launcher.Settings::GetRamOptimal[1]( [iMineLauncher]iMine.Launcher.Client.ServerInfo ) -> B
+	[iMineLauncher]iMine.Launcher.Settings::HasReportFlag[1]( [mscorlib]System.String ) -> C
+	[iMineLauncher]iMine.Launcher.Settings::SetReportFlag[1]( [mscorlib]System.String ) -> c
+	[iMineLauncher]iMine.Launcher.Settings::InnerClone[0]( ) -> d
+	[iMineLauncher]iMine.Launcher.Settings::SaveSettings[0]( ) -> E
+	[iMineLauncher]iMine.Launcher.Settings::TryAuthWithSettings[0]( ) -> e
+
+	[iMineLauncher]iMine.Launcher.Settings::.cctor[0]( ) skipped:  special name
+
+	Newtonsoft.Json.Linq.JObject [iMineLauncher]Newtonsoft.Json.Linq.JObject iMine.Launcher.Settings::Inner -> A
+	System.IO.FileInfo [iMineLauncher]System.IO.FileInfo iMine.Launcher.Settings::SettingsFile -> A
+
+	System.String [iMineLauncher]System.String iMine.Launcher.Settings::SelectedServer -> dropped
+	System.String [iMineLauncher]System.String iMine.Launcher.Settings::Username -> dropped
+	System.String [iMineLauncher]System.String iMine.Launcher.Settings::Token -> dropped
+	System.Boolean [iMineLauncher]System.Boolean iMine.Launcher.Settings::OpenConsoleOnPlay -> dropped
+}
+
+[iMineLauncher]iMine.Launcher.Properties.Resources -> [iMineLauncher]A.C
+{
+	[iMineLauncher]iMine.Launcher.Properties.Resources::get_ResourceManager[0]( ) -> A
+	[iMineLauncher]iMine.Launcher.Properties.Resources::get_Culture[0]( ) -> a
+	[iMineLauncher]iMine.Launcher.Properties.Resources::set_Culture[1]( [mscorlib]System.Globalization.CultureInfo ) -> A
+
+	[iMineLauncher]iMine.Launcher.Properties.Resources::.ctor[0]( ) skipped:  special name
+
+	System.Resources.ResourceManager [iMineLauncher]System.Resources.ResourceManager iMine.Launcher.Properties.Resources::resourceMan -> A
+	System.Globalization.CultureInfo [iMineLauncher]System.Globalization.CultureInfo iMine.Launcher.Properties.Resources::resourceCulture -> A
+
+	System.Resources.ResourceManager [iMineLauncher]System.Resources.ResourceManager iMine.Launcher.Properties.Resources::ResourceManager -> A
+	System.Globalization.CultureInfo [iMineLauncher]System.Globalization.CultureInfo iMine.Launcher.Properties.Resources::Culture -> a
+}
+
+[iMineLauncher]iMine.Launcher.Properties.Settings -> [iMineLauncher]A.c
+{
+	[iMineLauncher]iMine.Launcher.Properties.Settings::get_Default[0]( ) -> A
+
+	[iMineLauncher]iMine.Launcher.Properties.Settings::.ctor[0]( ) skipped:  special name
+	[iMineLauncher]iMine.Launcher.Properties.Settings::.cctor[0]( ) skipped:  special name
+
+	iMine.Launcher.Properties.Settings [iMineLauncher]iMine.Launcher.Properties.Settings iMine.Launcher.Properties.Settings::defaultInstance -> A
+
+	iMine.Launcher.Properties.Settings [iMineLauncher]iMine.Launcher.Properties.Settings iMine.Launcher.Properties.Settings::Default -> dropped
+}
+
+[iMineLauncher]iMine.Launcher.Helper.VerifyHelper -> [iMineLauncher]A.d
+{
+	[iMineLauncher]iMine.Launcher.Helper.VerifyHelper::GetMapValue[3]( [mscorlib]System.Collections.Generic.Dictionary`2<!0,!1>, !0, [mscorlib]System.String ) -> A
+	[iMineLauncher]iMine.Launcher.Helper.VerifyHelper::IsValidIdName[1]( [mscorlib]System.String ) -> A
+	[iMineLauncher]iMine.Launcher.Helper.VerifyHelper::IsValidIdNameChar[1]( [mscorlib]System.Int32 ) -> A
+	[iMineLauncher]iMine.Launcher.Helper.VerifyHelper::IsValidUsername[1]( [mscorlib]System.String ) -> a
+	[iMineLauncher]iMine.Launcher.Helper.VerifyHelper::PutIfAbsent[4]( [mscorlib]System.Collections.Generic.Dictionary`2<!0,!1>, !0, !1, [mscorlib]System.String ) -> A
+	[iMineLauncher]iMine.Launcher.Helper.VerifyHelper::Verify[3]( !0, [mscorlib]System.Predicate`1<!0>, [mscorlib]System.String ) -> A
+	[iMineLauncher]iMine.Launcher.Helper.VerifyHelper::VerifyDouble[3]( [mscorlib]System.Double, [mscorlib]System.Predicate`1<[mscorlib]System.Double>, [mscorlib]System.String ) -> A
+	[iMineLauncher]iMine.Launcher.Helper.VerifyHelper::VerifyIdName[1]( [mscorlib]System.String ) -> B
+	[iMineLauncher]iMine.Launcher.Helper.VerifyHelper::VerifyInt[3]( [mscorlib]System.Int32, [mscorlib]System.Predicate`1<[mscorlib]System.Int32>, [mscorlib]System.String ) -> A
+	[iMineLauncher]iMine.Launcher.Helper.VerifyHelper::VerifyLong[3]( [mscorlib]System.Int64, [mscorlib]System.Predicate`1<[mscorlib]System.Int64>, [mscorlib]System.String ) -> A
+	[iMineLauncher]iMine.Launcher.Helper.VerifyHelper::VerifyUsername[1]( [mscorlib]System.String ) -> b
+
+	[iMineLauncher]iMine.Launcher.Helper.VerifyHelper::.cctor[0]( ) skipped:  special name
+
+	System.Predicate`1<System.Int32> [iMineLauncher]System.Predicate`1<System.Int32> iMine.Launcher.Helper.VerifyHelper::Positive -> A
+	System.Predicate`1<System.Int32> [iMineLauncher]System.Predicate`1<System.Int32> iMine.Launcher.Helper.VerifyHelper::NotNegative -> a
+	System.Predicate`1<System.Int64> [iMineLauncher]System.Predicate`1<System.Int64> iMine.Launcher.Helper.VerifyHelper::LPositive -> A
+	System.Predicate`1<System.Int64> [iMineLauncher]System.Predicate`1<System.Int64> iMine.Launcher.Helper.VerifyHelper::LNotNegative -> a
+	System.Predicate`1<System.String> [iMineLauncher]System.Predicate`1<System.String> iMine.Launcher.Helper.VerifyHelper::NotEmpty -> A
+	System.Text.RegularExpressions.Regex [iMineLauncher]System.Text.RegularExpressions.Regex iMine.Launcher.Helper.VerifyHelper::UsernamePattern -> A
+}
+
+[iMineLauncher]iMine.Launcher.Serialize.HInput -> [iMineLauncher]A.E
+{
+	[iMineLauncher]iMine.Launcher.Serialize.HInput::Close[0]( ) -> A
+	[iMineLauncher]iMine.Launcher.Serialize.HInput::ReadAscii[1]( [mscorlib]System.Int32 ) -> A
+	[iMineLauncher]iMine.Launcher.Serialize.HInput::ReadBoolean[0]( ) -> a
+	[iMineLauncher]iMine.Launcher.Serialize.HInput::ReadByteArray[1]( [mscorlib]System.Int32 ) -> a
+	[iMineLauncher]iMine.Launcher.Serialize.HInput::ReadInt[0]( ) -> B
+	[iMineLauncher]iMine.Launcher.Serialize.HInput::ReadLength[1]( [mscorlib]System.Int32 ) -> B
+	[iMineLauncher]iMine.Launcher.Serialize.HInput::ReadLong[0]( ) -> b
+	[iMineLauncher]iMine.Launcher.Serialize.HInput::ReadShort[0]( ) -> C
+	[iMineLauncher]iMine.Launcher.Serialize.HInput::ReadString[1]( [mscorlib]System.Int32 ) -> b
+	[iMineLauncher]iMine.Launcher.Serialize.HInput::ReadGuid[0]( ) -> c
+	[iMineLauncher]iMine.Launcher.Serialize.HInput::ReadUnsignedByte[0]( ) -> D
+	[iMineLauncher]iMine.Launcher.Serialize.HInput::ReadUnsignedShort[0]( ) -> d
+	[iMineLauncher]iMine.Launcher.Serialize.HInput::ReadVarInt[0]( ) -> E
+	[iMineLauncher]iMine.Launcher.Serialize.HInput::ReadVarLong[0]( ) -> e
+	[iMineLauncher]iMine.Launcher.Serialize.HInput::VerifyLength[2]( [mscorlib]System.Int32, [mscorlib]System.Int32 ) -> A
+
+	[iMineLauncher]iMine.Launcher.Serialize.HInput::.ctor[1]( [mscorlib]System.IO.Stream ) skipped:  special name
+	[iMineLauncher]iMine.Launcher.Serialize.HInput::.ctor[1]( [mscorlib]System.Byte[] ) skipped:  special name
+	[iMineLauncher]iMine.Launcher.Serialize.HInput::Dispose[0]( ) skipped:  external base class or interface
+
+	System.IO.Stream [iMineLauncher]System.IO.Stream iMine.Launcher.Serialize.HInput::Stream -> A
+}
+
+[iMineLauncher]iMine.Launcher.Serialize.HOutput -> [iMineLauncher]A.e
+{
+	[iMineLauncher]iMine.Launcher.Serialize.HOutput::Close[0]( ) -> A
+	[iMineLauncher]iMine.Launcher.Serialize.HOutput::Flush[0]( ) -> a
+	[iMineLauncher]iMine.Launcher.Serialize.HOutput::WriteASCII[2]( [mscorlib]System.String, [mscorlib]System.Int32 ) -> A
+	[iMineLauncher]iMine.Launcher.Serialize.HOutput::WriteBoolean[1]( [mscorlib]System.Boolean ) -> A
+	[iMineLauncher]iMine.Launcher.Serialize.HOutput::WriteByteArray[2]( [mscorlib]System.Byte[], [mscorlib]System.Int32 ) -> A
+	[iMineLauncher]iMine.Launcher.Serialize.HOutput::WriteRightInt[1]( [mscorlib]System.Int32 ) -> A
+	[iMineLauncher]iMine.Launcher.Serialize.HOutput::WriteLength[2]( [mscorlib]System.Int32, [mscorlib]System.Int32 ) -> A
+	[iMineLauncher]iMine.Launcher.Serialize.HOutput::WriteLong[1]( [mscorlib]System.Int64 ) -> A
+	[iMineLauncher]iMine.Launcher.Serialize.HOutput::WriteShort[1]( [mscorlib]System.Int16 ) -> A
+	[iMineLauncher]iMine.Launcher.Serialize.HOutput::WriteString[2]( [mscorlib]System.String, [mscorlib]System.Int32 ) -> a
+	[iMineLauncher]iMine.Launcher.Serialize.HOutput::WriteGuid[1]( [mscorlib]System.Guid ) -> A
+	[iMineLauncher]iMine.Launcher.Serialize.HOutput::WriteUnsignedByte[1]( [mscorlib]System.Int32 ) -> a
+	[iMineLauncher]iMine.Launcher.Serialize.HOutput::WriteVarInt[1]( [mscorlib]System.Int32 ) -> B
+	[iMineLauncher]iMine.Launcher.Serialize.HOutput::WriteVarLong[1]( [mscorlib]System.Int64 ) -> a
+	[iMineLauncher]iMine.Launcher.Serialize.HOutput::VerifyLength[2]( [mscorlib]System.Int32, [mscorlib]System.Int32 ) -> a
+
+	[iMineLauncher]iMine.Launcher.Serialize.HOutput::Dispose[0]( ) skipped:  external base class or interface
+	[iMineLauncher]iMine.Launcher.Serialize.HOutput::.ctor[1]( [mscorlib]System.IO.Stream ) skipped:  special name
+
+	System.IO.Stream [iMineLauncher]System.IO.Stream iMine.Launcher.Serialize.HOutput::stream -> A
+}
+
+[iMineLauncher]iMine.Launcher.Serialize.SlideInfo -> [iMineLauncher]A.F
+{
+	[iMineLauncher]iMine.Launcher.Serialize.SlideInfo::add_ImageUpdated[1]( [iMineLauncher]iMine.Launcher.Serialize.SlideInfo/ImageUpdatedHandler ) -> A
+	[iMineLauncher]iMine.Launcher.Serialize.SlideInfo::remove_ImageUpdated[1]( [iMineLauncher]iMine.Launcher.Serialize.SlideInfo/ImageUpdatedHandler ) -> a
+	[iMineLauncher]iMine.Launcher.Serialize.SlideInfo::get_Image[0]( ) -> A
+	[iMineLauncher]iMine.Launcher.Serialize.SlideInfo::set_Image[1]( [PresentationCore]System.Windows.Media.Imaging.BitmapImage ) -> A
+	[iMineLauncher]iMine.Launcher.Serialize.SlideInfo::LoadImage[1]( [mscorlib]System.String ) -> A
+
+	[iMineLauncher]iMine.Launcher.Serialize.SlideInfo::.ctor[5]( [mscorlib]System.String, [mscorlib]System.String, [mscorlib]System.String, [mscorlib]System.String, [mscorlib]System.DateTime ) skipped:  special name
+
+	iMine.Launcher.Serialize.SlideInfo/ImageUpdatedHandler [iMineLauncher]iMine.Launcher.Serialize.SlideInfo/ImageUpdatedHandler iMine.Launcher.Serialize.SlideInfo::ImageUpdated -> A
+	System.Windows.Media.Imaging.BitmapImage [iMineLauncher]System.Windows.Media.Imaging.BitmapImage iMine.Launcher.Serialize.SlideInfo::<Image>k__BackingField -> A
+	System.String [iMineLauncher]System.String iMine.Launcher.Serialize.SlideInfo::Title -> A
+	System.String [iMineLauncher]System.String iMine.Launcher.Serialize.SlideInfo::Text -> a
+	System.String [iMineLauncher]System.String iMine.Launcher.Serialize.SlideInfo::ClickUrl -> B
+	System.DateTime [iMineLauncher]System.DateTime iMine.Launcher.Serialize.SlideInfo::DateTime -> A
+
+	System.Windows.Media.Imaging.BitmapImage [iMineLauncher]System.Windows.Media.Imaging.BitmapImage iMine.Launcher.Serialize.SlideInfo::Image -> dropped
+
+	iMine.Launcher.Serialize.SlideInfo/ImageUpdatedHandler [iMineLauncher]iMine.Launcher.Serialize.SlideInfo/ImageUpdatedHandler iMine.Launcher.Serialize.SlideInfo::ImageUpdated -> dropped
+}
+
+[iMineLauncher]iMine.Launcher.Serialize.Signed.SignedBytesHolder -> [iMineLauncher]A.G
+{
+	[iMineLauncher]iMine.Launcher.Serialize.Signed.SignedBytesHolder::Write[1]( [iMineLauncher]iMine.Launcher.Serialize.HOutput ) -> A
+	[iMineLauncher]iMine.Launcher.Serialize.Signed.SignedBytesHolder::GetBytes[0]( ) -> A
+	[iMineLauncher]iMine.Launcher.Serialize.Signed.SignedBytesHolder::GetSign[0]( ) -> a
+
+	[iMineLauncher]iMine.Launcher.Serialize.Signed.SignedBytesHolder::.ctor[1]( [iMineLauncher]iMine.Launcher.Serialize.HInput ) skipped:  special name
+	[iMineLauncher]iMine.Launcher.Serialize.Signed.SignedBytesHolder::.ctor[2]( [mscorlib]System.Byte[], [mscorlib]System.Byte[] ) skipped:  special name
+
+	System.Byte[] [iMineLauncher]System.Byte[] iMine.Launcher.Serialize.Signed.SignedBytesHolder::Bytes -> A
+	System.Byte[] [iMineLauncher]System.Byte[] iMine.Launcher.Serialize.Signed.SignedBytesHolder::Sign -> a
+}
+
+[iMineLauncher]iMine.Launcher.Windows.SecondaryWindowController -> [iMineLauncher]A.g
+{
+	[iMineLauncher]iMine.Launcher.Windows.SecondaryWindowController::HookWindow[1]( [PresentationFramework]System.Windows.Window ) -> A
+
+	[iMineLauncher]iMine.Launcher.Windows.SecondaryWindowController::.cctor[0]( ) skipped:  special name
+
+	System.Collections.Generic.List`1<System.Windows.Window> [iMineLauncher]System.Collections.Generic.List`1<System.Windows.Window> iMine.Launcher.Windows.SecondaryWindowController::Windows -> A
+}
+
+[iMineLauncher]iMine.Launcher.Utils.GoogleAnalytics -> [iMineLauncher]A.H
+{
+	[iMineLauncher]iMine.Launcher.Utils.GoogleAnalytics::Init[0]( ) -> A
+	[iMineLauncher]iMine.Launcher.Utils.GoogleAnalytics::StartSession[0]( ) -> a
+	[iMineLauncher]iMine.Launcher.Utils.GoogleAnalytics::EndSession[1]( [mscorlib]System.String ) -> A
+	[iMineLauncher]iMine.Launcher.Utils.GoogleAnalytics::Event[4]( [mscorlib]System.String, [mscorlib]System.String, [mscorlib]System.String, [mscorlib]System.String ) -> A
+	[iMineLauncher]iMine.Launcher.Utils.GoogleAnalytics::Timings[4]( [mscorlib]System.String, [mscorlib]System.String, [mscorlib]System.Int32, [mscorlib]System.String ) -> A
+	[iMineLauncher]iMine.Launcher.Utils.GoogleAnalytics::ScreenView[1]( [mscorlib]System.String ) -> a
+	[iMineLauncher]iMine.Launcher.Utils.GoogleAnalytics::Exception[4]( [mscorlib]System.String, [mscorlib]System.Exception, [mscorlib]System.String, [mscorlib]System.Boolean ) -> A
+	[iMineLauncher]iMine.Launcher.Utils.GoogleAnalytics::SendBugreport[2]( [mscorlib]System.String, [mscorlib]System.String ) -> A
+	[iMineLauncher]iMine.Launcher.Utils.GoogleAnalytics::SendRequest[1]( [System]System.Collections.Specialized.NameValueCollection ) -> A
+	[iMineLauncher]iMine.Launcher.Utils.GoogleAnalytics::Loop[0]( ) -> B
+
+	[iMineLauncher]iMine.Launcher.Utils.GoogleAnalytics::.cctor[0]( ) skipped:  special name
+
+	System.Collections.Generic.LinkedList`1<System.Collections.Specialized.NameValueCollection> [iMineLauncher]System.Collections.Generic.LinkedList`1<System.Collections.Specialized.NameValueCollection> iMine.Launcher.Utils.GoogleAnalytics::Requests -> A
+	System.String [iMineLauncher]System.String iMine.Launcher.Utils.GoogleAnalytics::Tid -> A
+}
+
+[iMineLauncher]iMine.Launcher.Utils.HardwareInfo -> [iMineLauncher]A.I
+{
+	[iMineLauncher]iMine.Launcher.Utils.HardwareInfo::GetCoresAndSpeed[0]( ) -> A
+	[iMineLauncher]iMine.Launcher.Utils.HardwareInfo::GetTotalRam[0]( ) -> a
+	[iMineLauncher]iMine.Launcher.Utils.HardwareInfo::GetRawData[0]( ) -> B
+	[iMineLauncher]iMine.Launcher.Utils.HardwareInfo::ReadValues[2]( [mscorlib]System.String, [mscorlib]System.String[] ) -> A
+	[iMineLauncher]iMine.Launcher.Utils.HardwareInfo::GetOsVersion[0]( ) -> b
+	[iMineLauncher]iMine.Launcher.Utils.HardwareInfo::GetRamFreeMb[0]( ) -> C
+	[iMineLauncher]iMine.Launcher.Utils.HardwareInfo::GetPageFileMb[0]( ) -> c
+	[iMineLauncher]iMine.Launcher.Utils.HardwareInfo::GetRamSizeMb[0]( ) -> D
+	[iMineLauncher]iMine.Launcher.Utils.HardwareInfo::GetBits[0]( ) -> d
+	[iMineLauncher]iMine.Launcher.Utils.HardwareInfo::GetUuid[0]( ) -> E
+
+	[iMineLauncher]iMine.Launcher.Utils.HardwareInfo::.cctor[0]( ) skipped:  special name
+
+	System.String[] [iMineLauncher]System.String[] iMine.Launcher.Utils.HardwareInfo::OsFields -> A
+	System.String[] [iMineLauncher]System.String[] iMine.Launcher.Utils.HardwareInfo::CpuFields -> a
+	System.String[] [iMineLauncher]System.String[] iMine.Launcher.Utils.HardwareInfo::GpuFields -> B
+	System.String[] [iMineLauncher]System.String[] iMine.Launcher.Utils.HardwareInfo::RamFields -> b
+	Newtonsoft.Json.Linq.JObject [iMineLauncher]Newtonsoft.Json.Linq.JObject iMine.Launcher.Utils.HardwareInfo::Data -> A
+}
+
+[iMineLauncher]iMine.Launcher.Utils.ImageCache -> [iMineLauncher]A.i
+{
+	[iMineLauncher]iMine.Launcher.Utils.ImageCache::Init[0]( ) -> A
+	[iMineLauncher]iMine.Launcher.Utils.ImageCache::Load[1]( [System]System.Uri ) -> A
+	[iMineLauncher]iMine.Launcher.Utils.ImageCache::GetImageFromCache[1]( [mscorlib]System.String ) -> A
+	[iMineLauncher]iMine.Launcher.Utils.ImageCache::PutImageToCache[2]( [mscorlib]System.String, [mscorlib]System.Byte[] ) -> A
+
+	[iMineLauncher]iMine.Launcher.Utils.ImageCache::.cctor[0]( ) skipped:  special name
+
+	System.Windows.Media.Imaging.BitmapImage [iMineLauncher]System.Windows.Media.Imaging.BitmapImage iMine.Launcher.Utils.ImageCache::Nope -> A
+	System.Windows.Media.Imaging.BitmapImage [iMineLauncher]System.Windows.Media.Imaging.BitmapImage iMine.Launcher.Utils.ImageCache::MainBcg -> a
+	System.Windows.Media.Imaging.BitmapImage [iMineLauncher]System.Windows.Media.Imaging.BitmapImage iMine.Launcher.Utils.ImageCache::MainBcgTint -> B
+	System.Windows.Media.Imaging.BitmapImage [iMineLauncher]System.Windows.Media.Imaging.BitmapImage iMine.Launcher.Utils.ImageCache::Console -> b
+	System.Windows.Media.Imaging.BitmapImage [iMineLauncher]System.Windows.Media.Imaging.BitmapImage iMine.Launcher.Utils.ImageCache::Bug -> C
+	System.Windows.Media.Imaging.BitmapImage [iMineLauncher]System.Windows.Media.Imaging.BitmapImage iMine.Launcher.Utils.ImageCache::Cog -> c
+	System.Windows.Media.Imaging.BitmapImage [iMineLauncher]System.Windows.Media.Imaging.BitmapImage iMine.Launcher.Utils.ImageCache::Logo -> D
+	System.Windows.Media.Imaging.BitmapImage [iMineLauncher]System.Windows.Media.Imaging.BitmapImage iMine.Launcher.Utils.ImageCache::ServerButtonInactive -> d
+	System.Windows.Media.Imaging.BitmapImage [iMineLauncher]System.Windows.Media.Imaging.BitmapImage iMine.Launcher.Utils.ImageCache::ServerButtonActive -> E
+	System.Windows.Media.Imaging.BitmapImage [iMineLauncher]System.Windows.Media.Imaging.BitmapImage iMine.Launcher.Utils.ImageCache::PlayButtonInactive -> e
+	System.Windows.Media.Imaging.BitmapImage [iMineLauncher]System.Windows.Media.Imaging.BitmapImage iMine.Launcher.Utils.ImageCache::PlayButtonActive -> F
+	System.Windows.Media.Imaging.BitmapImage [iMineLauncher]System.Windows.Media.Imaging.BitmapImage iMine.Launcher.Utils.ImageCache::GoldButton -> f
+	System.Windows.Media.Imaging.BitmapImage [iMineLauncher]System.Windows.Media.Imaging.BitmapImage iMine.Launcher.Utils.ImageCache::GoldButtonHover -> G
+	System.Windows.Media.Imaging.BitmapImage [iMineLauncher]System.Windows.Media.Imaging.BitmapImage iMine.Launcher.Utils.ImageCache::DiamondButton -> g
+	System.Windows.Media.Imaging.BitmapImage [iMineLauncher]System.Windows.Media.Imaging.BitmapImage iMine.Launcher.Utils.ImageCache::DiamondButtonHover -> H
+	System.Windows.Media.Imaging.BitmapImage [iMineLauncher]System.Windows.Media.Imaging.BitmapImage iMine.Launcher.Utils.ImageCache::CloseButton -> h
+	System.Windows.Media.Imaging.BitmapImage [iMineLauncher]System.Windows.Media.Imaging.BitmapImage iMine.Launcher.Utils.ImageCache::CloseButtonOnly -> I
+	System.Windows.Media.Imaging.BitmapImage [iMineLauncher]System.Windows.Media.Imaging.BitmapImage iMine.Launcher.Utils.ImageCache::CloseButtonGlowing -> i
+	System.Windows.Media.Imaging.BitmapImage [iMineLauncher]System.Windows.Media.Imaging.BitmapImage iMine.Launcher.Utils.ImageCache::MinimizeButtonGlowing -> J
+	System.Windows.Media.Imaging.BitmapImage [iMineLauncher]System.Windows.Media.Imaging.BitmapImage iMine.Launcher.Utils.ImageCache::CloseButtonOnlyGlowing -> j
+	System.Windows.Media.Imaging.BitmapImage [iMineLauncher]System.Windows.Media.Imaging.BitmapImage iMine.Launcher.Utils.ImageCache::ModListPanel -> K
+	System.Windows.Media.Imaging.BitmapImage [iMineLauncher]System.Windows.Media.Imaging.BitmapImage iMine.Launcher.Utils.ImageCache::FancyButton -> k
+	System.Windows.Media.Imaging.BitmapImage [iMineLauncher]System.Windows.Media.Imaging.BitmapImage iMine.Launcher.Utils.ImageCache::FancyButtonHover -> L
+	System.Windows.Media.Imaging.BitmapImage [iMineLauncher]System.Windows.Media.Imaging.BitmapImage iMine.Launcher.Utils.ImageCache::TintMask -> l
+	System.Windows.Media.Imaging.BitmapImage [iMineLauncher]System.Windows.Media.Imaging.BitmapImage iMine.Launcher.Utils.ImageCache::BlankDialog -> M
+	System.Windows.Media.Imaging.BitmapImage [iMineLauncher]System.Windows.Media.Imaging.BitmapImage iMine.Launcher.Utils.ImageCache::LoadingBcg -> m
+	System.Windows.Media.Imaging.BitmapImage [iMineLauncher]System.Windows.Media.Imaging.BitmapImage iMine.Launcher.Utils.ImageCache::LoadingBar -> N
+	System.IO.DirectoryInfo [iMineLauncher]System.IO.DirectoryInfo iMine.Launcher.Utils.ImageCache::CacheDir -> A
+	Newtonsoft.Json.Linq.JObject [iMineLauncher]Newtonsoft.Json.Linq.JObject iMine.Launcher.Utils.ImageCache::_cacheDic -> A
+}
+
+[iMineLauncher]iMine.Launcher.Utils.SuperTextWriter -> [iMineLauncher]A.J
+{
+	[iMineLauncher]iMine.Launcher.Utils.SuperTextWriter::Dispose[0]( ) -> A
+	[iMineLauncher]iMine.Launcher.Utils.SuperTextWriter::Process[0]( ) -> a
+
+	[iMineLauncher]iMine.Launcher.Utils.SuperTextWriter::get_Encoding[0]( ) skipped:  external base class or interface
+	[iMineLauncher]iMine.Launcher.Utils.SuperTextWriter::.ctor[2]( [mscorlib]System.Collections.Generic.IEnumerable`1<[mscorlib]System.IO.TextWriter>, [mscorlib]System.Text.Encoding ) skipped:  special name
+	[iMineLauncher]iMine.Launcher.Utils.SuperTextWriter::Write[1]( [mscorlib]System.String ) skipped:  external base class or interface
+	[iMineLauncher]iMine.Launcher.Utils.SuperTextWriter::WriteLine[1]( [mscorlib]System.String ) skipped:  external base class or interface
+	[iMineLauncher]iMine.Launcher.Utils.SuperTextWriter::Close[0]( ) skipped:  external base class or interface
+
+	System.Text.Encoding [iMineLauncher]System.Text.Encoding iMine.Launcher.Utils.SuperTextWriter::<Encoding>k__BackingField -> A
+	System.Collections.Generic.List`1<System.IO.TextWriter> [iMineLauncher]System.Collections.Generic.List`1<System.IO.TextWriter> iMine.Launcher.Utils.SuperTextWriter::writers -> A
+	System.Text.StringBuilder [iMineLauncher]System.Text.StringBuilder iMine.Launcher.Utils.SuperTextWriter::buffer -> A
+	System.Text.StringBuilder [iMineLauncher]System.Text.StringBuilder iMine.Launcher.Utils.SuperTextWriter::bufferSwap -> a
+	System.Threading.Thread [iMineLauncher]System.Threading.Thread iMine.Launcher.Utils.SuperTextWriter::timer -> A
+
+	System.Text.Encoding [iMineLauncher]System.Text.Encoding iMine.Launcher.Utils.SuperTextWriter::Encoding -> dropped
+}
+
+[iMineLauncher]iMine.Launcher.Utils.TextBoxWriter -> [iMineLauncher]A.j
+{
+
+	[iMineLauncher]iMine.Launcher.Utils.TextBoxWriter::get_Encoding[0]( ) skipped:  external base class or interface
+	[iMineLauncher]iMine.Launcher.Utils.TextBoxWriter::Write[1]( [mscorlib]System.String ) skipped:  external base class or interface
+	[iMineLauncher]iMine.Launcher.Utils.TextBoxWriter::WriteLine[1]( [mscorlib]System.String ) skipped:  external base class or interface
+	[iMineLauncher]iMine.Launcher.Utils.TextBoxWriter::Close[0]( ) skipped:  external base class or interface
+	[iMineLauncher]iMine.Launcher.Utils.TextBoxWriter::.ctor[1]( [PresentationFramework]System.Windows.Controls.TextBox ) skipped:  special name
+	[iMineLauncher]iMine.Launcher.Utils.TextBoxWriter::Flush[0]( ) skipped:  external base class or interface
+
+	System.Text.Encoding [iMineLauncher]System.Text.Encoding iMine.Launcher.Utils.TextBoxWriter::<Encoding>k__BackingField -> A
+	System.Windows.Controls.TextBox [iMineLauncher]System.Windows.Controls.TextBox iMine.Launcher.Utils.TextBoxWriter::textBox -> A
+
+	System.Text.Encoding [iMineLauncher]System.Text.Encoding iMine.Launcher.Utils.TextBoxWriter::Encoding -> dropped
+}
+
+[iMineLauncher]iMine.Launcher.Request.SeedRequest -> [iMineLauncher]A.k
+{
+	[iMineLauncher]iMine.Launcher.Request.SeedRequest::HandleResponse[2]( [iMineLauncher]iMine.Launcher.Serialize.HInput, [iMineLauncher]iMine.Launcher.Serialize.HOutput ) -> A
+	[iMineLauncher]iMine.Launcher.Request.SeedRequest::GetRequestType[0]( ) -> A
+
+	[iMineLauncher]iMine.Launcher.Request.SeedRequest::.ctor[4]( [mscorlib]System.String, [mscorlib]System.String, [mscorlib]System.String, [mscorlib]System.String ) skipped:  special name
+
+	System.String [iMineLauncher]System.String iMine.Launcher.Request.SeedRequest::username -> A
+	System.String [iMineLauncher]System.String iMine.Launcher.Request.SeedRequest::token -> a
+	System.String [iMineLauncher]System.String iMine.Launcher.Request.SeedRequest::guid -> B
+}
+
+[iMineLauncher]iMine.Launcher.Request.AbstractRequest`1 -> [iMineLauncher]A.L`1
+{
+	[iMineLauncher]iMine.Launcher.Request.AbstractRequest`1::HandleResponse[2]( [iMineLauncher]iMine.Launcher.Serialize.HInput, [iMineLauncher]iMine.Launcher.Serialize.HOutput ) -> A
+	[iMineLauncher]iMine.Launcher.Request.AbstractRequest`1::GetRequestType[0]( ) -> A
+	[iMineLauncher]iMine.Launcher.Request.AbstractRequest`1::SendRequest[0]( ) -> a
+	[iMineLauncher]iMine.Launcher.Request.AbstractRequest`1::WriteHandshake[2]( [iMineLauncher]iMine.Launcher.Serialize.HInput, [iMineLauncher]iMine.Launcher.Serialize.HOutput ) -> a
+	[iMineLauncher]iMine.Launcher.Request.AbstractRequest`1::ReadError[1]( [iMineLauncher]iMine.Launcher.Serialize.HInput ) -> A
+	[iMineLauncher]iMine.Launcher.Request.AbstractRequest`1::RequestError[1]( [mscorlib]System.String ) -> A
+
+	[iMineLauncher]iMine.Launcher.Request.AbstractRequest`1::.cctor[0]( ) skipped:  special name
+	[iMineLauncher]iMine.Launcher.Request.AbstractRequest`1::.ctor[0]( ) skipped:  special name
+
+	System.Net.IPEndPoint [iMineLauncher]System.Net.IPEndPoint iMine.Launcher.Request.AbstractRequest`1::EndPoint -> A
+	System.Int32 [iMineLauncher]System.Int32 iMine.Launcher.Request.AbstractRequest`1::attempt -> A
+}
+
+[iMineLauncher]iMine.Launcher.Request.PingRequest -> [iMineLauncher]A.l
+{
+	[iMineLauncher]iMine.Launcher.Request.PingRequest::HandleResponse[2]( [iMineLauncher]iMine.Launcher.Serialize.HInput, [iMineLauncher]iMine.Launcher.Serialize.HOutput ) -> A
+	[iMineLauncher]iMine.Launcher.Request.PingRequest::GetRequestType[0]( ) -> A
+
+	[iMineLauncher]iMine.Launcher.Request.PingRequest::.ctor[0]( ) skipped:  special name
+	[iMineLauncher]iMine.Launcher.Request.PingRequest::.cctor[0]( ) skipped:  special name
+
+	System.Byte [iMineLauncher]System.Byte iMine.Launcher.Request.PingRequest::ExpectedByte -> A
+}
+
+[iMineLauncher]iMine.Launcher.Request.RequestHelper -> [iMineLauncher]A.M
+{
+
+	[iMineLauncher]iMine.Launcher.Request.RequestHelper::.cctor[0]( ) skipped:  special name
+
+	System.Int32 [iMineLauncher]System.Int32 iMine.Launcher.Request.RequestHelper::ProtocolMagic -> A
+	System.Int32 [iMineLauncher]System.Int32 iMine.Launcher.Request.RequestHelper::RsaKeyLengthBits -> a
+	System.Int32 [iMineLauncher]System.Int32 iMine.Launcher.Request.RequestHelper::RsaKeyLength -> B
+	System.Int32 [iMineLauncher]System.Int32 iMine.Launcher.Request.RequestHelper::TokenLength -> b
+	System.Int32 [iMineLauncher]System.Int32 iMine.Launcher.Request.RequestHelper::TokenStringLength -> C
+	System.Int32 [iMineLauncher]System.Int32 iMine.Launcher.Request.RequestHelper::CryproMaxLength -> c
+}
+
+[iMineLauncher]iMine.Launcher.Request.RequestType -> [iMineLauncher]A.m
+{
+	iMine.Launcher.Request.RequestType [iMineLauncher]iMine.Launcher.Request.RequestType iMine.Launcher.Request.RequestType::Ping -> A
+	iMine.Launcher.Request.RequestType [iMineLauncher]iMine.Launcher.Request.RequestType iMine.Launcher.Request.RequestType::Register -> a
+	iMine.Launcher.Request.RequestType [iMineLauncher]iMine.Launcher.Request.RequestType iMine.Launcher.Request.RequestType::AuthToken -> B
+	iMine.Launcher.Request.RequestType [iMineLauncher]iMine.Launcher.Request.RequestType iMine.Launcher.Request.RequestType::AuthWin -> b
+	iMine.Launcher.Request.RequestType [iMineLauncher]iMine.Launcher.Request.RequestType iMine.Launcher.Request.RequestType::Launcher -> C
+	iMine.Launcher.Request.RequestType [iMineLauncher]iMine.Launcher.Request.RequestType iMine.Launcher.Request.RequestType::UpdateWin -> c
+	iMine.Launcher.Request.RequestType [iMineLauncher]iMine.Launcher.Request.RequestType iMine.Launcher.Request.RequestType::Seed -> D
+	iMine.Launcher.Request.RequestType [iMineLauncher]iMine.Launcher.Request.RequestType iMine.Launcher.Request.RequestType::Custom -> d
+
+	System.Int32 [iMineLauncher]System.Int32 iMine.Launcher.Request.RequestType::value__ skipped:  special name
+}
+
+[iMineLauncher]iMine.Launcher.Request.Update.UpdateRequest -> [iMineLauncher]A.n
+{
+	[iMineLauncher]iMine.Launcher.Request.Update.UpdateRequest::HandleResponse[2]( [iMineLauncher]iMine.Launcher.Serialize.HInput, [iMineLauncher]iMine.Launcher.Serialize.HOutput ) -> A
+	[iMineLauncher]iMine.Launcher.Request.Update.UpdateRequest::GetRequestType[0]( ) -> A
+	[iMineLauncher]iMine.Launcher.Request.Update.UpdateRequest::SendRequest[0]( ) -> a
+	[iMineLauncher]iMine.Launcher.Request.Update.UpdateRequest::get_DownloadedSize[0]( ) -> B
+	[iMineLauncher]iMine.Launcher.Request.Update.UpdateRequest::set_DownloadedSize[1]( [mscorlib]System.Int64 ) -> A
+	[iMineLauncher]iMine.Launcher.Request.Update.UpdateRequest::get_TotalSize[0]( ) -> b
+	[iMineLauncher]iMine.Launcher.Request.Update.UpdateRequest::set_TotalSize[1]( [mscorlib]System.Int64 ) -> a
+	[iMineLauncher]iMine.Launcher.Request.Update.UpdateRequest::get_CurrentFile[0]( ) -> C
+	[iMineLauncher]iMine.Launcher.Request.Update.UpdateRequest::set_CurrentFile[1]( [mscorlib]System.String ) -> A
+	[iMineLauncher]iMine.Launcher.Request.Update.UpdateRequest::get_CurrentDownloadedSize[0]( ) -> c
+	[iMineLauncher]iMine.Launcher.Request.Update.UpdateRequest::set_CurrentDownloadedSize[1]( [mscorlib]System.Int64 ) -> B
+	[iMineLauncher]iMine.Launcher.Request.Update.UpdateRequest::get_CurrentTotalSize[0]( ) -> D
+	[iMineLauncher]iMine.Launcher.Request.Update.UpdateRequest::set_CurrentTotalSize[1]( [mscorlib]System.Int64 ) -> b
+	[iMineLauncher]iMine.Launcher.Request.Update.UpdateRequest::SetStateCallback[1]( [iMineLauncher]iMine.Launcher.Request.Update.UpdateRequest/Callback ) -> A
+	[iMineLauncher]iMine.Launcher.Request.Update.UpdateRequest::DeleteExtraDir[3]( [mscorlib]System.IO.DirectoryInfo, [iMineLauncher]iMine.Launcher.Hasher.HashedDir, [mscorlib]System.Boolean ) -> A
+	[iMineLauncher]iMine.Launcher.Request.Update.UpdateRequest::DownloadFile[3]( [mscorlib]System.IO.FileSystemInfo, [iMineLauncher]iMine.Launcher.Hasher.HashedFile, [mscorlib]System.IO.Stream ) -> A
+	[iMineLauncher]iMine.Launcher.Request.Update.UpdateRequest::FillActionsQueue[2]( [System]System.Collections.Generic.LinkedList`1<[iMineLauncher]iMine.Launcher.Request.Update.UpdateRequest/Action>, [iMineLauncher]iMine.Launcher.Hasher.HashedDir ) -> A
+	[iMineLauncher]iMine.Launcher.Request.Update.UpdateRequest::UpdateState[3]( [mscorlib]System.String, [mscorlib]System.Int64, [mscorlib]System.Int64 ) -> A
+
+	[iMineLauncher]iMine.Launcher.Request.Update.UpdateRequest::.ctor[4]( [mscorlib]System.String, [mscorlib]System.IO.DirectoryInfo, [iMineLauncher]iMine.Launcher.Hasher.FileNameMatcher, [mscorlib]System.Boolean ) skipped:  special name
+
+	System.Int32 [iMineLauncher]System.Int32 iMine.Launcher.Request.Update.UpdateRequest::MaxQueueSize -> A
+	System.Int32 [iMineLauncher]System.Int32 iMine.Launcher.Request.Update.UpdateRequest::BufferSize -> a
+	System.String [iMineLauncher]System.String iMine.Launcher.Request.Update.UpdateRequest::dirName -> A
+	System.IO.DirectoryInfo [iMineLauncher]System.IO.DirectoryInfo iMine.Launcher.Request.Update.UpdateRequest::dir -> A
+	iMine.Launcher.Hasher.FileNameMatcher [iMineLauncher]iMine.Launcher.Hasher.FileNameMatcher iMine.Launcher.Request.Update.UpdateRequest::matcher -> A
+	System.Boolean [iMineLauncher]System.Boolean iMine.Launcher.Request.Update.UpdateRequest::digest -> A
+	iMine.Launcher.Request.Update.UpdateRequest/Callback [iMineLauncher]iMine.Launcher.Request.Update.UpdateRequest/Callback iMine.Launcher.Request.Update.UpdateRequest::stateCallback -> A
+	iMine.Launcher.Hasher.HashedDir [iMineLauncher]iMine.Launcher.Hasher.HashedDir iMine.Launcher.Request.Update.UpdateRequest::localDir -> A
+	System.DateTime [iMineLauncher]System.DateTime iMine.Launcher.Request.Update.UpdateRequest::startTime -> A
+	System.Int64 [iMineLauncher]System.Int64 iMine.Launcher.Request.Update.UpdateRequest::<DownloadedSize>k__BackingField -> A
+	System.Int64 [iMineLauncher]System.Int64 iMine.Launcher.Request.Update.UpdateRequest::<TotalSize>k__BackingField -> a
+	System.String [iMineLauncher]System.String iMine.Launcher.Request.Update.UpdateRequest::<CurrentFile>k__BackingField -> a
+	System.Int64 [iMineLauncher]System.Int64 iMine.Launcher.Request.Update.UpdateRequest::<CurrentDownloadedSize>k__BackingField -> B
+	System.Int64 [iMineLauncher]System.Int64 iMine.Launcher.Request.Update.UpdateRequest::<CurrentTotalSize>k__BackingField -> b
+
+	System.Int64 [iMineLauncher]System.Int64 iMine.Launcher.Request.Update.UpdateRequest::DownloadedSize -> dropped
+	System.Int64 [iMineLauncher]System.Int64 iMine.Launcher.Request.Update.UpdateRequest::TotalSize -> dropped
+	System.String [iMineLauncher]System.String iMine.Launcher.Request.Update.UpdateRequest::CurrentFile -> dropped
+	System.Int64 [iMineLauncher]System.Int64 iMine.Launcher.Request.Update.UpdateRequest::CurrentDownloadedSize -> dropped
+	System.Int64 [iMineLauncher]System.Int64 iMine.Launcher.Request.Update.UpdateRequest::CurrentTotalSize -> dropped
+}
+
+[iMineLauncher]iMine.Launcher.Request.Auth.AuthTokenRequest -> [iMineLauncher]A.O
+{
+	[iMineLauncher]iMine.Launcher.Request.Auth.AuthTokenRequest::HandleResponse[2]( [iMineLauncher]iMine.Launcher.Serialize.HInput, [iMineLauncher]iMine.Launcher.Serialize.HOutput ) -> A
+	[iMineLauncher]iMine.Launcher.Request.Auth.AuthTokenRequest::GetRequestType[0]( ) -> A
+
+	[iMineLauncher]iMine.Launcher.Request.Auth.AuthTokenRequest::.ctor[2]( [mscorlib]System.String, [mscorlib]System.String ) skipped:  special name
+
+	System.String [iMineLauncher]System.String iMine.Launcher.Request.Auth.AuthTokenRequest::username -> A
+	System.String [iMineLauncher]System.String iMine.Launcher.Request.Auth.AuthTokenRequest::token -> a
+}
+
+[iMineLauncher]iMine.Launcher.Request.Auth.RegisterRequest -> [iMineLauncher]A.o
+{
+	[iMineLauncher]iMine.Launcher.Request.Auth.RegisterRequest::HandleResponse[2]( [iMineLauncher]iMine.Launcher.Serialize.HInput, [iMineLauncher]iMine.Launcher.Serialize.HOutput ) -> A
+	[iMineLauncher]iMine.Launcher.Request.Auth.RegisterRequest::GetRequestType[0]( ) -> A
+
+	[iMineLauncher]iMine.Launcher.Request.Auth.RegisterRequest::.ctor[3]( [mscorlib]System.String, [mscorlib]System.String, [mscorlib]System.String ) skipped:  special name
+
+	System.String [iMineLauncher]System.String iMine.Launcher.Request.Auth.RegisterRequest::username -> A
+	System.String [iMineLauncher]System.String iMine.Launcher.Request.Auth.RegisterRequest::password -> a
+	System.String [iMineLauncher]System.String iMine.Launcher.Request.Auth.RegisterRequest::email -> B
+}
+
+[iMineLauncher]iMine.Launcher.Request.Auth.AuthRequest -> [iMineLauncher]A.P
+{
+	[iMineLauncher]iMine.Launcher.Request.Auth.AuthRequest::HandleResponse[2]( [iMineLauncher]iMine.Launcher.Serialize.HInput, [iMineLauncher]iMine.Launcher.Serialize.HOutput ) -> A
+	[iMineLauncher]iMine.Launcher.Request.Auth.AuthRequest::GetRequestType[0]( ) -> A
+
+	[iMineLauncher]iMine.Launcher.Request.Auth.AuthRequest::.ctor[2]( [mscorlib]System.String, [mscorlib]System.String ) skipped:  special name
+
+	System.String [iMineLauncher]System.String iMine.Launcher.Request.Auth.AuthRequest::username -> A
+	System.String [iMineLauncher]System.String iMine.Launcher.Request.Auth.AuthRequest::password -> a
+}
+
+[iMineLauncher]iMine.Launcher.Hasher.FileNameMatcher -> [iMineLauncher]A.p
+{
+	[iMineLauncher]iMine.Launcher.Hasher.FileNameMatcher::ShouldUpdate[1]( [mscorlib]System.Collections.Generic.ICollection`1<[mscorlib]System.String> ) -> A
+	[iMineLauncher]iMine.Launcher.Hasher.FileNameMatcher::AnyMatch[2]( [iMineLauncher]iMine.Launcher.Hasher.FileNameMatcher/Entry[], [mscorlib]System.Collections.Generic.ICollection`1<[mscorlib]System.String> ) -> A
+	[iMineLauncher]iMine.Launcher.Hasher.FileNameMatcher::ToEntries[1]( [mscorlib]System.String[] ) -> A
+
+	[iMineLauncher]iMine.Launcher.Hasher.FileNameMatcher::.ctor[3]( [mscorlib]System.String[], [mscorlib]System.String[], [mscorlib]System.String[] ) skipped:  special name
+	[iMineLauncher]iMine.Launcher.Hasher.FileNameMatcher::.ctor[3]( [iMineLauncher]iMine.Launcher.Hasher.FileNameMatcher/Entry[], [iMineLauncher]iMine.Launcher.Hasher.FileNameMatcher/Entry[], [iMineLauncher]iMine.Launcher.Hasher.FileNameMatcher/Entry[] ) skipped:  special name
+	[iMineLauncher]iMine.Launcher.Hasher.FileNameMatcher::.cctor[0]( ) skipped:  special name
+
+	iMine.Launcher.Hasher.FileNameMatcher/Entry[] [iMineLauncher]iMine.Launcher.Hasher.FileNameMatcher/Entry[] iMine.Launcher.Hasher.FileNameMatcher::NoEntries -> A
+	iMine.Launcher.Hasher.FileNameMatcher/Entry[] [iMineLauncher]iMine.Launcher.Hasher.FileNameMatcher/Entry[] iMine.Launcher.Hasher.FileNameMatcher::update -> a
+	iMine.Launcher.Hasher.FileNameMatcher/Entry[] [iMineLauncher]iMine.Launcher.Hasher.FileNameMatcher/Entry[] iMine.Launcher.Hasher.FileNameMatcher::verify -> B
+	iMine.Launcher.Hasher.FileNameMatcher/Entry[] [iMineLauncher]iMine.Launcher.Hasher.FileNameMatcher/Entry[] iMine.Launcher.Hasher.FileNameMatcher::exclusions -> b
+}
+
+[iMineLauncher]iMine.Launcher.Hasher.HashedType -> [iMineLauncher]A.Q
+{
+	iMine.Launcher.Hasher.HashedType [iMineLauncher]iMine.Launcher.Hasher.HashedType iMine.Launcher.Hasher.HashedType::Dir -> A
+	iMine.Launcher.Hasher.HashedType [iMineLauncher]iMine.Launcher.Hasher.HashedType iMine.Launcher.Hasher.HashedType::File -> a
+
+	System.Int32 [iMineLauncher]System.Int32 iMine.Launcher.Hasher.HashedType::value__ skipped:  special name
+}
+
+[iMineLauncher]iMine.Launcher.FileVisitor.FileVisitResult -> [iMineLauncher]A.S
+{
+	iMine.Launcher.FileVisitor.FileVisitResult [iMineLauncher]iMine.Launcher.FileVisitor.FileVisitResult iMine.Launcher.FileVisitor.FileVisitResult::Continue -> A
+	iMine.Launcher.FileVisitor.FileVisitResult [iMineLauncher]iMine.Launcher.FileVisitor.FileVisitResult iMine.Launcher.FileVisitor.FileVisitResult::Terminate -> a
+	iMine.Launcher.FileVisitor.FileVisitResult [iMineLauncher]iMine.Launcher.FileVisitor.FileVisitResult iMine.Launcher.FileVisitor.FileVisitResult::SkipSubtree -> B
+	iMine.Launcher.FileVisitor.FileVisitResult [iMineLauncher]iMine.Launcher.FileVisitor.FileVisitResult iMine.Launcher.FileVisitor.FileVisitResult::SkipSiblings -> b
+
+	System.Int32 [iMineLauncher]System.Int32 iMine.Launcher.FileVisitor.FileVisitResult::value__ skipped:  special name
+}
+
+[iMineLauncher]iMine.Launcher.Client.ServerInfo -> [iMineLauncher]A.T
+{
+
+	[iMineLauncher]iMine.Launcher.Client.ServerInfo::.ctor[1]( [iMineLauncher]iMine.Launcher.Client.ClientProfile ) skipped:  special name
+	[iMineLauncher]iMine.Launcher.Client.ServerInfo::.ctor[4]( [iMineLauncher]iMine.Launcher.Client.ClientProfile, [Newtonsoft.Json]Newtonsoft.Json.Linq.JObject, [Newtonsoft.Json]Newtonsoft.Json.Linq.JArray, [Newtonsoft.Json]Newtonsoft.Json.Linq.JArray ) skipped:  special name
+	[iMineLauncher]iMine.Launcher.Client.ServerInfo::ToString[0]( ) skipped:  external base class or interface
+
+	iMine.Launcher.Client.ClientProfile [iMineLauncher]iMine.Launcher.Client.ClientProfile iMine.Launcher.Client.ServerInfo::ClientProfile -> A
+	System.Collections.Generic.List`1<iMine.Launcher.Serialize.SlideInfo> [iMineLauncher]System.Collections.Generic.List`1<iMine.Launcher.Serialize.SlideInfo> iMine.Launcher.Client.ServerInfo::News -> A
+	System.Collections.Generic.List`1<iMine.Launcher.Serialize.SlideInfo> [iMineLauncher]System.Collections.Generic.List`1<iMine.Launcher.Serialize.SlideInfo> iMine.Launcher.Client.ServerInfo::ChangeLogs -> a
+	Newtonsoft.Json.Linq.JObject [iMineLauncher]Newtonsoft.Json.Linq.JObject iMine.Launcher.Client.ServerInfo::Mods -> A
+	Newtonsoft.Json.Linq.JObject [iMineLauncher]Newtonsoft.Json.Linq.JObject iMine.Launcher.Client.ServerInfo::Tags -> a
+	System.String [iMineLauncher]System.String iMine.Launcher.Client.ServerInfo::Online -> A
+	System.String [iMineLauncher]System.String iMine.Launcher.Client.ServerInfo::Slots -> a
+}
+
+[iMineLauncher]iMine.Launcher.Client.McVersion -> [iMineLauncher]A.t
+{
+	[iMineLauncher]iMine.Launcher.Client.McVersion::ByName[1]( [mscorlib]System.String ) -> A
+
+	[iMineLauncher]iMine.Launcher.Client.McVersion::ToString[0]( ) skipped:  external base class or interface
+	[iMineLauncher]iMine.Launcher.Client.McVersion::.ctor[2]( [mscorlib]System.String, [mscorlib]System.Int32 ) skipped:  special name
+	[iMineLauncher]iMine.Launcher.Client.McVersion::CompareTo[1]( [iMineLauncher]iMine.Launcher.Client.McVersion ) skipped:  external base class or interface
+	[iMineLauncher]iMine.Launcher.Client.McVersion::.cctor[0]( ) skipped:  special name
+
+	iMine.Launcher.Utils.Collections.NDictionary`2<System.String,iMine.Launcher.Client.McVersion> [iMineLauncher]iMine.Launcher.Utils.Collections.NDictionary`2<System.String,iMine.Launcher.Client.McVersion> iMine.Launcher.Client.McVersion::Versions -> A
+	iMine.Launcher.Client.McVersion [iMineLauncher]iMine.Launcher.Client.McVersion iMine.Launcher.Client.McVersion::Mc1_5_2 -> A
+	iMine.Launcher.Client.McVersion [iMineLauncher]iMine.Launcher.Client.McVersion iMine.Launcher.Client.McVersion::Mc1_6_4 -> a
+	iMine.Launcher.Client.McVersion [iMineLauncher]iMine.Launcher.Client.McVersion iMine.Launcher.Client.McVersion::Mc1_7_2 -> B
+	iMine.Launcher.Client.McVersion [iMineLauncher]iMine.Launcher.Client.McVersion iMine.Launcher.Client.McVersion::Mc1_7_10 -> b
+	iMine.Launcher.Client.McVersion [iMineLauncher]iMine.Launcher.Client.McVersion iMine.Launcher.Client.McVersion::Mc1_8_9 -> C
+	iMine.Launcher.Client.McVersion [iMineLauncher]iMine.Launcher.Client.McVersion iMine.Launcher.Client.McVersion::Mc1_9_4 -> c
+	iMine.Launcher.Client.McVersion [iMineLauncher]iMine.Launcher.Client.McVersion iMine.Launcher.Client.McVersion::Mc1_10_2 -> D
+	iMine.Launcher.Client.McVersion [iMineLauncher]iMine.Launcher.Client.McVersion iMine.Launcher.Client.McVersion::Mc1_11_2 -> d
+	iMine.Launcher.Client.McVersion [iMineLauncher]iMine.Launcher.Client.McVersion iMine.Launcher.Client.McVersion::Mc1_12_1 -> E
+	iMine.Launcher.Client.McVersion [iMineLauncher]iMine.Launcher.Client.McVersion iMine.Launcher.Client.McVersion::Mc1_12_2 -> e
+	System.String [iMineLauncher]System.String iMine.Launcher.Client.McVersion::Name -> A
+	System.Int32 [iMineLauncher]System.Int32 iMine.Launcher.Client.McVersion::Protocol -> A
+}
+
+[iMineLauncher]iMine.Launcher.ClientLauncher/<>c__DisplayClass1_0 -> [iMineLauncher]A.A/A
+{
+	[iMineLauncher]iMine.Launcher.ClientLauncher/<>c__DisplayClass1_0::<GoGame>b__1[0]( ) -> A
+	[iMineLauncher]iMine.Launcher.ClientLauncher/<>c__DisplayClass1_0::<GoGame>b__2[0]( ) -> a
+	[iMineLauncher]iMine.Launcher.ClientLauncher/<>c__DisplayClass1_0::<GoGame>b__0[2]( [mscorlib]System.Object, [mscorlib]System.EventArgs ) -> A
+
+	[iMineLauncher]iMine.Launcher.ClientLauncher/<>c__DisplayClass1_0::.ctor[0]( ) skipped:  special name
+
+	System.IO.StreamReader [iMineLauncher]System.IO.StreamReader iMine.Launcher.ClientLauncher/<>c__DisplayClass1_0::logs -> A
+	System.IO.StreamReader [iMineLauncher]System.IO.StreamReader iMine.Launcher.ClientLauncher/<>c__DisplayClass1_0::errors -> a
+	iMine.Launcher.Client.ServerInfo [iMineLauncher]iMine.Launcher.Client.ServerInfo iMine.Launcher.ClientLauncher/<>c__DisplayClass1_0::server -> A
+}
+
+[iMineLauncher]iMine.Launcher.Config/<>c -> [iMineLauncher]A.a/A
+{
+	[iMineLauncher]iMine.Launcher.Config/<>c::<ConnectLauncher>b__19_0[1]( [iMineLauncher]iMine.Launcher.Serialize.Signed.SignedObjectHolder`1<[iMineLauncher]iMine.Launcher.Client.ClientProfile> ) -> A
+
+	[iMineLauncher]iMine.Launcher.Config/<>c::.cctor[0]( ) skipped:  special name
+	[iMineLauncher]iMine.Launcher.Config/<>c::.ctor[0]( ) skipped:  special name
+
+	iMine.Launcher.Config/<>c [iMineLauncher]iMine.Launcher.Config/<>c iMine.Launcher.Config/<>c::<>9 -> A
+	System.Converter`2<iMine.Launcher.Serialize.Signed.SignedObjectHolder`1<iMine.Launcher.Client.ClientProfile>,iMine.Launcher.Client.ClientProfile> [iMineLauncher]System.Converter`2<iMine.Launcher.Serialize.Signed.SignedObjectHolder`1<iMine.Launcher.Client.ClientProfile>,iMine.Launcher.Client.ClientProfile> iMine.Launcher.Config/<>c::<>9__19_0 -> A
+}
+
+[iMineLauncher]iMine.Launcher.Config/<>c__DisplayClass21_0 -> [iMineLauncher]A.a/a
+{
+	[iMineLauncher]iMine.Launcher.Config/<>c__DisplayClass21_0::<DownloadClientAndRun>b__0[0]( ) -> A
+	[iMineLauncher]iMine.Launcher.Config/<>c__DisplayClass21_0::<DownloadClientAndRun>b__1[0]( ) -> a
+	[iMineLauncher]iMine.Launcher.Config/<>c__DisplayClass21_0::<DownloadClientAndRun>b__6[0]( ) -> B
+
+	[iMineLauncher]iMine.Launcher.Config/<>c__DisplayClass21_0::.ctor[0]( ) skipped:  special name
+
+	iMine.Launcher.Client.ServerInfo [iMineLauncher]iMine.Launcher.Client.ServerInfo iMine.Launcher.Config/<>c__DisplayClass21_0::serverInfo -> A
+	iMine.Launcher.Windows.DownloadingWindow [iMineLauncher]iMine.Launcher.Windows.DownloadingWindow iMine.Launcher.Config/<>c__DisplayClass21_0::downloadWindow -> A
+	System.Action [iMineLauncher]System.Action iMine.Launcher.Config/<>c__DisplayClass21_0::<>9__1 -> A
+	System.Action [iMineLauncher]System.Action iMine.Launcher.Config/<>c__DisplayClass21_0::<>9__6 -> a
+}
+
+[iMineLauncher]iMine.Launcher.Config/<>c__DisplayClass21_1 -> [iMineLauncher]A.a/B
+{
+	[iMineLauncher]iMine.Launcher.Config/<>c__DisplayClass21_1::<DownloadClientAndRun>b__2[0]( ) -> A
+
+	[iMineLauncher]iMine.Launcher.Config/<>c__DisplayClass21_1::.ctor[0]( ) skipped:  special name
+
+	System.String [iMineLauncher]System.String iMine.Launcher.Config/<>c__DisplayClass21_1::text -> A
+	iMine.Launcher.Config/<>c__DisplayClass21_0 [iMineLauncher]iMine.Launcher.Config/<>c__DisplayClass21_0 iMine.Launcher.Config/<>c__DisplayClass21_1::CS$<>8__locals1 -> A
+}
+
+[iMineLauncher]iMine.Launcher.Config/<>c__DisplayClass21_2 -> [iMineLauncher]A.a/b
+{
+	[iMineLauncher]iMine.Launcher.Config/<>c__DisplayClass21_2::<DownloadClientAndRun>b__3[0]( ) -> A
+
+	[iMineLauncher]iMine.Launcher.Config/<>c__DisplayClass21_2::.ctor[0]( ) skipped:  special name
+
+	System.String [iMineLauncher]System.String iMine.Launcher.Config/<>c__DisplayClass21_2::text -> A
+	iMine.Launcher.Config/<>c__DisplayClass21_0 [iMineLauncher]iMine.Launcher.Config/<>c__DisplayClass21_0 iMine.Launcher.Config/<>c__DisplayClass21_2::CS$<>8__locals2 -> A
+}
+
+[iMineLauncher]iMine.Launcher.Config/<>c__DisplayClass21_3 -> [iMineLauncher]A.a/C
+{
+	[iMineLauncher]iMine.Launcher.Config/<>c__DisplayClass21_3::<DownloadClientAndRun>b__4[0]( ) -> A
+
+	[iMineLauncher]iMine.Launcher.Config/<>c__DisplayClass21_3::.ctor[0]( ) skipped:  special name
+
+	System.String [iMineLauncher]System.String iMine.Launcher.Config/<>c__DisplayClass21_3::text -> A
+	iMine.Launcher.Config/<>c__DisplayClass21_0 [iMineLauncher]iMine.Launcher.Config/<>c__DisplayClass21_0 iMine.Launcher.Config/<>c__DisplayClass21_3::CS$<>8__locals3 -> A
+}
+
+[iMineLauncher]iMine.Launcher.Config/<>c__DisplayClass21_4 -> [iMineLauncher]A.a/c
+{
+	[iMineLauncher]iMine.Launcher.Config/<>c__DisplayClass21_4::<DownloadClientAndRun>b__5[0]( ) -> A
+
+	[iMineLauncher]iMine.Launcher.Config/<>c__DisplayClass21_4::.ctor[0]( ) skipped:  special name
+
+	System.String [iMineLauncher]System.String iMine.Launcher.Config/<>c__DisplayClass21_4::text -> A
+	iMine.Launcher.Config/<>c__DisplayClass21_0 [iMineLauncher]iMine.Launcher.Config/<>c__DisplayClass21_0 iMine.Launcher.Config/<>c__DisplayClass21_4::CS$<>8__locals4 -> A
+}
+
+[iMineLauncher]iMine.Launcher.Config/<>c__DisplayClass23_0 -> [iMineLauncher]A.a/D
+{
+	[iMineLauncher]iMine.Launcher.Config/<>c__DisplayClass23_0::<OpenNewLoginWindow>b__0[0]( ) -> A
+
+	[iMineLauncher]iMine.Launcher.Config/<>c__DisplayClass23_0::.ctor[0]( ) skipped:  special name
+
+	iMine.Launcher.Client.ServerInfo [iMineLauncher]iMine.Launcher.Client.ServerInfo iMine.Launcher.Config/<>c__DisplayClass23_0::serverInfo -> A
+}
+
+[iMineLauncher]iMine.Launcher.DataProvider/<>c__DisplayClass6_0 -> [iMineLauncher]A.B/A
+{
+
+	[iMineLauncher]iMine.Launcher.DataProvider/<>c__DisplayClass6_0::.ctor[0]( ) skipped:  special name
+
+	iMine.Launcher.Client.ClientProfile [iMineLauncher]iMine.Launcher.Client.ClientProfile iMine.Launcher.DataProvider/<>c__DisplayClass6_0::profile -> A
+}
+
+[iMineLauncher]iMine.Launcher.DataProvider/<>c__DisplayClass6_1 -> [iMineLauncher]A.B/a
+{
+	[iMineLauncher]iMine.Launcher.DataProvider/<>c__DisplayClass6_1::<DoEveryfin>b__0[0]( ) -> A
+	[iMineLauncher]iMine.Launcher.DataProvider/<>c__DisplayClass6_1::<DoEveryfin>b__1[0]( ) -> a
+	[iMineLauncher]iMine.Launcher.DataProvider/<>c__DisplayClass6_1::<DoEveryfin>b__2[0]( ) -> B
+
+	[iMineLauncher]iMine.Launcher.DataProvider/<>c__DisplayClass6_1::.ctor[0]( ) skipped:  special name
+
+	System.Net.WebClient [iMineLauncher]System.Net.WebClient iMine.Launcher.DataProvider/<>c__DisplayClass6_1::client1 -> A
+	System.String[] [iMineLauncher]System.String[] iMine.Launcher.DataProvider/<>c__DisplayClass6_1::result1 -> A
+	System.Net.WebClient [iMineLauncher]System.Net.WebClient iMine.Launcher.DataProvider/<>c__DisplayClass6_1::client2 -> a
+	System.String[] [iMineLauncher]System.String[] iMine.Launcher.DataProvider/<>c__DisplayClass6_1::result2 -> a
+	System.Net.WebClient [iMineLauncher]System.Net.WebClient iMine.Launcher.DataProvider/<>c__DisplayClass6_1::client3 -> B
+	System.String[] [iMineLauncher]System.String[] iMine.Launcher.DataProvider/<>c__DisplayClass6_1::result3 -> B
+	iMine.Launcher.DataProvider/<>c__DisplayClass6_0 [iMineLauncher]iMine.Launcher.DataProvider/<>c__DisplayClass6_0 iMine.Launcher.DataProvider/<>c__DisplayClass6_1::CS$<>8__locals1 -> A
+}
+
+[iMineLauncher]iMine.Launcher.Settings/<>c -> [iMineLauncher]A.b/A
+{
+	[iMineLauncher]iMine.Launcher.Settings/<>c::<TryAuthWithSettings>b__27_0[0]( ) -> A
+	[iMineLauncher]iMine.Launcher.Settings/<>c::<TryAuthWithSettings>b__27_1[0]( ) -> a
+
+	[iMineLauncher]iMine.Launcher.Settings/<>c::.cctor[0]( ) skipped:  special name
+	[iMineLauncher]iMine.Launcher.Settings/<>c::.ctor[0]( ) skipped:  special name
+
+	iMine.Launcher.Settings/<>c [iMineLauncher]iMine.Launcher.Settings/<>c iMine.Launcher.Settings/<>c::<>9 -> A
+	System.Action [iMineLauncher]System.Action iMine.Launcher.Settings/<>c::<>9__27_1 -> A
+	System.Threading.ThreadStart [iMineLauncher]System.Threading.ThreadStart iMine.Launcher.Settings/<>c::<>9__27_0 -> A
+}
+
+[iMineLauncher]iMine.Launcher.App/<>c__DisplayClass3_0 -> [iMineLauncher]iMine.Launcher.App/A
+{
+	[iMineLauncher]iMine.Launcher.App/<>c__DisplayClass3_0::<OnStart>b__1[0]( ) -> A
+	[iMineLauncher]iMine.Launcher.App/<>c__DisplayClass3_0::<OnStart>b__2[0]( ) -> a
+
+	[iMineLauncher]iMine.Launcher.App/<>c__DisplayClass3_0::.ctor[0]( ) skipped:  special name
+
+	iMine.Launcher.Windows.MainWindow [iMineLauncher]iMine.Launcher.Windows.MainWindow iMine.Launcher.App/<>c__DisplayClass3_0::mainWindow -> A
+	System.Action [iMineLauncher]System.Action iMine.Launcher.App/<>c__DisplayClass3_0::<>9__2 -> A
+}
+
+[iMineLauncher]iMine.Launcher.App/<>c -> [iMineLauncher]iMine.Launcher.App/a
+{
+	[iMineLauncher]iMine.Launcher.App/<>c::<OnStart>b__3_0[2]( [mscorlib]System.Object, [PresentationFramework]System.Windows.ExitEventArgs ) -> A
+	[iMineLauncher]iMine.Launcher.App/<>c::<OnStart>b__3_3[1]( [mscorlib]System.Collections.Generic.KeyValuePair`2<[mscorlib]System.String,[iMineLauncher]iMine.Launcher.Client.ServerInfo> ) -> A
+	[iMineLauncher]iMine.Launcher.App/<>c::<WriteException>b__7_0[0]( ) -> A
+	[iMineLauncher]iMine.Launcher.App/<>c::<WriteImportantException>b__8_0[0]( ) -> a
+
+	[iMineLauncher]iMine.Launcher.App/<>c::.cctor[0]( ) skipped:  special name
+	[iMineLauncher]iMine.Launcher.App/<>c::.ctor[0]( ) skipped:  special name
+
+	iMine.Launcher.App/<>c [iMineLauncher]iMine.Launcher.App/<>c iMine.Launcher.App/<>c::<>9 -> A
+	System.Windows.ExitEventHandler [iMineLauncher]System.Windows.ExitEventHandler iMine.Launcher.App/<>c::<>9__3_0 -> A
+	System.Func`2<System.Collections.Generic.KeyValuePair`2<System.String,iMine.Launcher.Client.ServerInfo>,System.Boolean> [iMineLauncher]System.Func`2<System.Collections.Generic.KeyValuePair`2<System.String,iMine.Launcher.Client.ServerInfo>,System.Boolean> iMine.Launcher.App/<>c::<>9__3_3 -> A
+	System.Action [iMineLauncher]System.Action iMine.Launcher.App/<>c::<>9__7_0 -> A
+	System.Action [iMineLauncher]System.Action iMine.Launcher.App/<>c::<>9__8_0 -> a
+}
+
+[iMineLauncher]iMine.Launcher.Helper.IoHelper/<>c -> [iMineLauncher]A.D/A
+{
+	[iMineLauncher]iMine.Launcher.Helper.IoHelper/<>c::<IsValidFileName>b__2_0[1]( [mscorlib]System.Char ) -> A
+
+	[iMineLauncher]iMine.Launcher.Helper.IoHelper/<>c::.cctor[0]( ) skipped:  special name
+	[iMineLauncher]iMine.Launcher.Helper.IoHelper/<>c::.ctor[0]( ) skipped:  special name
+
+	iMine.Launcher.Helper.IoHelper/<>c [iMineLauncher]iMine.Launcher.Helper.IoHelper/<>c iMine.Launcher.Helper.IoHelper/<>c::<>9 -> A
+	System.Func`2<System.Char,System.Boolean> [iMineLauncher]System.Func`2<System.Char,System.Boolean> iMine.Launcher.Helper.IoHelper/<>c::<>9__2_0 -> A
+}
+
+[iMineLauncher]iMine.Launcher.Helper.VerifyHelper/<>c__6`2 -> [iMineLauncher]A.d/A`2
+{
+	[iMineLauncher]iMine.Launcher.Helper.VerifyHelper/<>c__6`2::<GetMapValue>b__6_0[1]( !1 ) -> A
+
+	[iMineLauncher]iMine.Launcher.Helper.VerifyHelper/<>c__6`2::.cctor[0]( ) skipped:  special name
+	[iMineLauncher]iMine.Launcher.Helper.VerifyHelper/<>c__6`2::.ctor[0]( ) skipped:  special name
+
+	iMine.Launcher.Helper.VerifyHelper/<>c__6`2<TK,TV> [iMineLauncher]iMine.Launcher.Helper.VerifyHelper/<>c__6`2<TK,TV> iMine.Launcher.Helper.VerifyHelper/<>c__6`2::<>9 -> A
+	System.Predicate`1<TV> [iMineLauncher]System.Predicate`1<TV> iMine.Launcher.Helper.VerifyHelper/<>c__6`2::<>9__6_0 -> A
+}
+
+[iMineLauncher]iMine.Launcher.Helper.VerifyHelper/<>c -> [iMineLauncher]A.d/a
+{
+	[iMineLauncher]iMine.Launcher.Helper.VerifyHelper/<>c::<IsValidIdName>b__7_0[1]( [mscorlib]System.Char ) -> A
+	[iMineLauncher]iMine.Launcher.Helper.VerifyHelper/<>c::<.cctor>b__17_0[1]( [mscorlib]System.Int32 ) -> A
+	[iMineLauncher]iMine.Launcher.Helper.VerifyHelper/<>c::<.cctor>b__17_1[1]( [mscorlib]System.Int32 ) -> a
+	[iMineLauncher]iMine.Launcher.Helper.VerifyHelper/<>c::<.cctor>b__17_2[1]( [mscorlib]System.Int64 ) -> A
+	[iMineLauncher]iMine.Launcher.Helper.VerifyHelper/<>c::<.cctor>b__17_3[1]( [mscorlib]System.Int64 ) -> a
+	[iMineLauncher]iMine.Launcher.Helper.VerifyHelper/<>c::<.cctor>b__17_4[1]( [mscorlib]System.String ) -> A
+
+	[iMineLauncher]iMine.Launcher.Helper.VerifyHelper/<>c::.cctor[0]( ) skipped:  special name
+	[iMineLauncher]iMine.Launcher.Helper.VerifyHelper/<>c::.ctor[0]( ) skipped:  special name
+
+	iMine.Launcher.Helper.VerifyHelper/<>c [iMineLauncher]iMine.Launcher.Helper.VerifyHelper/<>c iMine.Launcher.Helper.VerifyHelper/<>c::<>9 -> A
+	System.Predicate`1<System.Char> [iMineLauncher]System.Predicate`1<System.Char> iMine.Launcher.Helper.VerifyHelper/<>c::<>9__7_0 -> A
+}
+
+[iMineLauncher]iMine.Launcher.Serialize.SlideInfo/<>c__DisplayClass12_0 -> [iMineLauncher]A.F/a
+{
+	[iMineLauncher]iMine.Launcher.Serialize.SlideInfo/<>c__DisplayClass12_0::<.ctor>b__0[0]( ) -> A
+
+	[iMineLauncher]iMine.Launcher.Serialize.SlideInfo/<>c__DisplayClass12_0::.ctor[0]( ) skipped:  special name
+
+	iMine.Launcher.Serialize.SlideInfo [iMineLauncher]iMine.Launcher.Serialize.SlideInfo iMine.Launcher.Serialize.SlideInfo/<>c__DisplayClass12_0::<>4__this -> A
+	System.String [iMineLauncher]System.String iMine.Launcher.Serialize.SlideInfo/<>c__DisplayClass12_0::imageUrl -> A
+}
+
+[iMineLauncher]iMine.Launcher.Serialize.SlideInfo/<>c__DisplayClass13_0 -> [iMineLauncher]A.F/B
+{
+	[iMineLauncher]iMine.Launcher.Serialize.SlideInfo/<>c__DisplayClass13_0::<LoadImage>b__0[0]( ) -> A
+
+	[iMineLauncher]iMine.Launcher.Serialize.SlideInfo/<>c__DisplayClass13_0::.ctor[0]( ) skipped:  special name
+
+	System.IO.MemoryStream [iMineLauncher]System.IO.MemoryStream iMine.Launcher.Serialize.SlideInfo/<>c__DisplayClass13_0::stream -> A
+	iMine.Launcher.Serialize.SlideInfo [iMineLauncher]iMine.Launcher.Serialize.SlideInfo iMine.Launcher.Serialize.SlideInfo/<>c__DisplayClass13_0::<>4__this -> A
+}
+
+[iMineLauncher]iMine.Launcher.Serialize.Signed.SignedObjectHolder`1 -> [iMineLauncher]a.E`1
+{
+	[iMineLauncher]iMine.Launcher.Serialize.Signed.SignedObjectHolder`1::NewInstance[1]( [iMineLauncher].IAdapter`1<!0> ) -> A
+
+	[iMineLauncher]iMine.Launcher.Serialize.Signed.SignedObjectHolder`1::.ctor[2]( [iMineLauncher]iMine.Launcher.Serialize.HInput, [iMineLauncher].IAdapter`1<!0> ) skipped:  special name
+
+	T [iMineLauncher]T iMine.Launcher.Serialize.Signed.SignedObjectHolder`1::Obj -> A
+}
+
+[iMineLauncher]iMine.Launcher.Serialize.Config.ConfigObject -> [iMineLauncher]a.e
+{
+	[iMineLauncher]iMine.Launcher.Serialize.Config.ConfigObject::Write[1]( [iMineLauncher]iMine.Launcher.Serialize.HOutput ) -> A
+
+	[iMineLauncher]iMine.Launcher.Serialize.Config.ConfigObject::.ctor[1]( [iMineLauncher]iMine.Launcher.Serialize.Config.Entry.BlockConfigEntry ) skipped:  special name
+
+	iMine.Launcher.Serialize.Config.Entry.BlockConfigEntry [iMineLauncher]iMine.Launcher.Serialize.Config.Entry.BlockConfigEntry iMine.Launcher.Serialize.Config.ConfigObject::Block -> A
+}
+
+[iMineLauncher]iMine.Launcher.Serialize.Config.Entry.ConfigEntry -> [iMineLauncher]a.F
+{
+	[iMineLauncher]iMine.Launcher.Serialize.Config.Entry.ConfigEntry::GetEntryType[0]( ) -> A
+	[iMineLauncher]iMine.Launcher.Serialize.Config.Entry.ConfigEntry::GetComment[1]( [mscorlib]System.Int32 ) -> A
+	[iMineLauncher]iMine.Launcher.Serialize.Config.Entry.ConfigEntry::GetValue[0]( ) -> a
+	[iMineLauncher]iMine.Launcher.Serialize.Config.Entry.ConfigEntry::SetValue[1]( [mscorlib]System.Object ) -> A
+	[iMineLauncher]iMine.Launcher.Serialize.Config.Entry.ConfigEntry::SetComment[2]( [mscorlib]System.Int32, [mscorlib]System.String ) -> A
+	[iMineLauncher]iMine.Launcher.Serialize.Config.Entry.ConfigEntry::EnsureWritable[0]( ) -> B
+	[iMineLauncher]iMine.Launcher.Serialize.Config.Entry.ConfigEntry::UncheckedSetValue[1]( [mscorlib]System.Object ) -> a
+	[iMineLauncher]iMine.Launcher.Serialize.Config.Entry.ConfigEntry::ReadEntry[2]( [iMineLauncher]iMine.Launcher.Serialize.HInput, [mscorlib]System.Boolean ) -> A
+	[iMineLauncher]iMine.Launcher.Serialize.Config.Entry.ConfigEntry::WriteEntry[2]( [iMineLauncher]iMine.Launcher.Serialize.Config.Entry.ConfigEntry, [iMineLauncher]iMine.Launcher.Serialize.HOutput ) -> A
+
+	[iMineLauncher]iMine.Launcher.Serialize.Config.Entry.ConfigEntry::.ctor[3]( [mscorlib]System.Object, [mscorlib]System.Boolean, [mscorlib]System.Int32 ) skipped:  special name
+
+	System.Boolean [iMineLauncher]System.Boolean iMine.Launcher.Serialize.Config.Entry.ConfigEntry::Ro -> A
+	System.String[] [iMineLauncher]System.String[] iMine.Launcher.Serialize.Config.Entry.ConfigEntry::comments -> A
+	System.Object [iMineLauncher]System.Object iMine.Launcher.Serialize.Config.Entry.ConfigEntry::value -> A
+}
+
+[iMineLauncher]iMine.Launcher.Windows.SecondaryWindowController/<>c__DisplayClass1_0 -> [iMineLauncher]A.g/A
+{
+	[iMineLauncher]iMine.Launcher.Windows.SecondaryWindowController/<>c__DisplayClass1_0::<HookWindow>b__0[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.RoutedEventArgs ) -> A
+	[iMineLauncher]iMine.Launcher.Windows.SecondaryWindowController/<>c__DisplayClass1_0::<HookWindow>b__1[2]( [mscorlib]System.Object, [mscorlib]System.EventArgs ) -> A
+
+	[iMineLauncher]iMine.Launcher.Windows.SecondaryWindowController/<>c__DisplayClass1_0::.ctor[0]( ) skipped:  special name
+
+	System.Windows.Window [iMineLauncher]System.Windows.Window iMine.Launcher.Windows.SecondaryWindowController/<>c__DisplayClass1_0::window -> A
+}
+
+[iMineLauncher]iMine.Launcher.Windows.LoginWindow/<>c -> [iMineLauncher]iMine.Launcher.Windows.LoginWindow/A
+{
+	[iMineLauncher]iMine.Launcher.Windows.LoginWindow/<>c::<LoginButtonClick>b__10_0[1]( [PresentationFramework]System.Windows.Window ) -> A
+
+	[iMineLauncher]iMine.Launcher.Windows.LoginWindow/<>c::.cctor[0]( ) skipped:  special name
+	[iMineLauncher]iMine.Launcher.Windows.LoginWindow/<>c::.ctor[0]( ) skipped:  special name
+
+	iMine.Launcher.Windows.LoginWindow/<>c [iMineLauncher]iMine.Launcher.Windows.LoginWindow/<>c iMine.Launcher.Windows.LoginWindow/<>c::<>9 -> A
+	System.Func`2<System.Windows.Window,System.Boolean> [iMineLauncher]System.Func`2<System.Windows.Window,System.Boolean> iMine.Launcher.Windows.LoginWindow/<>c::<>9__10_0 -> A
+}
+
+[iMineLauncher]iMine.Launcher.Windows.SettingsWindow/<>c__DisplayClass2_0 -> [iMineLauncher]iMine.Launcher.Windows.SettingsWindow/A
+{
+	[iMineLauncher]iMine.Launcher.Windows.SettingsWindow/<>c__DisplayClass2_0::<PostInitializeComponent>b__0[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.RoutedEventArgs ) -> A
+	[iMineLauncher]iMine.Launcher.Windows.SettingsWindow/<>c__DisplayClass2_0::<PostInitializeComponent>b__1[2]( [mscorlib]System.Object, [PresentationFramework]System.Windows.RoutedPropertyChangedEventArgs`1<[mscorlib]System.Double> ) -> A
+
+	[iMineLauncher]iMine.Launcher.Windows.SettingsWindow/<>c__DisplayClass2_0::.ctor[0]( ) skipped:  special name
+
+	iMine.Launcher.Windows.SettingsWindow [iMineLauncher]iMine.Launcher.Windows.SettingsWindow iMine.Launcher.Windows.SettingsWindow/<>c__DisplayClass2_0::<>4__this -> A
+	System.Int32 [iMineLauncher]System.Int32 iMine.Launcher.Windows.SettingsWindow/<>c__DisplayClass2_0::ramRec -> A
+	System.Int32 [iMineLauncher]System.Int32 iMine.Launcher.Windows.SettingsWindow/<>c__DisplayClass2_0::ramMin -> a
+	System.Int32 [iMineLauncher]System.Int32 iMine.Launcher.Windows.SettingsWindow/<>c__DisplayClass2_0::ramUser -> B
+	System.Int32 [iMineLauncher]System.Int32 iMine.Launcher.Windows.SettingsWindow/<>c__DisplayClass2_0::ramFree -> b
+	System.Int32 [iMineLauncher]System.Int32 iMine.Launcher.Windows.SettingsWindow/<>c__DisplayClass2_0::systemRamRec -> C
+}
+
+[iMineLauncher]iMine.Launcher.Windows.MainWindow/<>c__DisplayClass52_0 -> [iMineLauncher]iMine.Launcher.Windows.MainWindow/A
+{
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow/<>c__DisplayClass52_0::<ModHelpButtonClick>b__0[0]( ) -> A
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow/<>c__DisplayClass52_0::<ModHelpButtonClick>b__1[0]( ) -> a
+
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow/<>c__DisplayClass52_0::.ctor[0]( ) skipped:  special name
+
+	iMine.Launcher.Windows.MainWindow [iMineLauncher]iMine.Launcher.Windows.MainWindow iMine.Launcher.Windows.MainWindow/<>c__DisplayClass52_0::<>4__this -> A
+	System.Object [iMineLauncher]System.Object iMine.Launcher.Windows.MainWindow/<>c__DisplayClass52_0::sender -> A
+	System.Action [iMineLauncher]System.Action iMine.Launcher.Windows.MainWindow/<>c__DisplayClass52_0::<>9__1 -> A
+}
+
+[iMineLauncher]iMine.Launcher.Windows.MainWindow/<>c -> [iMineLauncher]iMine.Launcher.Windows.MainWindow/a
+{
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow/<>c::<ProcessCheckList>b__65_0[1]( [mscorlib]System.Object[] ) -> A
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow/<>c::<UpdateDisplay>b__69_0[1]( [mscorlib]System.Collections.Generic.KeyValuePair`2<[mscorlib]System.String,[Newtonsoft.Json]Newtonsoft.Json.Linq.JToken> ) -> A
+
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow/<>c::.cctor[0]( ) skipped:  special name
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow/<>c::.ctor[0]( ) skipped:  special name
+
+	iMine.Launcher.Windows.MainWindow/<>c [iMineLauncher]iMine.Launcher.Windows.MainWindow/<>c iMine.Launcher.Windows.MainWindow/<>c::<>9 -> A
+	System.Converter`2<System.Object[],System.Int32> [iMineLauncher]System.Converter`2<System.Object[],System.Int32> iMine.Launcher.Windows.MainWindow/<>c::<>9__65_0 -> A
+	System.Func`2<System.Collections.Generic.KeyValuePair`2<System.String,Newtonsoft.Json.Linq.JToken>,System.String> [iMineLauncher]System.Func`2<System.Collections.Generic.KeyValuePair`2<System.String,Newtonsoft.Json.Linq.JToken>,System.String> iMine.Launcher.Windows.MainWindow/<>c::<>9__69_0 -> A
+}
+
+[iMineLauncher]iMine.Launcher.Windows.MainWindow/<>c__DisplayClass67_0 -> [iMineLauncher]iMine.Launcher.Windows.MainWindow/B
+{
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow/<>c__DisplayClass67_0::<GenerateRuns>b__0[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.Input.MouseEventArgs ) -> A
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow/<>c__DisplayClass67_0::<GenerateRuns>b__1[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.Input.MouseEventArgs ) -> a
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow/<>c__DisplayClass67_0::<GenerateRuns>b__2[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.Input.MouseEventArgs ) -> B
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow/<>c__DisplayClass67_0::<GenerateRuns>b__3[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.Input.MouseEventArgs ) -> b
+
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow/<>c__DisplayClass67_0::.ctor[0]( ) skipped:  special name
+
+	System.Windows.Documents.Run [iMineLauncher]System.Windows.Documents.Run iMine.Launcher.Windows.MainWindow/<>c__DisplayClass67_0::run1 -> A
+	System.Windows.Documents.Run [iMineLauncher]System.Windows.Documents.Run iMine.Launcher.Windows.MainWindow/<>c__DisplayClass67_0::run2 -> a
+}
+
+[iMineLauncher]iMine.Launcher.Windows.MainWindow/<>c__DisplayClass72_0 -> [iMineLauncher]iMine.Launcher.Windows.MainWindow/b
+{
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow/<>c__DisplayClass72_0::<SetCurrentChangeLog>b__0[0]( ) -> A
+
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow/<>c__DisplayClass72_0::.ctor[0]( ) skipped:  special name
+
+	System.Int32 [iMineLauncher]System.Int32 iMine.Launcher.Windows.MainWindow/<>c__DisplayClass72_0::fuckSharp -> A
+	iMine.Launcher.Windows.MainWindow [iMineLauncher]iMine.Launcher.Windows.MainWindow iMine.Launcher.Windows.MainWindow/<>c__DisplayClass72_0::<>4__this -> A
+}
+
+[iMineLauncher]iMine.Launcher.Utils.GoogleAnalytics/<>c__DisplayClass8_0 -> [iMineLauncher]A.H/A
+{
+	[iMineLauncher]iMine.Launcher.Utils.GoogleAnalytics/<>c__DisplayClass8_0::<Exception>b__0[0]( ) -> A
+
+	[iMineLauncher]iMine.Launcher.Utils.GoogleAnalytics/<>c__DisplayClass8_0::.ctor[0]( ) skipped:  special name
+
+	System.Exception [iMineLauncher]System.Exception iMine.Launcher.Utils.GoogleAnalytics/<>c__DisplayClass8_0::exception -> A
+	System.String [iMineLauncher]System.String iMine.Launcher.Utils.GoogleAnalytics/<>c__DisplayClass8_0::name -> A
+	System.String [iMineLauncher]System.String iMine.Launcher.Utils.GoogleAnalytics/<>c__DisplayClass8_0::info -> a
+	System.Boolean [iMineLauncher]System.Boolean iMine.Launcher.Utils.GoogleAnalytics/<>c__DisplayClass8_0::isFatal -> A
+}
+
+[iMineLauncher]iMine.Launcher.Utils.TextBoxWriter/<>c__DisplayClass5_0 -> [iMineLauncher]A.j/A
+{
+	[iMineLauncher]iMine.Launcher.Utils.TextBoxWriter/<>c__DisplayClass5_0::<Write>b__0[0]( ) -> A
+
+	[iMineLauncher]iMine.Launcher.Utils.TextBoxWriter/<>c__DisplayClass5_0::.ctor[0]( ) skipped:  special name
+
+	iMine.Launcher.Utils.TextBoxWriter [iMineLauncher]iMine.Launcher.Utils.TextBoxWriter iMine.Launcher.Utils.TextBoxWriter/<>c__DisplayClass5_0::<>4__this -> A
+	System.String [iMineLauncher]System.String iMine.Launcher.Utils.TextBoxWriter/<>c__DisplayClass5_0::value -> A
+}
+
+[iMineLauncher]iMine.Launcher.Utils.TextBoxWriter/<>c__DisplayClass6_0 -> [iMineLauncher]A.j/a
+{
+	[iMineLauncher]iMine.Launcher.Utils.TextBoxWriter/<>c__DisplayClass6_0::<WriteLine>b__0[0]( ) -> A
+
+	[iMineLauncher]iMine.Launcher.Utils.TextBoxWriter/<>c__DisplayClass6_0::.ctor[0]( ) skipped:  special name
+
+	iMine.Launcher.Utils.TextBoxWriter [iMineLauncher]iMine.Launcher.Utils.TextBoxWriter iMine.Launcher.Utils.TextBoxWriter/<>c__DisplayClass6_0::<>4__this -> A
+	System.String [iMineLauncher]System.String iMine.Launcher.Utils.TextBoxWriter/<>c__DisplayClass6_0::value -> A
+}
+
+[iMineLauncher]iMine.Launcher.Request.Update.UpdateRequest/Action -> [iMineLauncher]A.n/a
+{
+	[iMineLauncher]iMine.Launcher.Request.Update.UpdateRequest/Action::Write[1]( [iMineLauncher]iMine.Launcher.Serialize.HOutput ) -> A
+
+	[iMineLauncher]iMine.Launcher.Request.Update.UpdateRequest/Action::.ctor[3]( [iMineLauncher]iMine.Launcher.Request.Update.UpdateRequest/Action/ActionType, [mscorlib]System.String, [iMineLauncher]iMine.Launcher.Hasher.HashedEntry ) skipped:  special name
+	[iMineLauncher]iMine.Launcher.Request.Update.UpdateRequest/Action::.ctor[1]( [iMineLauncher]iMine.Launcher.Serialize.HInput ) skipped:  special name
+	[iMineLauncher]iMine.Launcher.Request.Update.UpdateRequest/Action::.cctor[0]( ) skipped:  special name
+
+	iMine.Launcher.Request.Update.UpdateRequest/Action [iMineLauncher]iMine.Launcher.Request.Update.UpdateRequest/Action iMine.Launcher.Request.Update.UpdateRequest/Action::CdBack -> A
+	iMine.Launcher.Request.Update.UpdateRequest/Action [iMineLauncher]iMine.Launcher.Request.Update.UpdateRequest/Action iMine.Launcher.Request.Update.UpdateRequest/Action::Finish -> a
+	iMine.Launcher.Request.Update.UpdateRequest/Action/ActionType [iMineLauncher]iMine.Launcher.Request.Update.UpdateRequest/Action/ActionType iMine.Launcher.Request.Update.UpdateRequest/Action::actionType -> A
+	System.String [iMineLauncher]System.String iMine.Launcher.Request.Update.UpdateRequest/Action::name -> A
+	iMine.Launcher.Hasher.HashedEntry [iMineLauncher]iMine.Launcher.Hasher.HashedEntry iMine.Launcher.Request.Update.UpdateRequest/Action::entry -> A
+}
+
+[iMineLauncher]iMine.Launcher.Request.Update.UpdateRequest/State -> [iMineLauncher]A.n/B
+{
+	[iMineLauncher]iMine.Launcher.Request.Update.UpdateRequest/State::GetBps[0]( ) -> A
+	[iMineLauncher]iMine.Launcher.Request.Update.UpdateRequest/State::GetEstimatedTime[0]( ) -> a
+	[iMineLauncher]iMine.Launcher.Request.Update.UpdateRequest/State::GetFileDownloadedKiB[0]( ) -> B
+	[iMineLauncher]iMine.Launcher.Request.Update.UpdateRequest/State::GetFileDownloadedMiB[0]( ) -> b
+	[iMineLauncher]iMine.Launcher.Request.Update.UpdateRequest/State::GetFileDownloadedPart[0]( ) -> C
+	[iMineLauncher]iMine.Launcher.Request.Update.UpdateRequest/State::GetFileRemaining[0]( ) -> c
+	[iMineLauncher]iMine.Launcher.Request.Update.UpdateRequest/State::GetFileRemainingKiB[0]( ) -> D
+	[iMineLauncher]iMine.Launcher.Request.Update.UpdateRequest/State::GetFileRemainingMiB[0]( ) -> d
+	[iMineLauncher]iMine.Launcher.Request.Update.UpdateRequest/State::GetFileSizeKiB[0]( ) -> E
+	[iMineLauncher]iMine.Launcher.Request.Update.UpdateRequest/State::GetFileSizeMiB[0]( ) -> e
+	[iMineLauncher]iMine.Launcher.Request.Update.UpdateRequest/State::GetTotalDownloadedKiB[0]( ) -> F
+	[iMineLauncher]iMine.Launcher.Request.Update.UpdateRequest/State::GetTotalDownloadedMiB[0]( ) -> f
+	[iMineLauncher]iMine.Launcher.Request.Update.UpdateRequest/State::GetTotalDownloadedPart[0]( ) -> G
+	[iMineLauncher]iMine.Launcher.Request.Update.UpdateRequest/State::GetTotalRemaining[0]( ) -> g
+	[iMineLauncher]iMine.Launcher.Request.Update.UpdateRequest/State::GetTotalRemainingKiB[0]( ) -> H
+	[iMineLauncher]iMine.Launcher.Request.Update.UpdateRequest/State::GetTotalRemainingMiB[0]( ) -> h
+	[iMineLauncher]iMine.Launcher.Request.Update.UpdateRequest/State::GetTotalSizeKiB[0]( ) -> I
+	[iMineLauncher]iMine.Launcher.Request.Update.UpdateRequest/State::GetTotalSizeMiB[0]( ) -> i
+
+	[iMineLauncher]iMine.Launcher.Request.Update.UpdateRequest/State::.ctor[6]( [mscorlib]System.String, [mscorlib]System.Int64, [mscorlib]System.Int64, [mscorlib]System.Int64, [mscorlib]System.Int64, [mscorlib]System.TimeSpan ) skipped:  special name
+
+	System.Int64 [iMineLauncher]System.Int64 iMine.Launcher.Request.Update.UpdateRequest/State::fileDownloaded -> A
+	System.Int64 [iMineLauncher]System.Int64 iMine.Launcher.Request.Update.UpdateRequest/State::fileSize -> a
+	System.Int64 [iMineLauncher]System.Int64 iMine.Launcher.Request.Update.UpdateRequest/State::totalDownloaded -> B
+	System.Int64 [iMineLauncher]System.Int64 iMine.Launcher.Request.Update.UpdateRequest/State::totalSize -> b
+	System.String [iMineLauncher]System.String iMine.Launcher.Request.Update.UpdateRequest/State::filePath -> A
+	System.TimeSpan [iMineLauncher]System.TimeSpan iMine.Launcher.Request.Update.UpdateRequest/State::duration -> A
+}
+
+[iMineLauncher]iMine.Launcher.Request.Auth.AuthRequest/Result -> [iMineLauncher]A.P/A
+{
+
+	[iMineLauncher]iMine.Launcher.Request.Auth.AuthRequest/Result::.ctor[2]( [iMineLauncher]iMine.Launcher.Client.PlayerProfile, [mscorlib]System.String ) skipped:  special name
+
+	iMine.Launcher.Client.PlayerProfile [iMineLauncher]iMine.Launcher.Client.PlayerProfile iMine.Launcher.Request.Auth.AuthRequest/Result::PlayerProfile -> A
+	System.String [iMineLauncher]System.String iMine.Launcher.Request.Auth.AuthRequest/Result::AccessToken -> A
+}
+
+[iMineLauncher]iMine.Launcher.Hasher.FileNameMatcher/Entry -> [iMineLauncher]A.p/A
+{
+	[iMineLauncher]iMine.Launcher.Hasher.FileNameMatcher/Entry::Matches[1]( [mscorlib]System.Collections.Generic.ICollection`1<[mscorlib]System.String> ) -> A
+
+	[iMineLauncher]iMine.Launcher.Hasher.FileNameMatcher/Entry::.ctor[1]( [mscorlib]System.String ) skipped:  special name
+	[iMineLauncher]iMine.Launcher.Hasher.FileNameMatcher/Entry::.cctor[0]( ) skipped:  special name
+
+	System.Text.RegularExpressions.Regex [iMineLauncher]System.Text.RegularExpressions.Regex iMine.Launcher.Hasher.FileNameMatcher/Entry::Splitter -> A
+	System.Collections.Generic.List`1<System.Text.RegularExpressions.Regex> [iMineLauncher]System.Collections.Generic.List`1<System.Text.RegularExpressions.Regex> iMine.Launcher.Hasher.FileNameMatcher/Entry::Parts -> A
+}
+
+[iMineLauncher]iMine.Launcher.Hasher.FileNameMatcher/<>c__DisplayClass7_0 -> [iMineLauncher]A.p/a
+{
+	[iMineLauncher]iMine.Launcher.Hasher.FileNameMatcher/<>c__DisplayClass7_0::<AnyMatch>b__0[1]( [iMineLauncher]iMine.Launcher.Hasher.FileNameMatcher/Entry ) -> A
+
+	[iMineLauncher]iMine.Launcher.Hasher.FileNameMatcher/<>c__DisplayClass7_0::.ctor[0]( ) skipped:  special name
+
+	System.Collections.Generic.ICollection`1<System.String> [iMineLauncher]System.Collections.Generic.ICollection`1<System.String> iMine.Launcher.Hasher.FileNameMatcher/<>c__DisplayClass7_0::path -> A
+}
+
+[iMineLauncher]iMine.Launcher.Hasher.FileNameMatcher/<>c -> [iMineLauncher]A.p/B
+{
+	[iMineLauncher]iMine.Launcher.Hasher.FileNameMatcher/<>c::<ToEntries>b__8_0[1]( [mscorlib]System.String ) -> A
+
+	[iMineLauncher]iMine.Launcher.Hasher.FileNameMatcher/<>c::.cctor[0]( ) skipped:  special name
+	[iMineLauncher]iMine.Launcher.Hasher.FileNameMatcher/<>c::.ctor[0]( ) skipped:  special name
+
+	iMine.Launcher.Hasher.FileNameMatcher/<>c [iMineLauncher]iMine.Launcher.Hasher.FileNameMatcher/<>c iMine.Launcher.Hasher.FileNameMatcher/<>c::<>9 -> A
+	System.Converter`2<System.String,iMine.Launcher.Hasher.FileNameMatcher/Entry> [iMineLauncher]System.Converter`2<System.String,iMine.Launcher.Hasher.FileNameMatcher/Entry> iMine.Launcher.Hasher.FileNameMatcher/<>c::<>9__8_0 -> A
+}
+
+[iMineLauncher]iMine.Launcher.Hasher.HashedEntry -> [iMineLauncher]a.P
+{
+	[iMineLauncher]iMine.Launcher.Hasher.HashedEntry::GetHashedType[0]( ) -> a
+	[iMineLauncher]iMine.Launcher.Hasher.HashedEntry::GetSize[0]( ) -> B
+
+	[iMineLauncher]iMine.Launcher.Hasher.HashedEntry::.ctor[0]( ) skipped:  special name
+
+	System.Boolean [iMineLauncher]System.Boolean iMine.Launcher.Hasher.HashedEntry::Flag -> A
+}
+
+[iMineLauncher]iMine.Launcher.Client.CheckList/CheckResult -> [iMineLauncher]A.s/A
+{
+
+	[iMineLauncher]iMine.Launcher.Client.CheckList/CheckResult::.ctor[2]( [mscorlib]System.Int32, [mscorlib]System.String ) skipped:  special name
+	[iMineLauncher]iMine.Launcher.Client.CheckList/CheckResult::.cctor[0]( ) skipped:  special name
+
+	iMine.Launcher.Client.CheckList/CheckResult [iMineLauncher]iMine.Launcher.Client.CheckList/CheckResult iMine.Launcher.Client.CheckList/CheckResult::Ok -> A
+	System.Int32 [iMineLauncher]System.Int32 iMine.Launcher.Client.CheckList/CheckResult::WarnLevel -> A
+	System.String [iMineLauncher]System.String iMine.Launcher.Client.CheckList/CheckResult::Message -> A
+}
+
+[iMineLauncher]iMine.Launcher.Client.ServerInfo/<>c -> [iMineLauncher]A.T/A
+{
+	[iMineLauncher]iMine.Launcher.Client.ServerInfo/<>c::<.ctor>b__8_0[2]( [iMineLauncher]iMine.Launcher.Serialize.SlideInfo, [iMineLauncher]iMine.Launcher.Serialize.SlideInfo ) -> A
+	[iMineLauncher]iMine.Launcher.Client.ServerInfo/<>c::<.ctor>b__8_1[2]( [iMineLauncher]iMine.Launcher.Serialize.SlideInfo, [iMineLauncher]iMine.Launcher.Serialize.SlideInfo ) -> a
+
+	[iMineLauncher]iMine.Launcher.Client.ServerInfo/<>c::.cctor[0]( ) skipped:  special name
+	[iMineLauncher]iMine.Launcher.Client.ServerInfo/<>c::.ctor[0]( ) skipped:  special name
+
+	iMine.Launcher.Client.ServerInfo/<>c [iMineLauncher]iMine.Launcher.Client.ServerInfo/<>c iMine.Launcher.Client.ServerInfo/<>c::<>9 -> A
+	System.Comparison`1<iMine.Launcher.Serialize.SlideInfo> [iMineLauncher]System.Comparison`1<iMine.Launcher.Serialize.SlideInfo> iMine.Launcher.Client.ServerInfo/<>c::<>9__8_0 -> A
+	System.Comparison`1<iMine.Launcher.Serialize.SlideInfo> [iMineLauncher]System.Comparison`1<iMine.Launcher.Serialize.SlideInfo> iMine.Launcher.Client.ServerInfo/<>c::<>9__8_1 -> a
+}
+
+[iMineLauncher]iMine.Launcher.Client.Params -> [iMineLauncher]a.q
+{
+	[iMineLauncher]iMine.Launcher.Client.Params::Write[1]( [iMineLauncher]iMine.Launcher.Serialize.HOutput ) -> A
+
+	[iMineLauncher]iMine.Launcher.Client.Params::.ctor[11]( [mscorlib]System.Byte[], [mscorlib]System.IO.DirectoryInfo, [mscorlib]System.IO.DirectoryInfo, [mscorlib]System.IO.DirectoryInfo, [iMineLauncher]iMine.Launcher.Client.PlayerProfile, [mscorlib]System.String, [mscorlib]System.Boolean, [mscorlib]System.Boolean, [mscorlib]System.Int32, [mscorlib]System.Int32, [mscorlib]System.Int32 ) skipped:  special name
+
+	System.IO.DirectoryInfo [iMineLauncher]System.IO.DirectoryInfo iMine.Launcher.Client.Params::assetDir -> A
+	System.IO.DirectoryInfo [iMineLauncher]System.IO.DirectoryInfo iMine.Launcher.Client.Params::librariesDir -> a
+	System.IO.DirectoryInfo [iMineLauncher]System.IO.DirectoryInfo iMine.Launcher.Client.Params::clientDir -> B
+	iMine.Launcher.Client.PlayerProfile [iMineLauncher]iMine.Launcher.Client.PlayerProfile iMine.Launcher.Client.Params::pp -> A
+	System.String [iMineLauncher]System.String iMine.Launcher.Client.Params::accessToken -> A
+	System.Boolean [iMineLauncher]System.Boolean iMine.Launcher.Client.Params::autoEnter -> A
+	System.Boolean [iMineLauncher]System.Boolean iMine.Launcher.Client.Params::fullScreen -> a
+	System.Int32 [iMineLauncher]System.Int32 iMine.Launcher.Client.Params::ram -> A
+	System.Int32 [iMineLauncher]System.Int32 iMine.Launcher.Client.Params::width -> a
+	System.Int32 [iMineLauncher]System.Int32 iMine.Launcher.Client.Params::height -> B
+	System.Byte[] [iMineLauncher]System.Byte[] iMine.Launcher.Client.Params::launcherSign -> A
+}
+
+[iMineLauncher]iMine.Launcher.Client.PlayerProfile -> [iMineLauncher]a.R
+{
+	[iMineLauncher]iMine.Launcher.Client.PlayerProfile::Write[1]( [iMineLauncher]iMine.Launcher.Serialize.HOutput ) -> A
+
+	[iMineLauncher]iMine.Launcher.Client.PlayerProfile::ToString[0]( ) skipped:  external base class or interface
+	[iMineLauncher]iMine.Launcher.Client.PlayerProfile::.ctor[1]( [iMineLauncher]iMine.Launcher.Serialize.HInput ) skipped:  special name
+	[iMineLauncher]iMine.Launcher.Client.PlayerProfile::.ctor[4]( [mscorlib]System.Guid, [mscorlib]System.String, [iMineLauncher]iMine.Launcher.Client.PlayerProfile/Texture, [iMineLauncher]iMine.Launcher.Client.PlayerProfile/Texture ) skipped:  special name
+
+	System.Guid [iMineLauncher]System.Guid iMine.Launcher.Client.PlayerProfile::uuid -> A
+	System.String [iMineLauncher]System.String iMine.Launcher.Client.PlayerProfile::username -> A
+	iMine.Launcher.Client.PlayerProfile/Texture [iMineLauncher]iMine.Launcher.Client.PlayerProfile/Texture iMine.Launcher.Client.PlayerProfile::skin -> A
+	iMine.Launcher.Client.PlayerProfile/Texture [iMineLauncher]iMine.Launcher.Client.PlayerProfile/Texture iMine.Launcher.Client.PlayerProfile::cloak -> a
+}
+
+[iMineLauncher]iMine.Launcher.Request.Update.UpdateRequest/Action/ActionType -> [iMineLauncher]A.n/a/A
+{
+	iMine.Launcher.Request.Update.UpdateRequest/Action/ActionType [iMineLauncher]iMine.Launcher.Request.Update.UpdateRequest/Action/ActionType iMine.Launcher.Request.Update.UpdateRequest/Action/ActionType::Cd -> A
+	iMine.Launcher.Request.Update.UpdateRequest/Action/ActionType [iMineLauncher]iMine.Launcher.Request.Update.UpdateRequest/Action/ActionType iMine.Launcher.Request.Update.UpdateRequest/Action/ActionType::CdBack -> a
+	iMine.Launcher.Request.Update.UpdateRequest/Action/ActionType [iMineLauncher]iMine.Launcher.Request.Update.UpdateRequest/Action/ActionType iMine.Launcher.Request.Update.UpdateRequest/Action/ActionType::Get -> B
+	iMine.Launcher.Request.Update.UpdateRequest/Action/ActionType [iMineLauncher]iMine.Launcher.Request.Update.UpdateRequest/Action/ActionType iMine.Launcher.Request.Update.UpdateRequest/Action/ActionType::Finish -> b
+
+	System.Int32 [iMineLauncher]System.Int32 iMine.Launcher.Request.Update.UpdateRequest/Action/ActionType::value__ skipped:  special name
+}
+
+[iMineLauncher]iMine.Launcher.Hasher.FileNameMatcher/Entry/<>c -> [iMineLauncher]A.p/A/A
+{
+	[iMineLauncher]iMine.Launcher.Hasher.FileNameMatcher/Entry/<>c::<.ctor>b__2_0[1]( [mscorlib]System.String ) -> A
+
+	[iMineLauncher]iMine.Launcher.Hasher.FileNameMatcher/Entry/<>c::.cctor[0]( ) skipped:  special name
+	[iMineLauncher]iMine.Launcher.Hasher.FileNameMatcher/Entry/<>c::.ctor[0]( ) skipped:  special name
+
+	iMine.Launcher.Hasher.FileNameMatcher/Entry/<>c [iMineLauncher]iMine.Launcher.Hasher.FileNameMatcher/Entry/<>c iMine.Launcher.Hasher.FileNameMatcher/Entry/<>c::<>9 -> A
+	System.Converter`2<System.String,System.Text.RegularExpressions.Regex> [iMineLauncher]System.Converter`2<System.String,System.Text.RegularExpressions.Regex> iMine.Launcher.Hasher.FileNameMatcher/Entry/<>c::<>9__2_0 -> A
+}
+
+[iMineLauncher]iMine.Launcher.Hasher.HashedDir -> [iMineLauncher]a.V
+{
+	[iMineLauncher]iMine.Launcher.Hasher.HashedDir::Write[1]( [iMineLauncher]iMine.Launcher.Serialize.HOutput ) -> A
+	[iMineLauncher]iMine.Launcher.Hasher.HashedDir::GetHashedType[0]( ) -> a
+	[iMineLauncher]iMine.Launcher.Hasher.HashedDir::GetSize[0]( ) -> B
+	[iMineLauncher]iMine.Launcher.Hasher.HashedDir::diff[2]( [iMineLauncher]iMine.Launcher.Hasher.HashedDir, [iMineLauncher]iMine.Launcher.Hasher.FileNameMatcher ) -> A
+	[iMineLauncher]iMine.Launcher.Hasher.HashedDir::getEntry[1]( [mscorlib]System.String ) -> A
+	[iMineLauncher]iMine.Launcher.Hasher.HashedDir::isEmpty[0]( ) -> b
+	[iMineLauncher]iMine.Launcher.Hasher.HashedDir::map[0]( ) -> C
+	[iMineLauncher]iMine.Launcher.Hasher.HashedDir::resolve[1]( [mscorlib]System.Collections.Generic.IEnumerable`1<[mscorlib]System.String> ) -> A
+	[iMineLauncher]iMine.Launcher.Hasher.HashedDir::sideDiff[4]( [iMineLauncher]iMine.Launcher.Hasher.HashedDir, [iMineLauncher]iMine.Launcher.Hasher.FileNameMatcher, [System]System.Collections.Generic.LinkedList`1<[mscorlib]System.String>, [mscorlib]System.Boolean ) -> A
+
+	[iMineLauncher]iMine.Launcher.Hasher.HashedDir::.ctor[0]( ) skipped:  special name
+	[iMineLauncher]iMine.Launcher.Hasher.HashedDir::.ctor[4]( [mscorlib]System.IO.DirectoryInfo, [iMineLauncher]iMine.Launcher.Hasher.FileNameMatcher, [mscorlib]System.Boolean, [mscorlib]System.Boolean ) skipped:  special name
+	[iMineLauncher]iMine.Launcher.Hasher.HashedDir::.ctor[1]( [iMineLauncher]iMine.Launcher.Serialize.HInput ) skipped:  special name
+
+	iMine.Launcher.Utils.Collections.NDictionary`2<System.String,iMine.Launcher.Hasher.HashedEntry> [iMineLauncher]iMine.Launcher.Utils.Collections.NDictionary`2<System.String,iMine.Launcher.Hasher.HashedEntry> iMine.Launcher.Hasher.HashedDir::Map -> A
+	System.Boolean [iMineLauncher]System.Boolean iMine.Launcher.Hasher.HashedDir::anyMismatches -> A
+}
+
+[iMineLauncher]iMine.Launcher.Hasher.HashedFile -> [iMineLauncher]a.v
+{
+	[iMineLauncher]iMine.Launcher.Hasher.HashedFile::Write[1]( [iMineLauncher]iMine.Launcher.Serialize.HOutput ) -> A
+	[iMineLauncher]iMine.Launcher.Hasher.HashedFile::GetHashedType[0]( ) -> a
+	[iMineLauncher]iMine.Launcher.Hasher.HashedFile::GetSize[0]( ) -> B
+	[iMineLauncher]iMine.Launcher.Hasher.HashedFile::IsSame[1]( [iMineLauncher]iMine.Launcher.Hasher.HashedFile ) -> A
+	[iMineLauncher]iMine.Launcher.Hasher.HashedFile::IsSameDigest[1]( [mscorlib]System.Byte[] ) -> A
+
+	[iMineLauncher]iMine.Launcher.Hasher.HashedFile::.ctor[2]( [mscorlib]System.Int64, [mscorlib]System.Byte[] ) skipped:  special name
+	[iMineLauncher]iMine.Launcher.Hasher.HashedFile::.ctor[2]( [mscorlib]System.IO.FileInfo, [mscorlib]System.Boolean ) skipped:  special name
+	[iMineLauncher]iMine.Launcher.Hasher.HashedFile::.ctor[1]( [iMineLauncher]iMine.Launcher.Serialize.HInput ) skipped:  special name
+
+	System.Int64 [iMineLauncher]System.Int64 iMine.Launcher.Hasher.HashedFile::Size -> A
+	System.Byte[] [iMineLauncher]System.Byte[] iMine.Launcher.Hasher.HashedFile::_digest -> A
+}
+
+[iMineLauncher]iMine.Launcher.Client.ClientProfile -> [iMineLauncher]a.W
+{
+	[iMineLauncher]iMine.Launcher.Client.ClientProfile::Write[1]( [iMineLauncher]iMine.Launcher.Serialize.HOutput ) -> A
+	[iMineLauncher]iMine.Launcher.Client.ClientProfile::GetAssetIndex[0]( ) -> b
+	[iMineLauncher]iMine.Launcher.Client.ClientProfile::GetAssetDir[0]( ) -> C
+	[iMineLauncher]iMine.Launcher.Client.ClientProfile::GetLibrariesDir[0]( ) -> c
+	[iMineLauncher]iMine.Launcher.Client.ClientProfile::IsPrivate[0]( ) -> D
+	[iMineLauncher]iMine.Launcher.Client.ClientProfile::GetClassPath[0]( ) -> d
+	[iMineLauncher]iMine.Launcher.Client.ClientProfile::GetClientArgs[0]( ) -> E
+	[iMineLauncher]iMine.Launcher.Client.ClientProfile::GetClientUpdateMatcher[0]( ) -> e
+	[iMineLauncher]iMine.Launcher.Client.ClientProfile::GetJvmArgs[0]( ) -> F
+	[iMineLauncher]iMine.Launcher.Client.ClientProfile::GetMainClass[0]( ) -> f
+	[iMineLauncher]iMine.Launcher.Client.ClientProfile::GetServerAddress[0]( ) -> G
+	[iMineLauncher]iMine.Launcher.Client.ClientProfile::GetServerPort[0]( ) -> g
+	[iMineLauncher]iMine.Launcher.Client.ClientProfile::GetSortIndex[0]( ) -> H
+	[iMineLauncher]iMine.Launcher.Client.ClientProfile::GetDir[0]( ) -> h
+	[iMineLauncher]iMine.Launcher.Client.ClientProfile::GetTitle[0]( ) -> I
+	[iMineLauncher]iMine.Launcher.Client.ClientProfile::SetTitle[1]( [mscorlib]System.String ) -> A
+	[iMineLauncher]iMine.Launcher.Client.ClientProfile::GetVersion[0]( ) -> i
+	[iMineLauncher]iMine.Launcher.Client.ClientProfile::SetVersion[1]( [iMineLauncher]iMine.Launcher.Client.McVersion ) -> A
+	[iMineLauncher]iMine.Launcher.Client.ClientProfile::IsUpdateFastCheck[0]( ) -> J
+
+	[iMineLauncher]iMine.Launcher.Client.ClientProfile::ToString[0]( ) skipped:  external base class or interface
+	[iMineLauncher]iMine.Launcher.Client.ClientProfile::.ctor[1]( [iMineLauncher]iMine.Launcher.Serialize.Config.Entry.BlockConfigEntry ) skipped:  special name
+	[iMineLauncher]iMine.Launcher.Client.ClientProfile::.ctor[2]( [iMineLauncher]iMine.Launcher.Serialize.HInput, [mscorlib]System.Boolean ) skipped:  special name
+	[iMineLauncher]iMine.Launcher.Client.ClientProfile::.cctor[0]( ) skipped:  special name
+
+	iMine.Launcher.Serialize.Streaming.StreamObject/IAdapter`1<iMine.Launcher.Client.ClientProfile> [iMineLauncher]iMine.Launcher.Serialize.Streaming.StreamObject/IAdapter`1<iMine.Launcher.Client.ClientProfile> iMine.Launcher.Client.ClientProfile::RoAdapter -> A
+	iMine.Launcher.Hasher.FileNameMatcher [iMineLauncher]iMine.Launcher.Hasher.FileNameMatcher iMine.Launcher.Client.ClientProfile::AssetMatcher -> A
+	iMine.Launcher.Hasher.FileNameMatcher [iMineLauncher]iMine.Launcher.Hasher.FileNameMatcher iMine.Launcher.Client.ClientProfile::LibrariesMatcher -> a
+	iMine.Launcher.Serialize.Config.Entry.StringConfigEntry [iMineLauncher]iMine.Launcher.Serialize.Config.Entry.StringConfigEntry iMine.Launcher.Client.ClientProfile::version -> A
+	iMine.Launcher.Serialize.Config.Entry.StringConfigEntry [iMineLauncher]iMine.Launcher.Serialize.Config.Entry.StringConfigEntry iMine.Launcher.Client.ClientProfile::assetIndex -> a
+	iMine.Launcher.Serialize.Config.Entry.StringConfigEntry [iMineLauncher]iMine.Launcher.Serialize.Config.Entry.StringConfigEntry iMine.Launcher.Client.ClientProfile::assetDir -> B
+	iMine.Launcher.Serialize.Config.Entry.StringConfigEntry [iMineLauncher]iMine.Launcher.Serialize.Config.Entry.StringConfigEntry iMine.Launcher.Client.ClientProfile::librariesDir -> b
+	iMine.Launcher.Serialize.Config.Entry.BooleanConfigEntry [iMineLauncher]iMine.Launcher.Serialize.Config.Entry.BooleanConfigEntry iMine.Launcher.Client.ClientProfile::isPrivate -> A
+	iMine.Launcher.Serialize.Config.Entry.IntegerConfigEntry [iMineLauncher]iMine.Launcher.Serialize.Config.Entry.IntegerConfigEntry iMine.Launcher.Client.ClientProfile::sortIndex -> A
+	iMine.Launcher.Serialize.Config.Entry.StringConfigEntry [iMineLauncher]iMine.Launcher.Serialize.Config.Entry.StringConfigEntry iMine.Launcher.Client.ClientProfile::dir -> C
+	iMine.Launcher.Serialize.Config.Entry.StringConfigEntry [iMineLauncher]iMine.Launcher.Serialize.Config.Entry.StringConfigEntry iMine.Launcher.Client.ClientProfile::title -> c
+	iMine.Launcher.Serialize.Config.Entry.StringConfigEntry [iMineLauncher]iMine.Launcher.Serialize.Config.Entry.StringConfigEntry iMine.Launcher.Client.ClientProfile::serverAddress -> D
+	iMine.Launcher.Serialize.Config.Entry.IntegerConfigEntry [iMineLauncher]iMine.Launcher.Serialize.Config.Entry.IntegerConfigEntry iMine.Launcher.Client.ClientProfile::serverPort -> a
+	iMine.Launcher.Serialize.Config.Entry.IntegerConfigEntry [iMineLauncher]iMine.Launcher.Serialize.Config.Entry.IntegerConfigEntry iMine.Launcher.Client.ClientProfile::ramMin -> B
+	iMine.Launcher.Serialize.Config.Entry.IntegerConfigEntry [iMineLauncher]iMine.Launcher.Serialize.Config.Entry.IntegerConfigEntry iMine.Launcher.Client.ClientProfile::systemRamMin -> b
+	iMine.Launcher.Serialize.Config.Entry.IntegerConfigEntry [iMineLauncher]iMine.Launcher.Serialize.Config.Entry.IntegerConfigEntry iMine.Launcher.Client.ClientProfile::systemRamRec -> C
+	iMine.Launcher.Serialize.Config.Entry.IntegerConfigEntry [iMineLauncher]iMine.Launcher.Serialize.Config.Entry.IntegerConfigEntry iMine.Launcher.Client.ClientProfile::ramRec -> c
+	iMine.Launcher.Serialize.Config.Entry.ListConfigEntry [iMineLauncher]iMine.Launcher.Serialize.Config.Entry.ListConfigEntry iMine.Launcher.Client.ClientProfile::update -> A
+	iMine.Launcher.Serialize.Config.Entry.ListConfigEntry [iMineLauncher]iMine.Launcher.Serialize.Config.Entry.ListConfigEntry iMine.Launcher.Client.ClientProfile::updateExclusions -> a
+	iMine.Launcher.Serialize.Config.Entry.ListConfigEntry [iMineLauncher]iMine.Launcher.Serialize.Config.Entry.ListConfigEntry iMine.Launcher.Client.ClientProfile::updateVerify -> B
+	iMine.Launcher.Serialize.Config.Entry.BooleanConfigEntry [iMineLauncher]iMine.Launcher.Serialize.Config.Entry.BooleanConfigEntry iMine.Launcher.Client.ClientProfile::updateFastCheck -> a
+	iMine.Launcher.Serialize.Config.Entry.StringConfigEntry [iMineLauncher]iMine.Launcher.Serialize.Config.Entry.StringConfigEntry iMine.Launcher.Client.ClientProfile::mainClass -> d
+	iMine.Launcher.Serialize.Config.Entry.ListConfigEntry [iMineLauncher]iMine.Launcher.Serialize.Config.Entry.ListConfigEntry iMine.Launcher.Client.ClientProfile::jvmArgs -> b
+	iMine.Launcher.Serialize.Config.Entry.ListConfigEntry [iMineLauncher]iMine.Launcher.Serialize.Config.Entry.ListConfigEntry iMine.Launcher.Client.ClientProfile::classPath -> C
+	iMine.Launcher.Serialize.Config.Entry.ListConfigEntry [iMineLauncher]iMine.Launcher.Serialize.Config.Entry.ListConfigEntry iMine.Launcher.Client.ClientProfile::clientArgs -> c
+}
+
+[iMineLauncher]iMine.Launcher.Client.PlayerProfile/Texture -> [iMineLauncher]a.R/A
+{
+	[iMineLauncher]iMine.Launcher.Client.PlayerProfile/Texture::Write[1]( [iMineLauncher]iMine.Launcher.Serialize.HOutput ) -> A
+
+	[iMineLauncher]iMine.Launcher.Client.PlayerProfile/Texture::ToString[0]( ) skipped:  external base class or interface
+	[iMineLauncher]iMine.Launcher.Client.PlayerProfile/Texture::.ctor[2]( [mscorlib]System.String, [mscorlib]System.Byte[] ) skipped:  special name
+	[iMineLauncher]iMine.Launcher.Client.PlayerProfile/Texture::.ctor[2]( [mscorlib]System.String, [mscorlib]System.Boolean ) skipped:  special name
+	[iMineLauncher]iMine.Launcher.Client.PlayerProfile/Texture::.ctor[1]( [iMineLauncher]iMine.Launcher.Serialize.HInput ) skipped:  special name
+
+	System.String [iMineLauncher]System.String iMine.Launcher.Client.PlayerProfile/Texture::url -> A
+	System.Byte[] [iMineLauncher]System.Byte[] iMine.Launcher.Client.PlayerProfile/Texture::digest -> A
+}
+
+[iMineLauncher]iMine.Launcher.Serialize.Config.Entry.ListConfigEntry/<>c__4`1 -> [iMineLauncher]a.T/A`1
+{
+	[iMineLauncher]iMine.Launcher.Serialize.Config.Entry.ListConfigEntry/<>c__4`1::<GetEntries>b__4_0[1]( [iMineLauncher]iMine.Launcher.Serialize.Config.Entry.ConfigEntry ) -> A
+
+	[iMineLauncher]iMine.Launcher.Serialize.Config.Entry.ListConfigEntry/<>c__4`1::.cctor[0]( ) skipped:  special name
+	[iMineLauncher]iMine.Launcher.Serialize.Config.Entry.ListConfigEntry/<>c__4`1::.ctor[0]( ) skipped:  special name
+
+	iMine.Launcher.Serialize.Config.Entry.ListConfigEntry/<>c__4`1<T> [iMineLauncher]iMine.Launcher.Serialize.Config.Entry.ListConfigEntry/<>c__4`1<T> iMine.Launcher.Serialize.Config.Entry.ListConfigEntry/<>c__4`1::<>9 -> A
+	System.Converter`2<iMine.Launcher.Serialize.Config.Entry.ConfigEntry,T> [iMineLauncher]System.Converter`2<iMine.Launcher.Serialize.Config.Entry.ConfigEntry,T> iMine.Launcher.Serialize.Config.Entry.ListConfigEntry/<>c__4`1::<>9__4_0 -> A
+}
+
+[iMineLauncher]iMine.Launcher.Hasher.HashedDir/Diff -> [iMineLauncher]a.V/A
+{
+
+	[iMineLauncher]iMine.Launcher.Hasher.HashedDir/Diff::.ctor[2]( [iMineLauncher]iMine.Launcher.Hasher.HashedDir, [iMineLauncher]iMine.Launcher.Hasher.HashedDir ) skipped:  special name
+
+	iMine.Launcher.Hasher.HashedDir [iMineLauncher]iMine.Launcher.Hasher.HashedDir iMine.Launcher.Hasher.HashedDir/Diff::Mismatch -> A
+	iMine.Launcher.Hasher.HashedDir [iMineLauncher]iMine.Launcher.Hasher.HashedDir iMine.Launcher.Hasher.HashedDir/Diff::Extra -> a
+}
+
+[iMineLauncher]iMine.Launcher.Hasher.HashedDir/<>c -> [iMineLauncher]a.V/a
+{
+	[iMineLauncher]iMine.Launcher.Hasher.HashedDir/<>c::<GetSize>b__6_0[1]( [mscorlib]System.Collections.Generic.KeyValuePair`2<[mscorlib]System.String,[iMineLauncher]iMine.Launcher.Hasher.HashedEntry> ) -> A
+
+	[iMineLauncher]iMine.Launcher.Hasher.HashedDir/<>c::.cctor[0]( ) skipped:  special name
+	[iMineLauncher]iMine.Launcher.Hasher.HashedDir/<>c::.ctor[0]( ) skipped:  special name
+
+	iMine.Launcher.Hasher.HashedDir/<>c [iMineLauncher]iMine.Launcher.Hasher.HashedDir/<>c iMine.Launcher.Hasher.HashedDir/<>c::<>9 -> A
+	System.Func`2<System.Collections.Generic.KeyValuePair`2<System.String,iMine.Launcher.Hasher.HashedEntry>,System.Int64> [iMineLauncher]System.Func`2<System.Collections.Generic.KeyValuePair`2<System.String,iMine.Launcher.Hasher.HashedEntry>,System.Int64> iMine.Launcher.Hasher.HashedDir/<>c::<>9__6_0 -> A
+}
+
+[iMineLauncher]iMine.Launcher.Utils.Collections.NDictionary`2 -> [iMineLauncher]A.K`2
+{
+	[iMineLauncher]iMine.Launcher.Utils.Collections.NDictionary`2::get_Item[1]( !0 ) -> A
+	[iMineLauncher]iMine.Launcher.Utils.Collections.NDictionary`2::set_Item[2]( !0, !1 ) -> A
+
+	[iMineLauncher]iMine.Launcher.Utils.Collections.NDictionary`2::.ctor[0]( ) skipped:  special name
+	[iMineLauncher]iMine.Launcher.Utils.Collections.NDictionary`2::.ctor[1]( [mscorlib]System.Collections.Generic.IDictionary`2<!0,!1> ) skipped:  special name
+
+	a [iMineLauncher]a iMine.Launcher.Utils.Collections.NDictionary`2::Item -> dropped
+}
+
+[iMineLauncher]iMine.Launcher.Helper.IoHelper -> [iMineLauncher]A.D
+{
+	[iMineLauncher]iMine.Launcher.Helper.IoHelper::EncryptPassword[2]( [mscorlib]System.Byte[], [mscorlib]System.String ) -> A
+	[iMineLauncher]iMine.Launcher.Helper.IoHelper::VerifyFileName[1]( [mscorlib]System.String ) -> A
+	[iMineLauncher]iMine.Launcher.Helper.IoHelper::IsValidFileName[1]( [mscorlib]System.String ) -> a
+	[iMineLauncher]iMine.Launcher.Helper.IoHelper::IsValidPath[1]( [mscorlib]System.String ) -> B
+}
+
+[iMineLauncher]iMine.Launcher.Serialize.Streaming.StreamObject -> [iMineLauncher]A.f
+{
+	[iMineLauncher]iMine.Launcher.Serialize.Streaming.StreamObject::Write[1]( [iMineLauncher]iMine.Launcher.Serialize.HOutput ) -> A
+
+	[iMineLauncher]iMine.Launcher.Serialize.Streaming.StreamObject::.ctor[0]( ) skipped:  special name
+}
+
+[iMineLauncher]iMine.Launcher.Serialize.Config.Entry.BlockConfigEntry -> [iMineLauncher]a.r
+{
+	[iMineLauncher]iMine.Launcher.Serialize.Config.Entry.BlockConfigEntry::Write[1]( [iMineLauncher]iMine.Launcher.Serialize.HOutput ) -> A
+	[iMineLauncher]iMine.Launcher.Serialize.Config.Entry.BlockConfigEntry::GetEntryType[0]( ) -> A
+	[iMineLauncher]iMine.Launcher.Serialize.Config.Entry.BlockConfigEntry::GetValueAsMap[0]( ) -> b
+	[iMineLauncher]iMine.Launcher.Serialize.Config.Entry.BlockConfigEntry::Clear[0]( ) -> C
+	[iMineLauncher]iMine.Launcher.Serialize.Config.Entry.BlockConfigEntry::GetEntry[1]( [mscorlib]System.String ) -> A
+	[iMineLauncher]iMine.Launcher.Serialize.Config.Entry.BlockConfigEntry::ReadMap[2]( [iMineLauncher]iMine.Launcher.Serialize.HInput, [mscorlib]System.Boolean ) -> A
+
+	[iMineLauncher]iMine.Launcher.Serialize.Config.Entry.BlockConfigEntry::.ctor[3]( [mscorlib]System.Collections.Generic.Dictionary`2<[mscorlib]System.String,[iMineLauncher]iMine.Launcher.Serialize.Config.Entry.ConfigEntry>, [mscorlib]System.Boolean, [mscorlib]System.Int32 ) skipped:  special name
+	[iMineLauncher]iMine.Launcher.Serialize.Config.Entry.BlockConfigEntry::.ctor[1]( [mscorlib]System.Int32 ) skipped:  special name
+	[iMineLauncher]iMine.Launcher.Serialize.Config.Entry.BlockConfigEntry::.ctor[2]( [iMineLauncher]iMine.Launcher.Serialize.HInput, [mscorlib]System.Boolean ) skipped:  special name
+}
+
+[iMineLauncher]iMine.Launcher.Serialize.Config.Entry.BooleanConfigEntry -> [iMineLauncher]a.S
+{
+	[iMineLauncher]iMine.Launcher.Serialize.Config.Entry.BooleanConfigEntry::Write[1]( [iMineLauncher]iMine.Launcher.Serialize.HOutput ) -> A
+	[iMineLauncher]iMine.Launcher.Serialize.Config.Entry.BooleanConfigEntry::GetEntryType[0]( ) -> A
+
+	[iMineLauncher]iMine.Launcher.Serialize.Config.Entry.BooleanConfigEntry::.ctor[3]( [mscorlib]System.Boolean, [mscorlib]System.Boolean, [mscorlib]System.Int32 ) skipped:  special name
+	[iMineLauncher]iMine.Launcher.Serialize.Config.Entry.BooleanConfigEntry::.ctor[2]( [iMineLauncher]iMine.Launcher.Serialize.HInput, [mscorlib]System.Boolean ) skipped:  special name
+}
+
+[iMineLauncher]iMine.Launcher.Serialize.Config.Entry.IntegerConfigEntry -> [iMineLauncher]a.s
+{
+	[iMineLauncher]iMine.Launcher.Serialize.Config.Entry.IntegerConfigEntry::Write[1]( [iMineLauncher]iMine.Launcher.Serialize.HOutput ) -> A
+	[iMineLauncher]iMine.Launcher.Serialize.Config.Entry.IntegerConfigEntry::GetEntryType[0]( ) -> A
+
+	[iMineLauncher]iMine.Launcher.Serialize.Config.Entry.IntegerConfigEntry::.ctor[3]( [mscorlib]System.Int32, [mscorlib]System.Boolean, [mscorlib]System.Int32 ) skipped:  special name
+	[iMineLauncher]iMine.Launcher.Serialize.Config.Entry.IntegerConfigEntry::.ctor[2]( [iMineLauncher]iMine.Launcher.Serialize.HInput, [mscorlib]System.Boolean ) skipped:  special name
+}
+
+[iMineLauncher]iMine.Launcher.Serialize.Config.Entry.ListConfigEntry -> [iMineLauncher]a.T
+{
+	[iMineLauncher]iMine.Launcher.Serialize.Config.Entry.ListConfigEntry::Write[1]( [iMineLauncher]iMine.Launcher.Serialize.HOutput ) -> A
+	[iMineLauncher]iMine.Launcher.Serialize.Config.Entry.ListConfigEntry::GetEntryType[0]( ) -> A
+	[iMineLauncher]iMine.Launcher.Serialize.Config.Entry.ListConfigEntry::GetEntries[0]( ) -> b
+	[iMineLauncher]iMine.Launcher.Serialize.Config.Entry.ListConfigEntry::ReadList[2]( [iMineLauncher]iMine.Launcher.Serialize.HInput, [mscorlib]System.Boolean ) -> A
+
+	[iMineLauncher]iMine.Launcher.Serialize.Config.Entry.ListConfigEntry::.ctor[3]( [mscorlib]System.Collections.Generic.List`1<[iMineLauncher]iMine.Launcher.Serialize.Config.Entry.ConfigEntry>, [mscorlib]System.Boolean, [mscorlib]System.Int32 ) skipped:  special name
+	[iMineLauncher]iMine.Launcher.Serialize.Config.Entry.ListConfigEntry::.ctor[2]( [iMineLauncher]iMine.Launcher.Serialize.HInput, [mscorlib]System.Boolean ) skipped:  special name
+}
+
+[iMineLauncher]iMine.Launcher.Serialize.Config.Entry.StringConfigEntry -> [iMineLauncher]a.t
+{
+	[iMineLauncher]iMine.Launcher.Serialize.Config.Entry.StringConfigEntry::Write[1]( [iMineLauncher]iMine.Launcher.Serialize.HOutput ) -> A
+	[iMineLauncher]iMine.Launcher.Serialize.Config.Entry.StringConfigEntry::GetEntryType[0]( ) -> A
+
+	[iMineLauncher]iMine.Launcher.Serialize.Config.Entry.StringConfigEntry::.ctor[3]( [mscorlib]System.String, [mscorlib]System.Boolean, [mscorlib]System.Int32 ) skipped:  special name
+	[iMineLauncher]iMine.Launcher.Serialize.Config.Entry.StringConfigEntry::.ctor[2]( [iMineLauncher]iMine.Launcher.Serialize.HInput, [mscorlib]System.Boolean ) skipped:  special name
+}
+
+[iMineLauncher]iMine.Launcher.Utils.DirStuff -> [iMineLauncher]A.h
+{
+	[iMineLauncher]iMine.Launcher.Utils.DirStuff::ResolveDirectory[2]( [mscorlib]System.IO.DirectoryInfo, [mscorlib]System.String ) -> A
+	[iMineLauncher]iMine.Launcher.Utils.DirStuff::ResolveFile[2]( [mscorlib]System.IO.DirectoryInfo, [mscorlib]System.String ) -> a
+	[iMineLauncher]iMine.Launcher.Utils.DirStuff::ResolveString[2]( [mscorlib]System.IO.DirectoryInfo, [mscorlib]System.String ) -> B
+}
+
+[iMineLauncher]iMine.Launcher.Request.Update.LauncherRequest -> [iMineLauncher]A.N
+{
+	[iMineLauncher]iMine.Launcher.Request.Update.LauncherRequest::HandleResponse[2]( [iMineLauncher]iMine.Launcher.Serialize.HInput, [iMineLauncher]iMine.Launcher.Serialize.HOutput ) -> A
+	[iMineLauncher]iMine.Launcher.Request.Update.LauncherRequest::GetRequestType[0]( ) -> A
+
+	[iMineLauncher]iMine.Launcher.Request.Update.LauncherRequest::.ctor[0]( ) skipped:  special name
+}
+
+[iMineLauncher]iMine.Launcher.Hasher.StrongFileNameMatcher -> [iMineLauncher]a.N
+{
+	[iMineLauncher]iMine.Launcher.Hasher.StrongFileNameMatcher::ShouldUpdate[1]( [mscorlib]System.Collections.Generic.ICollection`1<[mscorlib]System.String> ) -> A
+
+	[iMineLauncher]iMine.Launcher.Hasher.StrongFileNameMatcher::.ctor[0]( ) skipped:  special name
+}
+
+[iMineLauncher]iMine.Launcher.FileVisitor.FileWatchDoge -> [iMineLauncher]A.q
+{
+	[iMineLauncher]iMine.Launcher.FileVisitor.FileWatchDoge::Watch[1]( [mscorlib]System.String ) -> A
+	[iMineLauncher]iMine.Launcher.FileVisitor.FileWatchDoge::OnChange[2]( [mscorlib]System.Object, [System]System.IO.FileSystemEventArgs ) -> A
+}
+
+[iMineLauncher]iMine.Launcher.FileVisitor.SimpleFileVisitor`1 -> [iMineLauncher]A.r`1
+{
+	[iMineLauncher]iMine.Launcher.FileVisitor.SimpleFileVisitor`1::PreVisitDirectory[1]( !0 ) -> A
+	[iMineLauncher]iMine.Launcher.FileVisitor.SimpleFileVisitor`1::VisitFile[1]( !0 ) -> a
+	[iMineLauncher]iMine.Launcher.FileVisitor.SimpleFileVisitor`1::VisitFileFailed[2]( !0, [mscorlib]System.IO.IOException ) -> A
+	[iMineLauncher]iMine.Launcher.FileVisitor.SimpleFileVisitor`1::PostVisitDirectory[2]( !0, [mscorlib]System.IO.IOException ) -> a
+
+	[iMineLauncher]iMine.Launcher.FileVisitor.SimpleFileVisitor`1::.ctor[0]( ) skipped:  special name
+}
+
+[iMineLauncher]iMine.Launcher.Client.CheckList -> [iMineLauncher]A.s
+{
+	[iMineLauncher]iMine.Launcher.Client.CheckList::CheckFreeSpace[1]( [iMineLauncher]iMine.Launcher.Client.ServerInfo ) -> A
+	[iMineLauncher]iMine.Launcher.Client.CheckList::CheckMaxRam[1]( [iMineLauncher]iMine.Launcher.Client.ServerInfo ) -> a
+	[iMineLauncher]iMine.Launcher.Client.CheckList::CheckCurrentRam[1]( [iMineLauncher]iMine.Launcher.Client.ServerInfo ) -> B
+	[iMineLauncher]iMine.Launcher.Client.CheckList::CheckPageFile[1]( [iMineLauncher]iMine.Launcher.Client.ServerInfo ) -> b
+	[iMineLauncher]iMine.Launcher.Client.CheckList::CheckCPU[1]( [iMineLauncher]iMine.Launcher.Client.ServerInfo ) -> C
+	[iMineLauncher]iMine.Launcher.Client.CheckList::CheckBits[1]( [iMineLauncher]iMine.Launcher.Client.ServerInfo ) -> c
+}
+
+[iMineLauncher]iMine.Launcher.Serialize.SlideInfo/ImageUpdatedHandler -> [iMineLauncher]A.F/A
+{
+
+	[iMineLauncher]iMine.Launcher.Serialize.SlideInfo/ImageUpdatedHandler::.ctor[2]( [mscorlib]System.Object, [mscorlib]System.IntPtr ) skipped:  runtime method
+	[iMineLauncher]iMine.Launcher.Serialize.SlideInfo/ImageUpdatedHandler::Invoke[0]( ) skipped:  runtime method
+	[iMineLauncher]iMine.Launcher.Serialize.SlideInfo/ImageUpdatedHandler::BeginInvoke[2]( [mscorlib]System.AsyncCallback, [mscorlib]System.Object ) skipped:  runtime method
+	[iMineLauncher]iMine.Launcher.Serialize.SlideInfo/ImageUpdatedHandler::EndInvoke[1]( [mscorlib]System.IAsyncResult ) skipped:  runtime method
+}
+
+[iMineLauncher]iMine.Launcher.Serialize.Streaming.StreamObject/IAdapter`1 -> [iMineLauncher]A.f/A`1
+{
+	[iMineLauncher]iMine.Launcher.Serialize.Streaming.StreamObject/IAdapter`1::Convert[1]( [iMineLauncher]iMine.Launcher.Serialize.HInput ) -> A
+}
+
+[iMineLauncher]iMine.Launcher.Request.Update.UpdateRequest/HashConverted -> [iMineLauncher]A.n/A
+{
+	[iMineLauncher]iMine.Launcher.Request.Update.UpdateRequest/HashConverted::Convert[1]( [iMineLauncher]iMine.Launcher.Serialize.HInput ) -> A
+
+	[iMineLauncher]iMine.Launcher.Request.Update.UpdateRequest/HashConverted::.ctor[0]( ) skipped:  special name
+}
+
+[iMineLauncher]iMine.Launcher.Client.ClientProfile/ClientConverted -> [iMineLauncher]a.W/A
+{
+	[iMineLauncher]iMine.Launcher.Client.ClientProfile/ClientConverted::Convert[1]( [iMineLauncher]iMine.Launcher.Serialize.HInput ) -> A
+
+	[iMineLauncher]iMine.Launcher.Client.ClientProfile/ClientConverted::.ctor[0]( ) skipped:  special name
+}
+
+[iMineLauncher]iMine.Launcher.Request.Update.UpdateRequest/Callback -> [iMineLauncher]A.n/b
+{
+	[iMineLauncher]iMine.Launcher.Request.Update.UpdateRequest/Callback::Call[1]( [iMineLauncher]iMine.Launcher.Request.Update.UpdateRequest/State ) -> A
+}
+
+[iMineLauncher]iMine.Launcher.FileVisitor.BasicFileAttributes -> [iMineLauncher]A.R
+{
+}
+
+Skipped Types:
+
+[iMineLauncher]iMine.Launcher.App skipped:  filtered by BAML
+{
+	[iMineLauncher]iMine.Launcher.App::OnStart[2]( [mscorlib]System.Object, [PresentationFramework]System.Windows.StartupEventArgs ) -> A
+	[iMineLauncher]iMine.Launcher.App::OnException[2]( [mscorlib]System.Object, [WindowsBase]System.Windows.Threading.DispatcherUnhandledExceptionEventArgs ) -> A
+	[iMineLauncher]iMine.Launcher.App::GetConsoleText[0]( ) -> A
+	[iMineLauncher]iMine.Launcher.App::WriteLog[1]( [mscorlib]System.Object ) -> A
+	[iMineLauncher]iMine.Launcher.App::WriteException[2]( [mscorlib]System.Exception, [mscorlib]System.String ) -> A
+	[iMineLauncher]iMine.Launcher.App::WriteImportantException[2]( [mscorlib]System.Exception, [mscorlib]System.String ) -> a
+	[iMineLauncher]iMine.Launcher.App::GetVersion[0]( ) -> a
+	[iMineLauncher]iMine.Launcher.App::InitializeComponent[0]( ) -> B
+	[iMineLauncher]iMine.Launcher.App::Main[0]( ) -> b
+
+	[iMineLauncher]iMine.Launcher.App::.ctor[0]( ) skipped:  special name
+	[iMineLauncher]iMine.Launcher.App::.cctor[0]( ) skipped:  special name
+
+	System.IO.StringWriter [iMineLauncher]System.IO.StringWriter iMine.Launcher.App::TextWriter -> A
+	System.Boolean [iMineLauncher]System.Boolean iMine.Launcher.App::IsShuttingDown -> A
+	System.Threading.Mutex [iMineLauncher]System.Threading.Mutex iMine.Launcher.App::mutex -> A
+	System.Boolean [iMineLauncher]System.Boolean iMine.Launcher.App::_contentLoaded -> a
+}
+
+[iMineLauncher]iMine.Launcher.Windows.BugreportWindow skipped:  filtered by BAML
+{
+	[iMineLauncher]iMine.Launcher.Windows.BugreportWindow::Show[1]( [mscorlib]System.Boolean ) -> A
+	[iMineLauncher]iMine.Launcher.Windows.BugreportWindow::PostInitializeComponent[0]( ) -> A
+	[iMineLauncher]iMine.Launcher.Windows.BugreportWindow::CloseButtonEnter[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.Input.MouseEventArgs ) -> A
+	[iMineLauncher]iMine.Launcher.Windows.BugreportWindow::CloseButtonLeave[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.Input.MouseEventArgs ) -> a
+	[iMineLauncher]iMine.Launcher.Windows.BugreportWindow::LoginButtonClick[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.RoutedEventArgs ) -> A
+	[iMineLauncher]iMine.Launcher.Windows.BugreportWindow::LoginButtonEnter[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.Input.MouseEventArgs ) -> B
+	[iMineLauncher]iMine.Launcher.Windows.BugreportWindow::LoginButtonLeave[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.Input.MouseEventArgs ) -> b
+	[iMineLauncher]iMine.Launcher.Windows.BugreportWindow::SendBugreport[0]( ) -> a
+	[iMineLauncher]iMine.Launcher.Windows.BugreportWindow::System.Windows.Markup.IComponentConnector.Connect[2]( [mscorlib]System.Int32, [mscorlib]System.Object ) -> A
+	[iMineLauncher]iMine.Launcher.Windows.BugreportWindow::<PostInitializeComponent>b__4_0[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.RoutedEventArgs ) -> a
+
+	[iMineLauncher]iMine.Launcher.Windows.BugreportWindow::.ctor[1]( [mscorlib]System.Boolean ) skipped:  special name
+	[iMineLauncher]iMine.Launcher.Windows.BugreportWindow::InitializeComponent[0]( ) skipped:  external base class or interface
+
+	iMine.Launcher.Windows.BugreportWindow [iMineLauncher]iMine.Launcher.Windows.BugreportWindow iMine.Launcher.Windows.BugreportWindow::instance -> A
+	System.Boolean [iMineLauncher]System.Boolean iMine.Launcher.Windows.BugreportWindow::sending -> A
+	System.Windows.Controls.Button [iMineLauncher]System.Windows.Controls.Button iMine.Launcher.Windows.BugreportWindow::CloseButton -> A
+	System.Windows.Controls.TextBlock [iMineLauncher]System.Windows.Controls.TextBlock iMine.Launcher.Windows.BugreportWindow::ErrorDesc -> A
+	System.Windows.Controls.TextBox [iMineLauncher]System.Windows.Controls.TextBox iMine.Launcher.Windows.BugreportWindow::LoginBox -> A
+	System.Windows.Controls.TextBox [iMineLauncher]System.Windows.Controls.TextBox iMine.Launcher.Windows.BugreportWindow::DescBox -> a
+	System.Windows.Controls.Button [iMineLauncher]System.Windows.Controls.Button iMine.Launcher.Windows.BugreportWindow::LoginButton -> a
+	System.Windows.Controls.Label [iMineLauncher]System.Windows.Controls.Label iMine.Launcher.Windows.BugreportWindow::SendButton -> A
+	System.Boolean [iMineLauncher]System.Boolean iMine.Launcher.Windows.BugreportWindow::_contentLoaded -> a
+}
+
+[iMineLauncher]iMine.Launcher.Windows.ConsoleWindow skipped:  filtered by BAML
+{
+	[iMineLauncher]iMine.Launcher.Windows.ConsoleWindow::KillButtonClick[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.RoutedEventArgs ) -> A
+	[iMineLauncher]iMine.Launcher.Windows.ConsoleWindow::CloseButtonEnter[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.Input.MouseEventArgs ) -> A
+	[iMineLauncher]iMine.Launcher.Windows.ConsoleWindow::CloseButtonLeave[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.Input.MouseEventArgs ) -> a
+	[iMineLauncher]iMine.Launcher.Windows.ConsoleWindow::OnDrag[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.Input.MouseButtonEventArgs ) -> A
+	[iMineLauncher]iMine.Launcher.Windows.ConsoleWindow::GoldButtonEnter[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.Input.MouseEventArgs ) -> B
+	[iMineLauncher]iMine.Launcher.Windows.ConsoleWindow::GoldButtonLeave[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.Input.MouseEventArgs ) -> b
+	[iMineLauncher]iMine.Launcher.Windows.ConsoleWindow::System.Windows.Markup.IComponentConnector.Connect[2]( [mscorlib]System.Int32, [mscorlib]System.Object ) -> A
+	[iMineLauncher]iMine.Launcher.Windows.ConsoleWindow::<.ctor>b__1_0[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.RoutedEventArgs ) -> a
+
+	[iMineLauncher]iMine.Launcher.Windows.ConsoleWindow::InitializeComponent[0]( ) skipped:  external base class or interface
+	[iMineLauncher]iMine.Launcher.Windows.ConsoleWindow::.ctor[0]( ) skipped:  special name
+
+	iMine.Launcher.Windows.ConsoleWindow [iMineLauncher]iMine.Launcher.Windows.ConsoleWindow iMine.Launcher.Windows.ConsoleWindow::Instance -> A
+	System.Windows.Controls.Button [iMineLauncher]System.Windows.Controls.Button iMine.Launcher.Windows.ConsoleWindow::KillButton -> A
+	System.Windows.Controls.TextBox [iMineLauncher]System.Windows.Controls.TextBox iMine.Launcher.Windows.ConsoleWindow::ConsoleBox -> A
+	System.Windows.Controls.Button [iMineLauncher]System.Windows.Controls.Button iMine.Launcher.Windows.ConsoleWindow::CloseButton -> a
+	System.Boolean [iMineLauncher]System.Boolean iMine.Launcher.Windows.ConsoleWindow::_contentLoaded -> A
+}
+
+[iMineLauncher]iMine.Launcher.Windows.DownloadingWindow skipped:  filtered by BAML
+{
+	[iMineLauncher]iMine.Launcher.Windows.DownloadingWindow::CloseButtonClick[2]( [mscorlib]System.Object, [mscorlib]System.EventArgs ) -> A
+	[iMineLauncher]iMine.Launcher.Windows.DownloadingWindow::OnTimer[2]( [mscorlib]System.Object, [mscorlib]System.EventArgs ) -> a
+	[iMineLauncher]iMine.Launcher.Windows.DownloadingWindow::CloseButton_MouseEnter[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.Input.MouseEventArgs ) -> A
+	[iMineLauncher]iMine.Launcher.Windows.DownloadingWindow::CloseButton_MouseLeave[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.Input.MouseEventArgs ) -> a
+	[iMineLauncher]iMine.Launcher.Windows.DownloadingWindow::System.Windows.Markup.IComponentConnector.Connect[2]( [mscorlib]System.Int32, [mscorlib]System.Object ) -> A
+
+	[iMineLauncher]iMine.Launcher.Windows.DownloadingWindow::InitializeComponent[0]( ) skipped:  external base class or interface
+	[iMineLauncher]iMine.Launcher.Windows.DownloadingWindow::.ctor[0]( ) skipped:  special name
+	[iMineLauncher]iMine.Launcher.Windows.DownloadingWindow::OnClosed[1]( [mscorlib]System.EventArgs ) skipped:  external base class or interface
+
+	iMine.Launcher.Request.Update.UpdateRequest [iMineLauncher]iMine.Launcher.Request.Update.UpdateRequest iMine.Launcher.Windows.DownloadingWindow::Request -> A
+	System.Int32 [iMineLauncher]System.Int32 iMine.Launcher.Windows.DownloadingWindow::busyBarTick -> A
+	System.Boolean [iMineLauncher]System.Boolean iMine.Launcher.Windows.DownloadingWindow::ImOk -> A
+	System.Windows.Controls.Grid [iMineLauncher]System.Windows.Controls.Grid iMine.Launcher.Windows.DownloadingWindow::SliderBase -> A
+	System.Windows.Shapes.Rectangle [iMineLauncher]System.Windows.Shapes.Rectangle iMine.Launcher.Windows.DownloadingWindow::Slider -> A
+	System.Windows.Controls.TextBox [iMineLauncher]System.Windows.Controls.TextBox iMine.Launcher.Windows.DownloadingWindow::DownloadDesc -> A
+	System.Windows.Controls.Button [iMineLauncher]System.Windows.Controls.Button iMine.Launcher.Windows.DownloadingWindow::CloseButton -> A
+	System.Boolean [iMineLauncher]System.Boolean iMine.Launcher.Windows.DownloadingWindow::_contentLoaded -> a
+}
+
+[iMineLauncher]iMine.Launcher.Windows.LoadingWindow skipped:  filtered by BAML
+{
+	[iMineLauncher]iMine.Launcher.Windows.LoadingWindow::get_Instance[0]( ) -> A
+	[iMineLauncher]iMine.Launcher.Windows.LoadingWindow::set_Instance[1]( [iMineLauncher]iMine.Launcher.Windows.LoadingWindow ) -> A
+	[iMineLauncher]iMine.Launcher.Windows.LoadingWindow::System.Windows.Markup.IComponentConnector.Connect[2]( [mscorlib]System.Int32, [mscorlib]System.Object ) -> A
+
+	[iMineLauncher]iMine.Launcher.Windows.LoadingWindow::InitializeComponent[0]( ) skipped:  external base class or interface
+	[iMineLauncher]iMine.Launcher.Windows.LoadingWindow::OnClosed[1]( [mscorlib]System.EventArgs ) skipped:  external base class or interface
+	[iMineLauncher]iMine.Launcher.Windows.LoadingWindow::.ctor[0]( ) skipped:  special name
+
+	iMine.Launcher.Windows.LoadingWindow [iMineLauncher]iMine.Launcher.Windows.LoadingWindow iMine.Launcher.Windows.LoadingWindow::<Instance>k__BackingField -> A
+	System.Boolean [iMineLauncher]System.Boolean iMine.Launcher.Windows.LoadingWindow::_contentLoaded -> A
+
+	iMine.Launcher.Windows.LoadingWindow [iMineLauncher]iMine.Launcher.Windows.LoadingWindow iMine.Launcher.Windows.LoadingWindow::Instance -> dropped
+}
+
+[iMineLauncher]iMine.Launcher.Windows.RegisterWindow skipped:  filtered by BAML
+{
+	[iMineLauncher]iMine.Launcher.Windows.RegisterWindow::PostInitializeComponent[0]( ) -> A
+	[iMineLauncher]iMine.Launcher.Windows.RegisterWindow::RegisterButtonEnter[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.Input.MouseEventArgs ) -> A
+	[iMineLauncher]iMine.Launcher.Windows.RegisterWindow::RegisterButtonLeave[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.Input.MouseEventArgs ) -> a
+	[iMineLauncher]iMine.Launcher.Windows.RegisterWindow::CloseButtonEnter[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.Input.MouseEventArgs ) -> B
+	[iMineLauncher]iMine.Launcher.Windows.RegisterWindow::CloseButtonLeave[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.Input.MouseEventArgs ) -> b
+	[iMineLauncher]iMine.Launcher.Windows.RegisterWindow::RegisterButtonClick[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.RoutedEventArgs ) -> A
+	[iMineLauncher]iMine.Launcher.Windows.RegisterWindow::System.Windows.Markup.IComponentConnector.Connect[2]( [mscorlib]System.Int32, [mscorlib]System.Object ) -> A
+	[iMineLauncher]iMine.Launcher.Windows.RegisterWindow::<PostInitializeComponent>b__1_0[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.RoutedEventArgs ) -> a
+	[iMineLauncher]iMine.Launcher.Windows.RegisterWindow::<RegisterButtonClick>b__7_0[0]( ) -> a
+
+	[iMineLauncher]iMine.Launcher.Windows.RegisterWindow::InitializeComponent[0]( ) skipped:  external base class or interface
+	[iMineLauncher]iMine.Launcher.Windows.RegisterWindow::OnClosed[1]( [mscorlib]System.EventArgs ) skipped:  external base class or interface
+	[iMineLauncher]iMine.Launcher.Windows.RegisterWindow::.ctor[0]( ) skipped:  special name
+
+	System.Windows.Controls.TextBox [iMineLauncher]System.Windows.Controls.TextBox iMine.Launcher.Windows.RegisterWindow::LoginBox -> A
+	System.Windows.Controls.PasswordBox [iMineLauncher]System.Windows.Controls.PasswordBox iMine.Launcher.Windows.RegisterWindow::PasswordBox -> A
+	System.Windows.Controls.PasswordBox [iMineLauncher]System.Windows.Controls.PasswordBox iMine.Launcher.Windows.RegisterWindow::PasswordAgainBox -> a
+	System.Windows.Controls.Button [iMineLauncher]System.Windows.Controls.Button iMine.Launcher.Windows.RegisterWindow::LoginButton -> A
+	System.Windows.Controls.TextBox [iMineLauncher]System.Windows.Controls.TextBox iMine.Launcher.Windows.RegisterWindow::EmailBox -> a
+	System.Windows.Controls.Button [iMineLauncher]System.Windows.Controls.Button iMine.Launcher.Windows.RegisterWindow::CloseButton -> a
+	System.Windows.Controls.TextBlock [iMineLauncher]System.Windows.Controls.TextBlock iMine.Launcher.Windows.RegisterWindow::ErrorBox -> A
+	System.Windows.Controls.Button [iMineLauncher]System.Windows.Controls.Button iMine.Launcher.Windows.RegisterWindow::RegisterButton -> B
+	System.Boolean [iMineLauncher]System.Boolean iMine.Launcher.Windows.RegisterWindow::_contentLoaded -> A
+}
+
+[iMineLauncher]iMine.Launcher.Windows.LoginWindow skipped:  filtered by BAML
+{
+	[iMineLauncher]iMine.Launcher.Windows.LoginWindow::PostInitializeComponent[0]( ) -> A
+	[iMineLauncher]iMine.Launcher.Windows.LoginWindow::RegisterButtonClick[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.RoutedEventArgs ) -> A
+	[iMineLauncher]iMine.Launcher.Windows.LoginWindow::ForgotButtonClick[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.RoutedEventArgs ) -> a
+	[iMineLauncher]iMine.Launcher.Windows.LoginWindow::GoldButtonEnter[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.Input.MouseEventArgs ) -> A
+	[iMineLauncher]iMine.Launcher.Windows.LoginWindow::GoldButtonLeave[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.Input.MouseEventArgs ) -> a
+	[iMineLauncher]iMine.Launcher.Windows.LoginWindow::CloseButtonEnter[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.Input.MouseEventArgs ) -> B
+	[iMineLauncher]iMine.Launcher.Windows.LoginWindow::CloseButtonLeave[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.Input.MouseEventArgs ) -> b
+	[iMineLauncher]iMine.Launcher.Windows.LoginWindow::LoginButtonClick[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.RoutedEventArgs ) -> B
+	[iMineLauncher]iMine.Launcher.Windows.LoginWindow::LoginButtonEnter[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.Input.MouseEventArgs ) -> C
+	[iMineLauncher]iMine.Launcher.Windows.LoginWindow::LoginButtonLeave[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.Input.MouseEventArgs ) -> c
+	[iMineLauncher]iMine.Launcher.Windows.LoginWindow::System.Windows.Markup.IComponentConnector.Connect[2]( [mscorlib]System.Int32, [mscorlib]System.Object ) -> A
+	[iMineLauncher]iMine.Launcher.Windows.LoginWindow::<PostInitializeComponent>b__2_0[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.RoutedEventArgs ) -> b
+	[iMineLauncher]iMine.Launcher.Windows.LoginWindow::<LoginButtonClick>b__10_1[0]( ) -> a
+
+	[iMineLauncher]iMine.Launcher.Windows.LoginWindow::InitializeComponent[0]( ) skipped:  external base class or interface
+	[iMineLauncher]iMine.Launcher.Windows.LoginWindow::OnClosed[1]( [mscorlib]System.EventArgs ) skipped:  external base class or interface
+	[iMineLauncher]iMine.Launcher.Windows.LoginWindow::.ctor[0]( ) skipped:  special name
+
+	iMine.Launcher.Client.ServerInfo [iMineLauncher]iMine.Launcher.Client.ServerInfo iMine.Launcher.Windows.LoginWindow::WannaStartGameAfter -> A
+	System.Windows.Controls.Button [iMineLauncher]System.Windows.Controls.Button iMine.Launcher.Windows.LoginWindow::CloseButton -> A
+	System.Windows.Controls.TextBlock [iMineLauncher]System.Windows.Controls.TextBlock iMine.Launcher.Windows.LoginWindow::ErrorBox -> A
+	System.Windows.Controls.Button [iMineLauncher]System.Windows.Controls.Button iMine.Launcher.Windows.LoginWindow::ResetPassButton -> a
+	System.Windows.Controls.Button [iMineLauncher]System.Windows.Controls.Button iMine.Launcher.Windows.LoginWindow::NoAccountButton -> B
+	System.Windows.Controls.TextBox [iMineLauncher]System.Windows.Controls.TextBox iMine.Launcher.Windows.LoginWindow::LoginBox -> A
+	System.Windows.Controls.PasswordBox [iMineLauncher]System.Windows.Controls.PasswordBox iMine.Launcher.Windows.LoginWindow::PasswordBox -> A
+	System.Windows.Controls.Button [iMineLauncher]System.Windows.Controls.Button iMine.Launcher.Windows.LoginWindow::LoginButton -> b
+	System.Boolean [iMineLauncher]System.Boolean iMine.Launcher.Windows.LoginWindow::_contentLoaded -> A
+}
+
+[iMineLauncher]iMine.Launcher.Windows.SettingsWindow skipped:  filtered by BAML
+{
+	[iMineLauncher]iMine.Launcher.Windows.SettingsWindow::PostInitializeComponent[1]( [iMineLauncher]iMine.Launcher.Client.ServerInfo ) -> A
+	[iMineLauncher]iMine.Launcher.Windows.SettingsWindow::ToggleConsole[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.RoutedEventArgs ) -> A
+	[iMineLauncher]iMine.Launcher.Windows.SettingsWindow::CloseButtonEnter[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.Input.MouseEventArgs ) -> A
+	[iMineLauncher]iMine.Launcher.Windows.SettingsWindow::CloseButtonLeave[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.Input.MouseEventArgs ) -> a
+	[iMineLauncher]iMine.Launcher.Windows.SettingsWindow::GoldButtonEnter[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.Input.MouseEventArgs ) -> B
+	[iMineLauncher]iMine.Launcher.Windows.SettingsWindow::GoldButtonLeave[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.Input.MouseEventArgs ) -> b
+	[iMineLauncher]iMine.Launcher.Windows.SettingsWindow::ResetMemory[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.RoutedEventArgs ) -> a
+	[iMineLauncher]iMine.Launcher.Windows.SettingsWindow::OpenLogs[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.RoutedEventArgs ) -> B
+	[iMineLauncher]iMine.Launcher.Windows.SettingsWindow::OpenScreenshots[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.RoutedEventArgs ) -> b
+	[iMineLauncher]iMine.Launcher.Windows.SettingsWindow::System.Windows.Markup.IComponentConnector.Connect[2]( [mscorlib]System.Int32, [mscorlib]System.Object ) -> A
+	[iMineLauncher]iMine.Launcher.Windows.SettingsWindow::<.ctor>b__1_0[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.Input.MouseButtonEventArgs ) -> A
+
+	[iMineLauncher]iMine.Launcher.Windows.SettingsWindow::InitializeComponent[0]( ) skipped:  external base class or interface
+	[iMineLauncher]iMine.Launcher.Windows.SettingsWindow::OnClosed[1]( [mscorlib]System.EventArgs ) skipped:  external base class or interface
+	[iMineLauncher]iMine.Launcher.Windows.SettingsWindow::.ctor[1]( [iMineLauncher]iMine.Launcher.Client.ServerInfo ) skipped:  special name
+
+	iMine.Launcher.Client.ServerInfo [iMineLauncher]iMine.Launcher.Client.ServerInfo iMine.Launcher.Windows.SettingsWindow::server -> A
+	System.Windows.Media.GradientStop [iMineLauncher]System.Windows.Media.GradientStop iMine.Launcher.Windows.SettingsWindow::RamPointMin -> A
+	System.Windows.Media.GradientStop [iMineLauncher]System.Windows.Media.GradientStop iMine.Launcher.Windows.SettingsWindow::RamPointMid -> a
+	System.Windows.Media.GradientStop [iMineLauncher]System.Windows.Media.GradientStop iMine.Launcher.Windows.SettingsWindow::RamPointRec -> B
+	System.Windows.Controls.Primitives.TickBar [iMineLauncher]System.Windows.Controls.Primitives.TickBar iMine.Launcher.Windows.SettingsWindow::MemoryTickBar -> A
+	System.Windows.Controls.Primitives.TickBar [iMineLauncher]System.Windows.Controls.Primitives.TickBar iMine.Launcher.Windows.SettingsWindow::MemoryTickBar2 -> a
+	System.Windows.Controls.Slider [iMineLauncher]System.Windows.Controls.Slider iMine.Launcher.Windows.SettingsWindow::MemorySlider -> A
+	System.Windows.Controls.Label [iMineLauncher]System.Windows.Controls.Label iMine.Launcher.Windows.SettingsWindow::MemoryValue -> A
+	System.Windows.Controls.RichTextBox [iMineLauncher]System.Windows.Controls.RichTextBox iMine.Launcher.Windows.SettingsWindow::MemoryWarning -> A
+	System.Windows.Controls.Button [iMineLauncher]System.Windows.Controls.Button iMine.Launcher.Windows.SettingsWindow::ApplyButton -> A
+	System.Windows.Controls.CheckBox [iMineLauncher]System.Windows.Controls.CheckBox iMine.Launcher.Windows.SettingsWindow::CheckerOpenConsoleOnPlay -> A
+	System.Windows.Controls.StackPanel [iMineLauncher]System.Windows.Controls.StackPanel iMine.Launcher.Windows.SettingsWindow::CloseButton -> A
+	System.Boolean [iMineLauncher]System.Boolean iMine.Launcher.Windows.SettingsWindow::_contentLoaded -> A
+}
+
+[iMineLauncher]iMine.Launcher.Windows.MainWindow skipped:  filtered by BAML
+{
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::get_Instance[0]( ) -> A
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::set_Instance[1]( [iMineLauncher]iMine.Launcher.Windows.MainWindow ) -> A
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::get_IsClosed[0]( ) -> a
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::set_IsClosed[1]( [mscorlib]System.Boolean ) -> A
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::PostInitializeComponent[0]( ) -> B
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::SettingsButtonClick[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.RoutedEventArgs ) -> A
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::LinkButtonClick[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.RoutedEventArgs ) -> a
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::LoginButtonClick[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.RoutedEventArgs ) -> B
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::RegisterButtonClick[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.RoutedEventArgs ) -> b
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::PrevSlideButtonClick[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.RoutedEventArgs ) -> C
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::NextSlideButtonClick[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.RoutedEventArgs ) -> c
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::ServerInfoTagClick[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.RoutedEventArgs ) -> D
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::PrevBottomSlideButtonClick[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.RoutedEventArgs ) -> d
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::NextBottomSlideButtonClick[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.RoutedEventArgs ) -> E
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::ServerButtonClick[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.RoutedEventArgs ) -> e
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::PlayButtonClick[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.RoutedEventArgs ) -> F
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::CloseButtonClick[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.Input.MouseButtonEventArgs ) -> A
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::CloseButtonMove[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.Input.MouseEventArgs ) -> A
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::CloseButtonLeave[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.Input.MouseEventArgs ) -> a
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::DragMouseDown[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.Input.MouseButtonEventArgs ) -> a
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::GoldButtonEnter[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.Input.MouseEventArgs ) -> B
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::GoldButtonLeave[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.Input.MouseEventArgs ) -> b
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::DiamondButtonEnter[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.Input.MouseEventArgs ) -> C
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::DiamondButtonLeave[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.Input.MouseEventArgs ) -> c
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::ModHelpMouseEnter[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.Input.MouseEventArgs ) -> D
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::ModHelpMouseLeave[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.Input.MouseEventArgs ) -> d
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::MainSliderTextMouseEnter[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.Input.MouseEventArgs ) -> E
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::MainSliderTextMouseLeave[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.Input.MouseEventArgs ) -> e
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::BottomSliderTextMouseEnter[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.Input.MouseEventArgs ) -> F
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::BottomSliderTextMouseLeave[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.Input.MouseEventArgs ) -> f
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::MainSliderMouseEnter[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.Input.MouseEventArgs ) -> G
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::MainSliderMouseLeave[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.Input.MouseEventArgs ) -> g
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::PrevSlideButtonMouseEnter[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.Input.MouseEventArgs ) -> H
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::PrevSlideButtonMouseLeave[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.Input.MouseEventArgs ) -> h
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::NextSlideButtonMouseEnter[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.Input.MouseEventArgs ) -> I
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::NextSlideButtonMouseLeave[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.Input.MouseEventArgs ) -> i
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::PrevButtonMouseEnter[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.Input.MouseEventArgs ) -> J
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::NextButtonMouseEnter[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.Input.MouseEventArgs ) -> j
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::PrevButtonMouseLeave[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.Input.MouseEventArgs ) -> K
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::NextButtonMouseLeave[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.Input.MouseEventArgs ) -> k
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::ConsoleButtonClick[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.RoutedEventArgs ) -> f
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::BugButtonClick[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.RoutedEventArgs ) -> G
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::ConsoleButtonEnter[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.Input.MouseEventArgs ) -> L
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::ConsoleButtonLeave[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.Input.MouseEventArgs ) -> l
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::ModHelpButtonClick[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.Input.MouseEventArgs ) -> M
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::ModPanelLinkClicked[2]( [mscorlib]System.Object, [mscorlib]System.EventArgs ) -> A
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::MouseEnterServerButton[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.Input.MouseEventArgs ) -> m
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::MouseLeaveServerButton[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.Input.MouseEventArgs ) -> N
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::MouseEnterPlayButton[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.Input.MouseEventArgs ) -> n
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::MouseLeavePlayButton[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.Input.MouseEventArgs ) -> O
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::MainSliderTextClick[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.RoutedEventArgs ) -> g
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::BottomSliderTextClick[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.Input.MouseButtonEventArgs ) -> B
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::ToggleLogin[1]( [mscorlib]System.Boolean ) -> a
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::GetSign[1]( [mscorlib]System.Int32 ) -> A
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::ShowCheckList[0]( ) -> b
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::MininizeCheckList[0]( ) -> C
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::HideCheckList[0]( ) -> c
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::ProcessCheckList[0]( ) -> D
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::CheckListButtonClick[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.RoutedEventArgs ) -> H
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::GenerateRuns[2]( [mscorlib]System.String, [iMineLauncher]iMine.Launcher.Client.CheckList/CheckResult ) -> A
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::ProcessServers[2]( [mscorlib]System.Collections.Generic.IEnumerable`1<[iMineLauncher]iMine.Launcher.Client.ServerInfo>, [iMineLauncher]iMine.Launcher.Utils.Collections.NDictionary`2<[mscorlib]System.String,[mscorlib]System.String> ) -> A
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::UpdateDisplay[0]( ) -> d
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::SetCurrentNews[1]( [mscorlib]System.Int32 ) -> a
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::DisplayMyNew[0]( ) -> E
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::SetCurrentChangeLog[1]( [mscorlib]System.Int32 ) -> B
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::DrawMyChangelog[1]( [mscorlib]System.Int32 ) -> b
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::GotFocusHandler[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.RoutedEventArgs ) -> h
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::System.Windows.Markup.IComponentConnector.Connect[2]( [mscorlib]System.Int32, [mscorlib]System.Object ) -> A
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::<.ctor>b__10_0[0]( ) -> e
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::<PostInitializeComponent>b__11_0[2]( [mscorlib]System.Object, [PresentationCore]System.Windows.Input.PreProcessInputEventArgs ) -> A
+
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::InitializeComponent[0]( ) skipped:  external base class or interface
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::OnClosed[1]( [mscorlib]System.EventArgs ) skipped:  external base class or interface
+	[iMineLauncher]iMine.Launcher.Windows.MainWindow::.ctor[0]( ) skipped:  special name
+
+	iMine.Launcher.Windows.MainWindow [iMineLauncher]iMine.Launcher.Windows.MainWindow iMine.Launcher.Windows.MainWindow::<Instance>k__BackingField -> A
+	System.Int32 [iMineLauncher]System.Int32 iMine.Launcher.Windows.MainWindow::currentNew -> A
+	System.Int32 [iMineLauncher]System.Int32 iMine.Launcher.Windows.MainWindow::currentChangeLog -> a
+	System.Boolean [iMineLauncher]System.Boolean iMine.Launcher.Windows.MainWindow::<IsClosed>k__BackingField -> A
+	System.Windows.Controls.Grid [iMineLauncher]System.Windows.Controls.Grid iMine.Launcher.Windows.MainWindow::MainGrid -> A
+	System.Windows.Controls.Border [iMineLauncher]System.Windows.Controls.Border iMine.Launcher.Windows.MainWindow::MainSliderBorder -> A
+	System.Windows.Controls.Grid [iMineLauncher]System.Windows.Controls.Grid iMine.Launcher.Windows.MainWindow::MainSlider -> a
+	System.Windows.Controls.Button [iMineLauncher]System.Windows.Controls.Button iMine.Launcher.Windows.MainWindow::PrevSlideButton -> A
+	System.Windows.Controls.Button [iMineLauncher]System.Windows.Controls.Button iMine.Launcher.Windows.MainWindow::NextSlideButton -> a
+	System.Windows.Controls.RichTextBox [iMineLauncher]System.Windows.Controls.RichTextBox iMine.Launcher.Windows.MainWindow::MainSliderText -> A
+	System.Windows.Shapes.Rectangle [iMineLauncher]System.Windows.Shapes.Rectangle iMine.Launcher.Windows.MainWindow::SliderOpacity -> A
+	System.Windows.Controls.Grid [iMineLauncher]System.Windows.Controls.Grid iMine.Launcher.Windows.MainWindow::BottomSlider0 -> B
+	System.Windows.Controls.RichTextBox [iMineLauncher]System.Windows.Controls.RichTextBox iMine.Launcher.Windows.MainWindow::BottomSliderText0 -> a
+	System.Windows.Controls.TextBlock [iMineLauncher]System.Windows.Controls.TextBlock iMine.Launcher.Windows.MainWindow::BottomSliderNew0 -> A
+	System.Windows.Shapes.Rectangle [iMineLauncher]System.Windows.Shapes.Rectangle iMine.Launcher.Windows.MainWindow::BottomSliderOpacity1 -> a
+	System.Windows.Shapes.Rectangle [iMineLauncher]System.Windows.Shapes.Rectangle iMine.Launcher.Windows.MainWindow::BottomSlider0Tint -> B
+	System.Windows.Controls.Grid [iMineLauncher]System.Windows.Controls.Grid iMine.Launcher.Windows.MainWindow::BottomSlider1 -> b
+	System.Windows.Controls.RichTextBox [iMineLauncher]System.Windows.Controls.RichTextBox iMine.Launcher.Windows.MainWindow::BottomSliderText1 -> B
+	System.Windows.Controls.TextBlock [iMineLauncher]System.Windows.Controls.TextBlock iMine.Launcher.Windows.MainWindow::BottomSliderNew1 -> a
+	System.Windows.Shapes.Rectangle [iMineLauncher]System.Windows.Shapes.Rectangle iMine.Launcher.Windows.MainWindow::BottomSliderOpacity2 -> b
+	System.Windows.Shapes.Rectangle [iMineLauncher]System.Windows.Shapes.Rectangle iMine.Launcher.Windows.MainWindow::BottomSlider1Tint -> C
+	System.Windows.Controls.Grid [iMineLauncher]System.Windows.Controls.Grid iMine.Launcher.Windows.MainWindow::BottomSlider2 -> C
+	System.Windows.Controls.RichTextBox [iMineLauncher]System.Windows.Controls.RichTextBox iMine.Launcher.Windows.MainWindow::BottomSliderText2 -> b
+	System.Windows.Controls.TextBlock [iMineLauncher]System.Windows.Controls.TextBlock iMine.Launcher.Windows.MainWindow::BottomSliderNew2 -> B
+	System.Windows.Shapes.Rectangle [iMineLauncher]System.Windows.Shapes.Rectangle iMine.Launcher.Windows.MainWindow::BottomSliderOpacity3 -> c
+	System.Windows.Shapes.Rectangle [iMineLauncher]System.Windows.Shapes.Rectangle iMine.Launcher.Windows.MainWindow::BottomSlider2Tint -> D
+	System.Windows.Controls.Button [iMineLauncher]System.Windows.Controls.Button iMine.Launcher.Windows.MainWindow::PrevBottomButton -> B
+	System.Windows.Controls.Button [iMineLauncher]System.Windows.Controls.Button iMine.Launcher.Windows.MainWindow::NextBottomButton -> b
+	System.Windows.Controls.Label [iMineLauncher]System.Windows.Controls.Label iMine.Launcher.Windows.MainWindow::ServerName -> A
+	System.Windows.Controls.Border [iMineLauncher]System.Windows.Controls.Border iMine.Launcher.Windows.MainWindow::TagBorder0 -> a
+	System.Windows.Controls.Label [iMineLauncher]System.Windows.Controls.Label iMine.Launcher.Windows.MainWindow::Tag0 -> a
+	System.Windows.Controls.Border [iMineLauncher]System.Windows.Controls.Border iMine.Launcher.Windows.MainWindow::TagBorder1 -> B
+	System.Windows.Controls.Label [iMineLauncher]System.Windows.Controls.Label iMine.Launcher.Windows.MainWindow::Tag1 -> B
+	System.Windows.Controls.Border [iMineLauncher]System.Windows.Controls.Border iMine.Launcher.Windows.MainWindow::TagBorder2 -> b
+	System.Windows.Controls.Label [iMineLauncher]System.Windows.Controls.Label iMine.Launcher.Windows.MainWindow::Tag2 -> b
+	System.Windows.Controls.Border [iMineLauncher]System.Windows.Controls.Border iMine.Launcher.Windows.MainWindow::TagBorder3 -> C
+	System.Windows.Controls.Label [iMineLauncher]System.Windows.Controls.Label iMine.Launcher.Windows.MainWindow::Tag3 -> C
+	System.Windows.Controls.Border [iMineLauncher]System.Windows.Controls.Border iMine.Launcher.Windows.MainWindow::TagBorder4 -> c
+	System.Windows.Controls.Label [iMineLauncher]System.Windows.Controls.Label iMine.Launcher.Windows.MainWindow::Tag4 -> c
+	System.Windows.Controls.Border [iMineLauncher]System.Windows.Controls.Border iMine.Launcher.Windows.MainWindow::TagBorder5 -> D
+	System.Windows.Controls.Label [iMineLauncher]System.Windows.Controls.Label iMine.Launcher.Windows.MainWindow::Tag5 -> D
+	System.Windows.Controls.Border [iMineLauncher]System.Windows.Controls.Border iMine.Launcher.Windows.MainWindow::TagBorder6 -> d
+	System.Windows.Controls.Label [iMineLauncher]System.Windows.Controls.Label iMine.Launcher.Windows.MainWindow::Tag6 -> d
+	System.Windows.Controls.Button [iMineLauncher]System.Windows.Controls.Button iMine.Launcher.Windows.MainWindow::ServerInfoButton -> C
+	System.Windows.Controls.StackPanel [iMineLauncher]System.Windows.Controls.StackPanel iMine.Launcher.Windows.MainWindow::Logo -> A
+	System.Windows.Controls.TextBlock [iMineLauncher]System.Windows.Controls.TextBlock iMine.Launcher.Windows.MainWindow::LoginLabel -> b
+	System.Windows.Controls.Button [iMineLauncher]System.Windows.Controls.Button iMine.Launcher.Windows.MainWindow::ConsoleButton -> c
+	System.Windows.Controls.Button [iMineLauncher]System.Windows.Controls.Button iMine.Launcher.Windows.MainWindow::BugButton -> D
+	System.Windows.Controls.Button [iMineLauncher]System.Windows.Controls.Button iMine.Launcher.Windows.MainWindow::LoginButton -> d
+	System.Windows.Controls.Button [iMineLauncher]System.Windows.Controls.Button iMine.Launcher.Windows.MainWindow::RegisterButton -> E
+	System.Windows.Controls.StackPanel [iMineLauncher]System.Windows.Controls.StackPanel iMine.Launcher.Windows.MainWindow::CloseButton -> a
+	System.Windows.Controls.StackPanel [iMineLauncher]System.Windows.Controls.StackPanel iMine.Launcher.Windows.MainWindow::ModListPanel -> B
+	System.Windows.Controls.RichTextBox [iMineLauncher]System.Windows.Controls.RichTextBox iMine.Launcher.Windows.MainWindow::ModList -> C
+	System.Windows.Controls.Border [iMineLauncher]System.Windows.Controls.Border iMine.Launcher.Windows.MainWindow::CheckListBorder -> E
+	System.Windows.Controls.Grid [iMineLauncher]System.Windows.Controls.Grid iMine.Launcher.Windows.MainWindow::CheckListGrid -> c
+	System.Windows.Controls.TextBlock [iMineLauncher]System.Windows.Controls.TextBlock iMine.Launcher.Windows.MainWindow::CheckListTitle -> C
+	System.Windows.Controls.Button [iMineLauncher]System.Windows.Controls.Button iMine.Launcher.Windows.MainWindow::CheckListButton -> e
+	System.Windows.Controls.TextBlock [iMineLauncher]System.Windows.Controls.TextBlock iMine.Launcher.Windows.MainWindow::CheckListButtonText -> c
+	System.Windows.Controls.RichTextBox [iMineLauncher]System.Windows.Controls.RichTextBox iMine.Launcher.Windows.MainWindow::CheckList -> c
+	System.Windows.Controls.DockPanel [iMineLauncher]System.Windows.Controls.DockPanel iMine.Launcher.Windows.MainWindow::PlayButtonBcg -> A
+	System.Windows.Controls.Label [iMineLauncher]System.Windows.Controls.Label iMine.Launcher.Windows.MainWindow::PlayerCount -> E
+	System.Windows.Controls.Button [iMineLauncher]System.Windows.Controls.Button iMine.Launcher.Windows.MainWindow::SettingsButton -> F
+	System.Windows.Controls.Border [iMineLauncher]System.Windows.Controls.Border iMine.Launcher.Windows.MainWindow::ModPanel -> e
+	System.Windows.Controls.RichTextBox [iMineLauncher]System.Windows.Controls.RichTextBox iMine.Launcher.Windows.MainWindow::ModPanelBox -> D
+	System.Windows.Documents.Hyperlink [iMineLauncher]System.Windows.Documents.Hyperlink iMine.Launcher.Windows.MainWindow::ModPanelLink -> A
+	System.Windows.Controls.StackPanel [iMineLauncher]System.Windows.Controls.StackPanel iMine.Launcher.Windows.MainWindow::BlackTint -> b
+	System.Boolean [iMineLauncher]System.Boolean iMine.Launcher.Windows.MainWindow::_contentLoaded -> a
+
+	iMine.Launcher.Windows.MainWindow [iMineLauncher]iMine.Launcher.Windows.MainWindow iMine.Launcher.Windows.MainWindow::Instance -> dropped
+	System.Boolean [iMineLauncher]System.Boolean iMine.Launcher.Windows.MainWindow::IsClosed -> dropped
+}
+
+Renamed Resources:
+
+iMine.Launcher.Properties.Resources.resources -> A.C.resources
+
+Skipped Resources:
+
+iMineLauncher.g.resources (no clear new name)

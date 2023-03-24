@@ -1,0 +1,9 @@
+iMine Launcher v.0.9.4.L-040119
+Загружаем данные по серверам...
+
+System.IO.IOException: Не удается прочитать данные из транспортного соединения: Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера. ---> System.Net.Sockets.SocketException: Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера
+   в System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   в System.IO.Stream.ReadByte()
+   в iMine.Launcher.Serialize.HInput.ReadBoolean() в D:\MineCraft\eggman's legacy\Launcher\Launcher\Serialize\HInput.cs:строка 37

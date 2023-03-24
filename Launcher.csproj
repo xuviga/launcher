@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Obfuscar.2.2.13\build\obfuscar.props" Condition="Exists('packages\Obfuscar.2.2.13\build\obfuscar.props')" />
+  <Import Project="..\packages\Obfuscar.2.2.11\build\obfuscar.props" Condition="Exists('..\packages\Obfuscar.2.2.11\build\obfuscar.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1DBFFCF5-1DBC-40CA-8898-FA9D14BA781D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>iMine.Launcher</RootNamespace>
+    <AssemblyName>iMineLauncher</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>7.0</LangVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed">
+      <HintPath>packages\Newtonsoft.Json.11.0.2\lib\net40\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <HintPath>C:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Management.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="ClientLauncher.cs" />
+    <Compile Include="Client\CheckList.cs" />
+    <Compile Include="Client\ServerInfo.cs" />
+    <Compile Include="Config.cs" />
+    <Compile Include="DataProvider.cs" />
+    <Compile Include="FileVisitor\FileWatchDoge.cs" />
+    <Compile Include="Hasher\StrongFileNameMatcher.cs" />
+    <Compile Include="Request\Auth\AuthTokenRequest.cs" />
+    <Compile Include="Request\Auth\RegisterRequest.cs" />
+    <Compile Include="Request\SeedRequest.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="Utils\GoogleAnalytics.cs" />
+    <Compile Include="Windows\BugreportWindow.xaml.cs">
+      <DependentUpon>BugreportWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\ConsoleWindow.xaml.cs">
+      <DependentUpon>ConsoleWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\DownloadingWindow.xaml.cs">
+      <DependentUpon>DownloadingWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\SecondaryWindowController.cs" />
+    <Compile Include="Windows\LoadingWindow.xaml.cs">
+      <DependentUpon>LoadingWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\RegisterWindow.xaml.cs">
+      <DependentUpon>RegisterWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\LoginWindow.xaml.cs">
+      <DependentUpon>LoginWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Request\AbstractRequest.cs" />
+    <Compile Include="Request\Auth\AuthRequest.cs" />
+    <Compile Include="Request\PingRequest.cs" />
+    <Compile Include="Request\RequestHelper.cs" />
+    <Compile Include="Request\RequestType.cs" />
+    <Compile Include="Request\Update\LauncherRequest.cs" />
+    <Compile Include="Request\Update\UpdateRequest.cs" />
+    <Compile Include="Serialize\Config\ConfigObject.cs" />
+    <Compile Include="Serialize\Config\Entry\BlockConfigEntry.cs" />
+    <Compile Include="Serialize\Config\Entry\BooleanConfigEntry.cs" />
+    <Compile Include="Serialize\Config\Entry\ConfigEntry.cs" />
+    <Compile Include="Serialize\Config\Entry\IntegerConfigEntry.cs" />
+    <Compile Include="Serialize\Config\Entry\ListConfigEntry.cs" />
+    <Compile Include="Serialize\Config\Entry\StringConfigEntry.cs" />
+    <Compile Include="Serialize\HInput.cs" />
+    <Compile Include="Serialize\HOutput.cs" />
+    <Compile Include="Serialize\SlideInfo.cs" />
+    <Compile Include="Serialize\Signed\SignedBytesHolder.cs" />
+    <Compile Include="Serialize\Signed\SignedObjectHolder.cs" />
+    <Compile Include="Serialize\Streaming\StreamObject.cs" />
+    <Compile Include="Windows\SettingsWindow.xaml.cs">
+      <DependentUpon>SettingsWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\Collections\NDictionary.cs" />
+    <Compile Include="Utils\DirStuff.cs" />
+    <Compile Include="Utils\HardwareInfo.cs" />
+    <Compile Include="Utils\ImageCache.cs" />
+    <Compile Include="Utils\SuperTextWriter.cs" />
+    <Compile Include="Utils\TextBoxWriter.cs" />
+    <Page Include="Windows\BugreportWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\ConsoleWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\DownloadingWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\LoadingWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\RegisterWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\LoginWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Client\ClientProfile.cs" />
+    <Compile Include="Client\McVersion.cs" />
+    <Compile Include="Client\Params.cs" />
+    <Compile Include="Client\PlayerProfile.cs" />
+    <Compile Include="FileVisitor\BasicFileAttributes.cs" />
+    <Compile Include="FileVisitor\SimpleFileVisitor.cs" />
+    <Compile Include="Hasher\FileNameMatcher.cs" />
+    <Compile Include="Hasher\HashedDir.cs" />
+    <Compile Include="Hasher\HashedEntry.cs" />
+    <Compile Include="Hasher\HashedFile.cs" />
+    <Compile Include="Hasher\HashedType.cs" />
+    <Compile Include="Helper\IoHelper.cs" />
+    <Compile Include="Helper\VerifyHelper.cs" />
+    <Compile Include="Windows\MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Windows\SettingsWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icon.ico" />
+    <Content Include="obfuscar.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <Major>0</Major>
+    <Minor>9</Minor>
+    <Build>3</Build>
+    <Revision>0</Revision>
+  </PropertyGroup>
+  <!--<Target Name="BeforeBuild">
+    <GitVersion LocalPath="$(MSBuildProjectDirectory)">
+      <Output TaskParameter="CommitHash" PropertyName="Revision" />
+    </GitVersion>
+    <AssemblyInfo CodeLanguage="CS" OutputFile="Properties\AssemblyInfo.cs" AssemblyTitle="iMine Launcher" AssemblyDescription="iMine Launcher" AssemblyCompany="" AssemblyProduct="iMine Launcher" ComVisible="false" CLSCompliant="true" AssemblyInformationalVersion="$(Major).$(Minor).$(Build).L-$(Revision)" AssemblyVersion="$(Major).$(Minor).$(Build)" AssemblyFileVersion="$(Major).$(Minor).$(Build)" />
+  </Target>      -->
+  <Import Project="packages\MSBuildTasks.1.5.0.235\build\MSBuildTasks.targets" Condition="Exists('packages\MSBuildTasks.1.5.0.235\build\MSBuildTasks.targets')" />
+</Project>
